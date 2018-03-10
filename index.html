@@ -1,0 +1,325 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <title>My Valerie | Design</title>
+  <meta name="description" content="Portfolio for Valerie Lamm">
+  <meta name="author" content="Valerie Lamm">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="makemepretty.css">
+  <link rel="shortcut icon" href="favicon.ico">
+</head>
+    
+<body>
+
+    <!--Mobile Checker-->
+    <div id="mobile-indicator"></div>
+
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="http://www.myvalerie.design/">
+                Valerie Lamm
+            </a>
+        </div>
+    </div>
+    
+    <!--Logo Process JS Screen-->
+    <div id="darkness">
+        <div id="x">
+                X
+        </div>
+        <div id="swipezone">
+            <div id="logoOne">
+                <img class="thirty-eighty" src="adilogo.svg"/>
+                <div class="gap">
+                </div>
+                <img class="fifty-left" src="adiprocess1.png"/>
+                <img class="fifty-right" src="adiprocess2.png"/>
+            </div>
+            <div id="logoTwo">
+                <img class="thirty-eighty" src="clogo.svg"/>
+                <div class="gap">
+                </div>
+                <img class="fifty-left" src="cprocess1.png"/>
+                <img class="fifty-right" src="cprocess2.png"/>
+            </div>
+            <div id="logoThree">
+                <img class="thirty-eighty" src="wings-logo.svg"/>
+                <div class="gap">
+                </div>
+                <img class="fifty-left" src="iw-process01.png"/>
+                <img class="fifty-right" src="iw-process02.png"/>
+            </div>
+            <div id="logoFour">
+                <img class="thirty-eighty" src="blogo.svg"/>
+                <div class="gap">
+                </div>
+                <img class="fifty-left" src="bprocess1.png"/>
+                <img class="fifty-right" src="bprocess2.png"/>
+            </div>
+        </div>
+        <div id="slideshow-buttons">
+            <div id="left-button">
+                <a id="left">&#10094;</a>
+            </div>
+            <div id="right-button">
+                <a id="right">&#x276F;</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!--Main Content-->
+    <div class="bg per-bg  top">
+    <div class="gap"></div>
+    <div class="wrapper">
+        <img src="welcome.svg"><!--dashed line-->
+        <h4>
+            Design
+        </h4>
+        <div class="gap-medium">
+        </div>
+        <a href="http://www.myvalerie.design/Perennial/"> 
+            <img class="brand-icons" src="Perennial/logo.svg">
+        </a>
+        <a href="http://www.myvalerie.design/RootRocket/"> 
+            <img class="brand-icons" src="RootRocket/logo.svg">
+        </a>
+        <a href="http://www.myvalerie.design/ExploreEcology/"> 
+            <img class="brand-icons" src="ExploreEcology/logo.svg">
+        </a>
+        <hr>
+        <div class="gap"></div>
+        
+        
+        <div class="gap-big"></div>
+        <img src="welcome.svg"><!--dashed line-->
+        <h4>
+            Stand-Alone Logos &emsp; | &emsp; Tap to View Process
+        </h4>
+        <div class="gap-medium">
+        </div>
+        <img id="thumbnailOne" src="adilogo.svg"/>
+        <img id="thumbnailTwo" src="clogo.svg"/>
+        <img id="thumbnailThree" src="wings-logo.svg"/>
+        <img id="thumbnailFour" src="blogo.svg"/>
+        <div class="gap-big">
+        </div>
+    </div>
+    </div>
+        <!--end links-->
+    <footer>
+        <div class="wrapper">
+            <a href="http://www.myvalerie.design/About/" class="left-social">About Page 
+            </a>
+            <div class="right-social">
+                <a href="https://www.instagram.com/my__valerie/" target="_blank"><img class="social" src="instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="linkedin.svg"></a>
+            </div>
+        </div>
+    </footer>
+<script>
+
+    //Add triggers to logo thumbnails
+    document.getElementById("thumbnailOne").addEventListener('click', previewMeOne);
+    document.getElementById("thumbnailTwo").addEventListener('click', previewMeTwo);  
+    document.getElementById("thumbnailThree").addEventListener('click', previewMeThree);
+    document.getElementById("thumbnailFour").addEventListener('click', previewMeFour);
+
+    //Click Call Left
+    var left = document.getElementById("left");
+    left.addEventListener('click', switchMeLeft);
+
+    //Click Call Right
+    var right = document.getElementById("right");
+    right.addEventListener('click', switchMeRight);
+    
+    //Pull overlay elements into java
+    var darkness = document.getElementById('darkness');
+    var logoOne = document.getElementById('logoOne');
+    var logoTwo = document.getElementById('logoTwo');
+    var logoThree = document.getElementById('logoThree');
+    var logoFour = document.getElementById('logoFour');
+
+    //Logo process preview openers
+    function previewBasics(){
+        right.style.display='block';
+        left.style.display='block';
+        darkness.style.opacity = '1';
+        darkness.style.zIndex='1';
+    }
+    function previewMeOne(){
+        previewBasics();
+        logoOne.style.opacity='1';
+    }    
+    function previewMeTwo(){
+        previewBasics();
+        logoTwo.style.opacity='1';
+    }
+    function previewMeThree(){
+        previewBasics();
+        logoThree.style.opacity='1';
+    }  
+    function previewMeFour(){
+        previewBasics();
+        logoFour.style.opacity='1';
+    }
+
+    //Close The Preview
+    document.getElementById("x").addEventListener('click', closeMe);
+    function closeMe(){
+        darkness.style.opacity = '0';
+        darkness.style.zIndex='-3';
+        logoOne.style.zIndex='-3';
+        logoOne.style.opacity = '0';
+        logoTwo.style.zIndex='-3';
+        logoTwo.style.opacity = '0';
+        logoThree.style.zIndex='-3';
+        logoThree.style.opacity = '0';
+        logoFour.style.zIndex='-3';
+        logoFour.style.opacity = '0';
+        right.style.display='none';
+        left.style.display='none';
+        }
+    
+    //Switch Left Function
+    function switchMeLeft(){
+        if (logoFour.style.opacity=='1')
+            {
+                logoFour.style.opacity = '0';
+                logoThree.style.opacity = '1';
+            }
+        else if (logoThree.style.opacity=='1')
+            {
+                logoThree.style.opacity = '0';
+                logoTwo.style.opacity = '1';
+            }
+        else if (logoTwo.style.opacity=='1')
+            {
+                logoTwo.style.opacity = '0';
+                logoOne.style.opacity = '1';
+            }
+        else //Loops Back
+            {
+                logoOne.style.opacity = '0';
+                logoFour.style.opacity = '1';
+            }
+    }
+    
+    //Switch Right Function
+    function switchMeRight(){
+        if (logoOne.style.opacity=='1')
+            {
+                logoOne.style.opacity = '0';
+                logoTwo.style.opacity = '1';
+            }
+        else if (logoTwo.style.opacity=='1')
+            {
+                logoTwo.style.opacity = '0';
+                logoThree.style.opacity = '1';
+            }
+        else if (logoThree.style.opacity=='1')
+            {
+                logoThree.style.opacity = '0';
+                logoFour.style.opacity = '1';
+            }
+        else //loops back to start
+            {
+                logoFour.style.opacity = '0';
+                logoOne.style.opacity='1';
+            }
+      }
+    
+    //Switch logo process using swipe on touch screen
+    //Credit: http://www.javascriptkit.com/javatutors/touchevents2.shtml
+    function swipedetect(el, callback){
+        var touchsurface = el,
+        swipedir,
+        startX,
+        distX,
+        threshold = 150, //required min distance traveled to be considered swipe
+        restraint = 100, // maximum distance allowed at the same time in perpendicular direction
+        allowedTime = 300, // maximum time allowed to travel that distance
+        elapsedTime,
+        startTime,
+        handleswipe = callback || function(swipedir){}
+
+        touchsurface.addEventListener('touchstart', function(e){
+            var touchobj = e.changedTouches[0]
+            swipedir = 'none'
+            dist = 0
+            startX = touchobj.pageX
+            startTime = new Date().getTime() // record time when finger first makes contact with surface
+            e.preventDefault()
+        }, false)
+
+        touchsurface.addEventListener('touchmove', function(e){
+            e.preventDefault() // prevent scrolling when inside DIV
+        }, false)
+
+        touchsurface.addEventListener('touchend', function(e){
+            var touchobj = e.changedTouches[0]
+            distX = touchobj.pageX - startX 
+            // get horizontal dist traveled by finger while in contact with surface
+            elapsedTime = new Date().getTime() - startTime 
+            // get time elapsed
+            if (elapsedTime <= allowedTime){ 
+            // first condition for awipe met
+                if (Math.abs(distX) >= threshold){ 
+                // 2nd condition for horizontal swipe met
+                    swipedir = (distX < 0)? 'left' : 'right' 
+                    // if dist traveled is negative, it indicates left swipe
+                }
+            }
+            handleswipe(swipedir)
+            e.preventDefault()
+        }, false)
+    }
+
+    //Swipe Call
+    var el = document.getElementById('swipezone');
+    swipedetect(el, function(swipedir){
+        //For if screen is swiped while preview isn't open
+        if (logoOne.style.opacity=='1' || logoTwo.style.opacity=='1' || logoThree.style.opacity=='1' || logoFour.style.opacity == '1'){
+            //Swipe Left
+            if (swipedir == 'left')
+            {
+                switchMeLeft()
+            }
+            //Swipe Right
+            else if (swipedir == 'right')
+            {
+                switchMeRight()
+            }
+            else{} 
+        }  
+        else {}
+    });
+ 
+    //Arrow Key Call
+    window.addEventListener("keydown", moveSomething, false);
+    function moveSomething(e) {
+        //For if arrows are pressed while preview isn't open
+        if (logoOne.style.opacity=='1' || logoTwo.style.opacity=='1' || logoThree.style.opacity=='1' || logoFour.style.opacity == '1'){
+            switch(e.keyCode) {
+                case 37:
+                    // Left Arrow
+                    switchMeLeft()
+                    break;
+                case 39:
+                    // Right Arrow
+                    switchMeRight()
+                    break;
+            }   
+        }
+        else {}
+    }
+    
+</script>
+    
+</body>
+    
+</html>
