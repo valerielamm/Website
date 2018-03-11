@@ -1,0 +1,115 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <title>Valerie Lamm / Amala</title>
+  <meta name="description" content="Portfolio for Valerie Lamm">
+  <meta name="author" content="Valerie Lamm">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,600,700" rel="stylesheet">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../makemepretty.css">
+    <link rel="shortcut icon" href="../favicon.ico">
+</head>
+    
+<body>
+
+    <!--Mobile Checker-->
+    <div id="mobile-indicator"></div>
+
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="top-links">
+            <a href="http://www.myvalerie.design/">
+                VL
+            </a>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <img class="hundred shadow" src="header01.jpg">
+    <div class="bg per-bg top">
+        <div class="wrapper">
+            
+            <div class="gap"></div>
+            <img src="../welcome.svg"><!--dashed line-->
+            <div class="gap"></div>
+            
+            <!--intro-->
+            <img id="thirty-sixty" src="amala-logo.svg">
+            <div class="fifty-ninety">
+                <h2>Amala Foundation</h2>
+                <p>
+                    <b>About:</b> The Amala Foundation unites people from all walks of life and inspires them to grow as individuals and as leaders in service to humanity.
+                </p>
+                <p>
+                    <b>The Problem:</b> Participants and Guardians often comment on the long, repetitive registration process. Amala would like to address this issue as well as communication limitations within their community.
+                </p>
+                <p>
+                    <b>How Might We:</b> <br>
+                    1. Encourage attendance to the programs.<br>
+                    2. Establish a community<br>
+                    3. Make the sign-up process easier<br>
+                    4. Keep our audience informed<br>
+                    
+                </p>
+                <p>
+                    <b>Current State:</b> The wireframes are currently being user-tested...
+                </p>
+            </div>
+            <hr>
+            <div class="gap-big"></div>
+
+
+        <!--invision-->
+        <div class="wrapper">
+            <div class="hundred-ninety">
+                <h4>Test Me</h4>
+                <div class="invision-box" align="center">
+                        <iframe id="invision" src="//invis.io/8EFP279YADR" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+             <div class="gap-big"></div>
+            <hr>
+        </div>
+    
+    <!--end links-->
+    <footer>
+        <div class="wrapper">
+            <a href="http://www.myvalerie.design/" class="left-social">&#8592; Design Work
+            </a>
+            <a>|</a>
+            <a href="http://www.myvalerie.design/About/" class="left-social">About Page 
+            </a>
+            <div class="right-social">
+                <a href="https://www.instagram.com/my__valerie/" target="_blank"><img class="social" src="../instagram.svg"></a>
+                <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="../linkedin.svg"></a>
+            </div>
+        </div>
+    </footer>
+   
+    <script>
+        //slideshow
+            var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    
+</body>
+    
+</html>
