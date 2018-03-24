@@ -3,7 +3,7 @@
 <html lang="en">
     
 <head>
-    <title>My Valerie / About</title>
+    <title>Valerie Lamm / About</title>
     <meta name="description" content="Portfolio for Valerie Lamm">
     <meta name="author" content="Valerie Lamm">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,24 +15,33 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 </head>
     
-<body>
+<body onload="load()">
     
     <!--Mobile Checker-->
     <div id="mobile-indicator"></div>
 
     <!--Top Bar-->
     <div class="top-bar">
-        <div class="top-links">
-            <a href="http://www.myvalerie.design/">
-                Valerie Lamm
-            </a>
+        <div class="wrapper">
+            <a href="http://www.myvalerie.design/" class="left-social"> Valerie Lamm</a>
+            <div class="right-social">
+                <a class="float-right">About</a>
+                <a href="http://www.myvalerie.design/" class="float-right">Design</a>
+                <a class="float-right js-btn3">Contact</a>
+            </div>
         </div>
     </div>
 
+    <!--mail-->
+    <div id="sent">
+        <p id="mailTime">
+            Sent! Thank-you so much for contacting me!
+        </p>
+    </div>
     
     <!--Main Content-->
     <div class="bg top">
-    <div class="gap-medium"></div>
+        <div class="gap-medium"></div>
         <div class="wrapper">
             <div class="white">
                 <div class="fifty-hundred" style="background:#1a1a1a;">
@@ -41,60 +50,226 @@
                 <div class="fifty-hundred">
                     <p>
                         Hi, I'm Valerie Lamm, a designer born and raised in San Antonio. Here's my
-                        <a id="resume" href="resume.pdf" target="_blank"> 
+                        <a id="resume" href="valerie_lamm_resume.pdf" target="_blank"> 
                         resume.
-                        </a> 
-                    </p>
-                    <p>
-                        Being driven by challenging myself, I often dabble in many things. Designing and coding constantly require different skill sets and knowledge bases, so I appreciate the challenges it brings to my table.
+                        </a>
                     </p>
                     <p>
                         I'm majoring in Communication Design at Texas State University and expect to graduate fall of 2018.
                     </p>
                     <p>
-                        On my free time, I enjoy sketching, painting, cooking, singing, 
-                        playing guitar, and challenges.
+                        Being driven by challenging myself, I often dabble in many things. Designing and coding constantly require different skill sets and knowledge bases, so I appreciate the challenges it brings to my table.
+                    </p>
+                    <p>
+                        On my free time, I enjoy sketching, singing, playing guitar, and challenges. Here's my <a href="https://www.instagram.com/my__valerie/" target="_blank">instagram.</a>
                         <br><br>
                         P.S. This website is hand-coded.
                     </p>
                 </div>
-            </div>
-            <hr><div class="gap-big"></div>
-            <img src="../welcome.svg"><!--dashed line-->
+            </div>  
+            
+            <hr><div class="gap-big js-section3"></div>
+            <img src="../lines.svg"><!--dashed line-->
             <hr><div class="gap"></div>
-            <div class="hundred-ninety">
-                <h4>My Instagram Feed</h4>
-                <div class="gap"></div>
-                <!--linked instagram feed-->
-                <div id="instafeed"></div>
-                <div class="gap-big"></div>
+
+            <!--Email Form-->
+            <div class="hundred-ninety" id="contact">
+                <h1>Contact Me</h1>
+                <form method="post" action="send_mail.php" >
+                    <p>
+                        <input placeholder="Name" type="text" name="first_name" required>
+                    </p>
+                    <p>
+                        <input placeholder="Email" type="email" name="email_address">
+                    </p>
+                    <p>
+                        <textarea placeholder="Message" name="comments" maxlength="500"></textarea>
+                    </p>
+                    <p><button>Send</button></p>
+                </form>
+                <div class="gap-medium"></div>
             </div>
-         </div>
-    </div>
+        </div>
+    </div> 
     <!--end links-->
     <footer>
         <div class="wrapper">
             <a href="http://www.myvalerie.design/" class="left-social">&#8592; Design Work
             </a>
             <div class="right-social">
-                <a href="https://www.instagram.com/my__valerie/" target="_blank"><img class="social" src="../instagram.svg"></a>
+                <a href="https://github.com/valerielamm" target="_blank"><img class="social" src="../github.svg"></a>
                 <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="../linkedin.svg"></a>
             </div>
         </div>
     </footer>
-    <script>
-        //instagramfeed
-        var userFeed = new Instafeed({
-                get: 'user',
-                userId: '267816113',
-                accessToken: '267816113.2c1eee2.1131d548948c47699aaca800ebe3d2b4',
-                resolution: 'standard_resolution',
-                sortBy: 'most-recent',
-                template: '<a class="instagram-{{orientation}}" href="#"><img src="{{image}}" /></a>',
-                limit: 12,
-                template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}"/></a>'
+    <script>        
+        
+        //email sent popup
+        setTimeout(function(){
+            document.getElementById('mailTime').className = 'sent-fade';
+        }, 5000);
+        
+        //check before email popup
+        function load(){
+            if(document.referrer === 'http://www.myvalerie.design/About/sent.html'){
+                document.getElementById('sent').style.zIndex='99';
+            } 
+        };
+        
+        
+        //A huge shoutout to Paweł Grzybek
+        //"Page scrolling in vanilla JavaScript"
+        //
+        // Browser support:
+
+        // Chrome >= 24
+        // Firefox >= 23
+        // IE >= 10
+        // Opera >= 15
+        // Safari >= 8 (on previous versions it breaks on 'now' in window.performance)
+        // Android 4.4
+        // Firefox >= 23
+        // IE Mobile >= 10
+        // Opera Mobile >= 15
+        // Safari iOS >= 9
+        // Chrome for Android >= 35
+
+        /**
+         *
+         * @param {(number|HTMLElement)} destination - Destination to scroll to (DOM element or number)
+         * @param {number} duration - Duration of scrolling animation
+         * @param {string} easing - Timing function name (Allowed values: 'linear', 'easeInQuad', 'easeOutQuad', 'easeInOutQuad', 'easeInCubic', 'easeOutCubic', 'easeInOutCubic', 'easeInQuart', 'easeOutQuart', 'easeInOutQuart', 'easeInQuint', 'easeOutQuint', 'easeInOutQuint')
+         * @param {function} callback - Optional callback invoked after animation
+         */
+        function scrollIt(destination, duration = 200, easing = 'linear', callback) {
+
+          // Predefine list of available timing functions
+          const easings = {
+            linear(t) {
+              return t;
+            },
+            easeInQuad(t) {
+              return t * t;
+            },
+            easeOutQuad(t) {
+              return t * (2 - t);
+            },
+            easeInOutQuad(t) {
+              return t < 0.5 ? 2 * t * t : -1 + (4 - 2 * t) * t;
+            },
+            easeInCubic(t) {
+              return t * t * t;
+            },
+            easeOutCubic(t) {
+              return (--t) * t * t + 1;
+            },
+            easeInOutCubic(t) {
+              return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+            },
+            easeInQuart(t) {
+              return t * t * t * t;
+            },
+            easeOutQuart(t) {
+              return 1 - (--t) * t * t * t;
+            },
+            easeInOutQuart(t) {
+              return t < 0.5 ? 8 * t * t * t * t : 1 - 8 * (--t) * t * t * t;
+            },
+            easeInQuint(t) {
+              return t * t * t * t * t;
+            },
+            easeOutQuint(t) {
+              return 1 + (--t) * t * t * t * t;
+            },
+            easeInOutQuint(t) {
+              return t < 0.5 ? 16 * t * t * t * t * t : 1 + 16 * (--t) * t * t * t * t;
+            }
+          };
+
+
+          // Store initial position of a window and time
+          // If performance is not available in your browser
+          // It will fallback to new Date().getTime() - thanks IE < 10
+          const start = window.pageYOffset;
+          const startTime = 'now' in window.performance ? performance.now() : new Date().getTime();
+          // const startTime = typeof(window.performance['now']) == 'function' ? performance.now() : new Date().getTime();
+
+
+          // Take height of window and document to sesolve max scrollable value
+          // Prevent requestAnimationFrame() from scrolling below maximum scollable value
+          // Resolve destination type (node or number)
+          const documentHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
+          const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
+          const destinationOffset = typeof destination === 'number' ? destination : destination.offsetTop;
+          const destinationOffsetToScroll = Math.round(documentHeight - destinationOffset < windowHeight ? documentHeight - windowHeight : destinationOffset);
+
+
+          // If requestAnimationFrame is not supported
+          // Move window to destination position and trigger callback function
+          if ('requestAnimationFrame' in window === false) {
+            window.scroll(0, destinationOffsetToScroll);
+            if (callback) {
+              callback();
+            }
+            return;
+          }
+
+
+          // function resolves position of a window and moves to exact amount of pixels
+          // Resolved by calculating delta and timing function choosen by user
+          function scroll() {
+            const now = 'now' in window.performance ? performance.now() : new Date().getTime();
+            const time = Math.min(1, ((now - startTime) / duration));
+            const timeFunction = easings[easing](time);
+            window.scroll(0, Math.ceil((timeFunction * (destinationOffsetToScroll - start)) + start));
+
+            // Stop requesting animation when window reached its destination
+            // And run a callback function
+            if (window.pageYOffset === destinationOffsetToScroll) {
+              if (callback) {
+                callback();
+              }
+              return;
+            }
+
+            // If window still needs to scroll to reach destination
+            // Request another scroll invokation
+            requestAnimationFrame(scroll);
+          }
+
+
+          // Invoke scroll and sequential requestAnimationFrame
+          scroll();
+        }
+
+        // Scroll to section 2
+        document.querySelector('.js-btn3').addEventListener('click', () => {
+          scrollIt(
+            document.querySelector('.js-section3'),
+            300,
+            'easeOutQuad',
+            () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
+          );
+        });
+        
+        
+        // Thank-you Rick 
+        // https://stackoverflow.com/users/4467793/rick
+        // https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+        $(document).ready(function(){
+            $('a[href^="#"]').on('click',function (e) {
+                e.preventDefault();
+
+                var target = this.hash,
+                $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 2800, 'swing', function () {
+                    window.location.hash = target;
+                });
             });
-            userFeed.run();
+        });
     </script>
 </body>
     
