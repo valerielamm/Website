@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <title>Valerie Lamm / Nutrish</title>
+  <meta name="description" content="Portfolio for Valerie Lamm">
+  <meta name="author" content="Valerie Lamm">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../makemepretty.css">
+      <link rel="shortcut icon" href="../favicon.ico">
+</head>
+    
+<body>
+    
+    <!--Mobile Checker-->
+    <div id="mobile-indicator"></div>
+
+   <!--Top Bar-->
+    <div class="top-bar">
+        <div class="top-links">
+            <div class="wrapper">
+                <a href="http://www.myvalerie.design/" class="left-social"> Valerie Lamm
+                </a>
+                <div class="right-social">
+                    <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right">Contact
+                    </a>
+                    <a href="http://www.myvalerie.design/About/" class="float-right">About 
+                    </a>
+                    <a href="http://www.myvalerie.design/">
+                    Design
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <img class="hundred shadow" src="hero5.jpg">
+    <div class="bg per-bg top">
+    <div class="wrapper root-bg">
+        <div class="gap"></div>
+        <img src="../lines.svg"><!--dashed line-->
+        <div class="gap"></div>
+
+        <img id="thirty-sixty" src="nutrish-logo.svg">
+        <div class="fifty-right">
+            <p>Showcased in AIGA Blue Ridge’s 2017 annual Flux Student Design Competition</p>
+            <p>
+                <b>Nutrish: </b>Nutrish is an app designed to create a more nutritious, enjoyable, and less wasteful relationship users have with their food through the use of adaptive algorithms and devices.
+
+            </p>
+            <p>
+                <b>The Problem: </b>Due to lack of time, people struggle with taking nutrition into account and scheduling family dinners, which has been shown to negatively affect our health and happiness. This also inadvertently contributes to the growing problem of food waste.
+            </p>
+        </div>
+        <hr>
+        <div class="gap-big"></div>
+    </div>    
+    <div class="hundred">
+        <div class="color-box">
+            <hr>
+            <div class="color-content">
+                <div class="amala-box">
+                    <img class="hundred" src="community.svg">
+                </div>
+                <div class="amala-box">
+                    <img class="hundred" src="waste.svg">
+                </div>
+                <div class="amala-box">
+                    <img class="hundred" src="nutrition.svg">
+                </div>
+                <div class="amala-box">
+                    <img class="hundred" src="convenience.svg">
+                </div>
+            </div>
+            <div class="gap-big"></div>
+        </div>
+    </div>
+
+    <div class="hundred root-color4">
+        <img class="third" src="flux01.jpg">
+        <img class="third" src="flux02.jpg">
+        <img class="third" src="flux03.jpg">  
+        <div class="wrapper">
+            <div class="gap-big"></div>
+        </div>
+    </div>  
+    <hr>
+    </div>
+        <!--end links-->
+    <footer>
+        <div class="wrapper">
+            <a href="http://www.myvalerie.design/" class="left-social">&#8592; Design Work
+            </a>
+            <a>|</a>
+            <a href="http://www.myvalerie.design/About/" class="left-social">About Page 
+            </a>
+            <div class="right-social">
+                <a href="https://github.com/valerielamm" target="_blank"><img class="social" src="../github.svg"></a>
+                <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="../linkedin.svg"></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+    //slideshow
+            var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+    
+</html>
