@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <title>Valerie Lamm / Perennial / Inspiration</title>
+  <meta name="description" content="Portfolio for Valerie Lamm">
+  <meta name="author" content="Valerie Lamm">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,600,700" rel="stylesheet">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../../makemepretty.css">
+    <link rel="shortcut icon" href="../../favicon.ico">
+</head>
+    
+<body>
+
+    <!--Mobile Checker-->
+    <div id="mobile-indicator"></div>
+
+    <!--Top Bar-->
+    <div class="top-bar">
+        <div class="top-links">
+            <div class="wrapper">
+                <a href="http://www.myvalerie.design/" class="left-social"> Valerie Lamm
+                </a>
+                <div class="right-social">
+                    <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
+                    </a>
+                    <a href="http://www.myvalerie.design/About/" class="float-right">About 
+                    </a>
+                    <a href="http://www.myvalerie.design/">
+                    Design
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <div class="bg per-bg top">
+        <div class="wrapper">
+            
+            <div class="gap"></div>
+            <img src="../../lines.svg"><!--dashed line-->
+            <div class="gap"></div>
+            
+            <!--intro-->
+            <img id="thirty-sixty" src="../logo.svg">
+            <div class="fifty-right">
+                <h2>Perennial Inspiration Board</h2>
+                <p>
+                    <b>Creative Objective:</b> The app should be clean, user friendly, and take advantage of nature's beauty through the use of imagery.
+                </p>
+                <p>
+                    See the app by <a href="http://www.myvalerie.design/Perennial/">clicking here.</a>
+                </p>
+            </div>
+            <hr>
+            <div class="gap-big"></div>
+        </div>
+        <img class="hundred2" src="inspiration.jpg">
+        <img class="hundred2" src="inspiration04.jpg">
+        <img class="hundred2" src="inspiration05.jpg">
+        <img class="hundred2" src="inspiration03.jpg">
+        <img class="hundred2" src="inspiration02.jpg">
+    </div> 
+    
+    <!--end links-->
+    <footer>
+        <div class="wrapper">
+            <a href="http://www.myvalerie.design/" class="left-social">&#8592; Design
+            </a>
+            <a>|</a>
+            <a href="http://www.myvalerie.design/About/" class="left-social">About
+            </a>
+            <div class="right-social">
+                <a href="https://www.instagram.com/my__valerie/" target="_blank"><img class="social" src="../../github.svg"></a>
+                <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="../../linkedin.svg"></a>
+            </div>
+        </div>
+    </footer>
+   
+    <script>
+        //slideshow
+            var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+    
+</body>
+    
+</html>
