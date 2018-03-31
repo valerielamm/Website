@@ -130,6 +130,10 @@ input, textarea, button{
     text-decoration: none; 
     border:none; 
     padding: .5em; 
+    border-radius: 0;
+}
+button a:visited{
+    color:#1a1a1a;
 }
 input, textarea{
     width:50%;
@@ -204,6 +208,10 @@ footer .wrapper{
 }
 
 /*common classes*/
+audio{
+    align-content: center;
+    text-align: center;
+}
 .top{
     margin-top: 2.5em;
     margin-bottom: 8em;
@@ -528,7 +536,47 @@ footer .wrapper{
     }
 }
 
-
+/*When input is active on about this keeps everything mobile*/
+@media screen and (max-width: 400px){
+    .fifty-hundred {
+        width:100%;
+        float:left;
+    }
+    #me {
+        width: 100%;
+        margin-left: 0;
+        max-width: none;
+    }
+    input, input:active, input:focus, textarea, textarea:active, textarea:focus {
+        width: 90%;
+    }
+    textarea, textarea:active, textarea:focus{
+        height: 6em;
+    }
+    .wrapper {
+        max-width:none;
+        width: 100%;
+    }
+    .hundred-ninety{
+        width:90%; 
+        margin-left: 5%;
+        float:left;
+        margin-top:1em;
+    }
+    .white {
+        width: 90%;
+        margin: auto;
+    }
+    p {
+        padding:0em 1.5em 1.5em 10%;
+    }
+    .gap-medium{
+        height:4em;
+    }
+    .gap-big{
+        height: 4em;
+    }
+}
 
 /* Portrait */
 @media screen and (orientation:portrait)
@@ -587,7 +635,7 @@ footer .wrapper{
     .white {
     width: 90%;
     margin: auto;
-}
+    }
     .fifty-hundred {
     width:100%;
     float:left;
@@ -639,6 +687,12 @@ footer .wrapper{
     }
     .hero{
         background-attachment:scroll;
+    }
+    input, input:active, input:focus, textarea, textarea:active, textarea:focus {
+        width: 90%;
+    }
+    textarea, textarea:active, textarea:focus{
+        height: 6em;
     }
 }
 
