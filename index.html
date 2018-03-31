@@ -19,20 +19,17 @@
 
     <!--Top Bar-->
     <div class="top-bar">
-        <div class="top-links">
-            <div class="wrapper">
-            <a href="http://www.myvalerie.design/" class="left-social"> Valerie Lamm
-            </a>
+        <div class="wrapper">
+            <a class="left-social"> Valerie Lamm</a>
             <div class="right-social">
+                <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
+                </a>
                 <a href="http://www.myvalerie.design/About/" class="float-right">About 
                 </a>
                 <a class="float-right js-btn1">
                 Design
                 </a>
-                <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right">Contact
-                </a>
             </div>
-        </div>
         </div>
     </div>
     <div class="bg per-bg top">
@@ -47,10 +44,9 @@
         
         <!--Main Content-->
         <div class="gap js-section2"></div>
-        <div class="wrapper">
-            <img src="welcome.svg"><!--dashed line-->
-            <div class="gap-medium">
-            </div>
+        <div class="wrapper" id="design">
+            <img src="lines.svg"><!--dashed line-->
+            <div class="gap-medium"></div>
             
             <h4>Design</h4>
             <div id="per-tile" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('root-tile'); invisible('per-description');" onmouseover="visible('per-description'); invisible('root-tile');"><a href="http://www.myvalerie.design/Perennial/"><img src="Perennial/tile.jpg" class="hundred"></a></div>
@@ -58,7 +54,7 @@
                 <div style="margin-top:100%;background:#d6d6d6;"></div>
                 <div style="position:absolute;top:0;">
                    <h2>Root Rocket</h2>
-                <p>
+                <p class="mobile-hide">
                     A fertilizer that enhances root growth and plant longetivity. 
                 </p>
                 <p>
@@ -74,7 +70,7 @@
                 <div style="margin-top:100%;background:#d6d6d6;"></div>
                 <div style="position:absolute;top:0;">
                     <h2>Perennial</h2>
-                <p>
+                <p class="mobile-hide">
                     An app that allows one to manage, share, get inspired by, and learn about gardening.
                 </p>
                 <p>
@@ -92,12 +88,12 @@
             
             
             
-            <div id="exp-tile" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('nutrish-tile'); invisible('exp-description');" onmouseover="visible('exp-description'); invisible('nutrish-tile');"><a href="http://www.myvalerie.design/ExploreEcology/"><img src="ExploreEcology/tile3.jpg" class="hundred"></a></div>
+            <div id="exp-tile" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('nutrish-tile'); invisible('exp-description');" onmouseover="visible('exp-description'); invisible('nutrish-tile');"><a href="http://www.myvalerie.design/ExploreEcology/"><img src="ExploreEcology/tile.jpg" class="hundred"></a></div>
             <div id="nutrish-description" style="width:40%; height:40%; margin-left:10%; display:none; float:left; background: #d6d6d6;position:relative;">
                 <div style="margin-top:100%;background:#d6d6d6;"></div>
                 <div style="position:absolute;top:0;">
                     <h2>Nutrish</h2>
-                <p>
+                <p class="mobile-hide">
                     An app designed to create a more nutritious, enjoyable, and less wasteful relationship users have with their food through the use of adaptive algorithms and devices.
                 </p>
                 <p>
@@ -114,7 +110,7 @@
                 <div style="margin-top:100%;background:#d6d6d6;"></div>
                 <div style="position:absolute;top:0;">
                 <h2>Explore Ecology</h2>
-                <p>
+                <p class="mobile-hide">
                     An organization that provides youth ages 5 -13 with fun events that bring awareness of the environment in a welcoming manner.
                 </p>
                 <p>
@@ -130,13 +126,13 @@
             
             
             
-            <div id="amala-tile" style="width:40%; height:40%; margin-left:10%; float:left;" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="invisible('amala-description');" onmouseover="visible('amala-description');"><a href="http://www.myvalerie.design/Amala/"><img src="Amala/tile2.jpg" class="hundred"></a></div>
+            <div id="amala-tile" style="width:40%; height:40%; margin-left:10%; float:left;" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="invisible('amala-description');" onmouseover="visible('amala-description');"><a href="http://www.myvalerie.design/Amala/"><img src="Amala/tile.jpg" class="hundred"></a></div>
             
             <div id="amala-description" style="width:40%; height:40%; display:none; float:left; background: #d6d6d6;position:relative;">
                 <div style="margin-top:100%;background:#d6d6d6;"></div>
                 <div style="position:absolute;top:0;">
                 <h2>Amala Foundation</h2>
-                <p>
+                <p class="mobile-hide">
                     An app for a foundation located in Austin that unites people from all walks of life and inspires them to grow as individuals and as leaders in service to humanity.
                 </p>
                 <p>
@@ -342,6 +338,24 @@ document.querySelector('.js-btn1').addEventListener('click', () => {
     'easeOutQuad',
     () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
   );
+});
+    
+// Thank-you Rick 
+// https://stackoverflow.com/users/4467793/rick
+// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+$(document).ready(function(){
+    $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash,
+        $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 2800, 'swing', function () {
+            window.location.hash = target;
+        });
+    });
 });
 </script> 
     
