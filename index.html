@@ -194,6 +194,11 @@
     var touchScreenMode = 0;
     document.addEventListener('touchstart', function(){
         touchScreenMode = '1';
+        // Reverts quickly so that if the user swaps 
+        // back to using a mouse, it won't go to link on hover
+        setTimeout(function(){ 
+            touchScreenMode = '0'; 
+        }, 100);
     });
     
     var perennial = document.getElementById("per-tile");
