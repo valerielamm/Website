@@ -409,9 +409,6 @@ audio{
 .sent-fade{
     opacity:0;
 }
-.hero-inner{
-    width:80%;
-}
 
 
 /*perrenial*/
@@ -495,6 +492,32 @@ audio{
 /*nutrish*/
 .third{
     width:30%; margin-right:1.5%; margin-left:1.5%; float:left;
+}
+
+/*home page*/
+.hero-inner{
+    width:80%;
+}
+.tile, .tile-left{
+    width:40%; 
+    height:40%; 
+    margin-left:10%; 
+    float:left;
+}
+.tile{margin-left:0;}
+.description{display:none; 
+    float:left; 
+    background: #d6d6d6; 
+    position:relative;
+}
+.description-box{ 
+    /*makes box the right height*/
+    margin-top:100%; 
+    background:#d6d6d6;
+}
+.description-text{
+    position:absolute;
+    top:0;
 }
 
 /*tablet*/
