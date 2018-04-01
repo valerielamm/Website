@@ -409,6 +409,9 @@ audio{
 .sent-fade{
     opacity:0;
 }
+.hero-inner{
+    width:80%;
+}
 
 
 /*perrenial*/
@@ -536,7 +539,7 @@ audio{
     }
 }
 
-/*When input is active on about this keeps everything mobile*/
+/*When input is active on the about page, this keeps everything in mobile format*/
 @media screen and (max-width: 400px){
     .fifty-hundred {
         width:100%;
@@ -687,6 +690,7 @@ audio{
     }
     .hero{
         background-attachment:scroll;
+        height:50em;
     }
     input, input:active, input:focus, textarea, textarea:active, textarea:focus {
         width: 90%;
