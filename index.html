@@ -20,14 +20,16 @@
     <!--Top Bar-->
     <div class="top-bar">
         <div class="wrapper">
-            <a class="left-social"> Valerie Lamm</a>
+            <a class="left-social">Valerie Lamm</a>
             <div class="right-social">
-                <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
+                <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">
+                    Contact
                 </a>
-                <a href="http://www.myvalerie.design/About/" class="float-right">About 
+                <a href="http://www.myvalerie.design/About/" class="float-right">
+                    About 
                 </a>
                 <a class="float-right js-btn1">
-                Design
+                    Design
                 </a>
             </div>
         </div>
@@ -47,106 +49,127 @@
         <div class="wrapper" id="design">
             <img src="lines.svg"><!--dashed line-->
             <div class="gap-medium"></div>
-            
             <h4>Design</h4>
-            <div id="per-tile" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('root-tile'); invisible('per-description');" onmouseover="visible('per-description'); invisible('root-tile');"><a href="http://www.myvalerie.design/Perennial/"><img src="Perennial/tile.jpg" class="hundred"></a></div>
-            <div id="root-description" style="width:40%; height:40%; margin-left:10%; display:none; float:left;background: #d6d6d6;position:relative;">
-                <div style="margin-top:100%;background:#d6d6d6;"></div>
-                <div style="position:absolute;top:0;">
+            
+            <!--perennial image-->
+            <div id="per-tile" class="tile-left" onmouseout="visible('root-tile'); invisible('per-description');" onmouseover="hoverClick('perennial')">
+                <a href="http://www.myvalerie.design/Perennial/">
+                    <img src="Perennial/tile.jpg" class="hundred">
+                </a>
+            </div>
+            
+            <!--root rocket description-->
+            <div id="root-description" class="tile-left description">
+                <div class="description-box"></div>
+                <div class="description-text">
                    <h2>Root Rocket</h2>
-                <p class="mobile-hide">
-                    A fertilizer that enhances root growth and plant longetivity. 
-                </p>
-                <p>
-                    Web / Branding / Packaging  
-                </p>
+                    <p class="mobile-hide">
+                        A fertilizer that enhances root growth and plant longetivity. 
+                    </p>
+                    <p>
+                        Web / Branding / Packaging  
+                    </p>
                 </div>
             </div>
             
+            <!--root rocket image-->
+            <div id="root-tile" class="tile" onmouseout="visible('per-tile'); invisible('root-description');" onmouseover="hoverClick('root')">
+                <a href="http://www.myvalerie.design/RootRocket/">
+                    <img src="RootRocket/tile.jpg" class="hundred">
+                </a>
+            </div>
             
-            <div id="root-tile" style="width:40%; height:40%; float:left;" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('per-tile'); invisible('root-description');" onmouseover="visible('root-description'); invisible('per-tile');"><a href="http://www.myvalerie.design/RootRocket/"><img src="RootRocket/tile.jpg" class="hundred"></a></div>
-            
-            <div id="per-description" style="width:40%; height:40%; display:none; float:left;background: #d6d6d6;position:relative;">
-                <div style="margin-top:100%;background:#d6d6d6;"></div>
-                <div style="position:absolute;top:0;">
+            <!--perennial description-->
+            <div id="per-description" class="tile description">
+                <div class="description-box"></div>
+                <div class="description-text">
                     <h2>Perennial</h2>
-                <p class="mobile-hide">
-                    An app that allows one to manage, share, get inspired by, and learn about gardening.
-                </p>
-                <p>
-                    UX / UI / Branding
-                </p>
-                </div>
-                
+                    <p class="mobile-hide">
+                        An app that allows one to manage, share, get inspired by, and learn about gardening.
+                    </p>
+                    <p>
+                        UX / UI / Branding
+                    </p>
+                </div>  
             </div>
-            
-           
             
             
             <hr>
             <div class="gap"></div>
+
             
+            <!--explore ecology image-->
+            <div id="exp-tile" class="tile-left" onmouseout="visible('nutrish-tile'); invisible('exp-description');" onmouseover="hoverClick('explore')">
+                <a href="http://www.myvalerie.design/ExploreEcology/">
+                    <img src="ExploreEcology/tile.jpg" class="hundred">
+                </a>
+            </div>
             
-            
-            <div id="exp-tile" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('nutrish-tile'); invisible('exp-description');" onmouseover="visible('exp-description'); invisible('nutrish-tile');"><a href="http://www.myvalerie.design/ExploreEcology/"><img src="ExploreEcology/tile.jpg" class="hundred"></a></div>
-            <div id="nutrish-description" style="width:40%; height:40%; margin-left:10%; display:none; float:left; background: #d6d6d6;position:relative;">
-                <div style="margin-top:100%;background:#d6d6d6;"></div>
-                <div style="position:absolute;top:0;">
+            <!--nutrish description-->
+            <div id="nutrish-description" class="tile-left description">
+                <div class="description-box"></div>
+                <div class="description-text">
                     <h2>Nutrish</h2>
-                <p class="mobile-hide">
-                    An app designed to create a more nutritious, enjoyable, and less wasteful relationship users have with their food through the use of adaptive algorithms and devices.
-                </p>
-                <p>
-                    UX / UI 
-                </p>
-                </div>
-                
-            </div>
-            
-            
-            <div id="nutrish-tile" style="width:40%; height:40%; float:left;" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="visible('exp-tile'); invisible('nutrish-description');" onmouseover="visible('nutrish-description'); invisible('exp-tile');"><a href="http://www.myvalerie.design/Nutrish/"><img src="Nutrish/veggies-bw.jpg" class="hundred"></a></div>
-            
-            <div id="exp-description" style="width:40%; height:40%; display:none; float:left; background: #d6d6d6;position:relative;">
-                <div style="margin-top:100%;background:#d6d6d6;"></div>
-                <div style="position:absolute;top:0;">
-                <h2>Explore Ecology</h2>
-                <p class="mobile-hide">
-                    An organization that provides youth ages 5 -13 with fun events that bring awareness of the environment in a welcoming manner.
-                </p>
-                <p>
-                    Web / Branding  
-                </p>
+                    <p class="mobile-hide">
+                        An app designed to create a more nutritious, enjoyable, and less wasteful relationship users have with their food through the use of adaptive algorithms and devices.
+                    </p>
+                    <p>
+                        UX / UI 
+                    </p>
                 </div>
             </div>
             
+            <!--nutrish image-->
+            <div id="nutrish-tile" class="tile" onmouseout="visible('exp-tile'); invisible('nutrish-description');" onmouseover="hoverClick('nutrish')">
+                <a href="http://www.myvalerie.design/Nutrish/">
+                    <img src="Nutrish/veggies-bw.jpg" class="hundred">
+                </a>
+            </div>
+            
+            <!--explore ecology description-->
+            <div id="exp-description" class="tile description">
+                <div class="description-box"></div>
+                <div class="description-text">
+                    <h2>Explore Ecology</h2>
+                    <p class="mobile-hide">
+                        An organization that provides youth ages 5 -13 with fun events that bring awareness of the environment in a welcoming manner.
+                    </p>
+                    <p>
+                        Web / Branding  
+                    </p>
+                </div>
+            </div>
             
             
             <hr>
             <div class="gap"></div>
             
             
-            
-            <div id="amala-tile" style="width:40%; height:40%; margin-left:10%; float:left;" style="width:40%; height:40%; margin-left:10%; float:left;" onmouseout="invisible('amala-description');" onmouseover="visible('amala-description');"><a href="http://www.myvalerie.design/Amala/"><img src="Amala/tile.jpg" class="hundred"></a></div>
-            
-            <div id="amala-description" style="width:40%; height:40%; display:none; float:left; background: #d6d6d6;position:relative;">
-                <div style="margin-top:100%;background:#d6d6d6;"></div>
-                <div style="position:absolute;top:0;">
-                <h2>Amala Foundation</h2>
-                <p class="mobile-hide">
-                    An app for a foundation located in Austin that unites people from all walks of life and inspires them to grow as individuals and as leaders in service to humanity.
-                </p>
-                <p>
-                    UX / UI 
-                </p>
-                </div>
+            <!--amala image-->
+            <div id="amala-tile" class="tile-left" onmouseout="invisible('amala-description');" onmouseover="hoverClick('amala')">
+                <a href="http://www.myvalerie.design/Amala/">
+                    <img src="Amala/tile.jpg" class="hundred">
+                </a>
             </div>
             
-            
-            
-            
+            <!--amala description-->
+            <div id="amala-description" class="tile description">
+                <div class="description-box"></div>
+                <div class="description-text">
+                    <h2>Amala Foundation</h2>
+                    <p class="mobile-hide">
+                        An app for a foundation located in Austin that unites people from all walks of life and inspires them to grow as individuals and as leaders in service to humanity.
+                    </p>
+                    <p>
+                        UX / UI 
+                    </p>
+                </div>
+            </div>
             <div class="gap-big"></div>
         </div>
     </div>
+    
+    
         <!--end links-->
     <footer>
         <div class="wrapper">
@@ -164,7 +187,79 @@
 <script>
     
     
-
+    
+// When in mobile, the device treats a tap like a hover activator
+// This says, okay, a hover. Is touchscreen activated? 
+// If yes, then don't do the hover effect, go to the link
+    var touchScreenMode = 0;
+    document.addEventListener('touchstart', function(){
+        touchScreenMode = '1';
+    });
+    
+    var perennial = document.getElementById("per-tile");
+    var perDescription = document.getElementById("per-description");
+    var rootRocket = document.getElementById("root-tile");
+    var rootDescription = document.getElementById("root-description");
+    var explore = document.getElementById("exp-tile");
+    var exploreDescription = document.getElementById("exp-description");
+    var nutrish = document.getElementById("nutrish-tile");
+    var nutrishDescription = document.getElementById("nutrish-description");
+    var amalaDescription = document.getElementById("amala-description");
+    
+    function hoverClick(aa) {   
+        // Handle touch event.
+        if(touchScreenMode == '1') {
+            switch(aa) {
+                case 'perennial':
+                    window.location.href = "http://www.myvalerie.design/Perennial/";
+                    break;
+                case 'root':
+                    window.location.href = "http://www.myvalerie.design/RootRocket/";
+                    break;
+                case 'explore':
+                     window.location.href = "http://www.myvalerie.design/ExploreEcology/";
+                    break;
+                case 'nutrish':
+                     window.location.href = "http://www.myvalerie.design/Nutrish/";
+                    break;
+                case 'amala':
+                     window.location.href = "http://www.myvalerie.design/Amala/";
+                    break;
+                default:
+                    break;
+            }
+        } 
+        else {
+            // Handle hover event.
+            switch(aa) {
+                case 'perennial':
+                    perDescription.style.display = 'block';
+                    rootRocket.style.display = 'none';
+                    break;
+                case 'root':
+                    rootDescription.style.display = 'block';
+                    perennial.style.display = 'none';
+                    break;
+                case 'explore':
+                    exploreDescription.style.display = 'block';
+                    nutrish.style.display = 'none';
+                    break;
+                case 'nutrish':
+                    nutrishDescription.style.display = 'block';
+                    explore.style.display = 'none';
+                    break;
+                case 'amala':
+                     amalaDescription.style.display = 'block';
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+    
+    
+// This is the code for the hover effect 
+    
     //makes target switch between visible and invisible
     function toggle_visibility(id) {
        var e = document.getElementById(id);
@@ -203,6 +298,7 @@
        }
     };
     
+
     
     
 //A huge shoutout to Paweł Grzybek
@@ -357,6 +453,9 @@ $(document).ready(function(){
         });
     });
 });
+    
+    
+
 </script> 
     
 </body>
