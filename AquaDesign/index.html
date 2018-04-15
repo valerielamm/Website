@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+    
+<head>
+  <title>Valerie Lamm / Aqua Design</title>
+  <meta name="description" content="Portfolio for Valerie Lamm">
+  <meta name="author" content="Valerie Lamm">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="../makemepretty.css">
+      <link rel="shortcut icon" href="../favicon.ico">
+</head>
+    
+<body>
+    
+    <!--Mobile Checker-->
+    <div id="mobile-indicator"></div>
+
+   <!--Top Bar-->
+    <div class="top-bar">
+        <div class="top-links">
+            <div class="wrapper">
+                <a href="../" class="left-social"> Valerie Lamm
+                </a>
+                <div class="right-social">
+                    <a href="../About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
+                    </a>
+                    <a href="../About/" class="float-right">About 
+                    </a>
+                    <a href="../#design">
+                    Design
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main Content-->
+    <img class="hundred shadow" src="hero.jpg">
+    <div class="bg per-bg top">
+    <div class="wrapper root-bg">
+        <div class="gap"></div>
+        <img src="../lines.svg"><!--dashed line-->
+        <div class="gap"></div>
+
+        <img id="thirty-sixty" src="circle.svg">
+        <div class="fifty-right">
+            <h2>Aqua Design</h2>
+            <p>Graphis Silver Award: Typography4</p>
+            <p>
+                <b>Assignment: </b>This is student work for a theoretical client. The logo needed to reflect the company's mission, which is to embrace innovation.
+
+            </p>
+            <p>
+                <b>Approach: </b>A fish was strategically incorporated in a way to suggest that it's swimming behind the two main letterforms, towards brightness. The tail becomes a replacement for the crossbar.
+            </p>
+            <p>
+                <b>Results: </b>Having the letter 'A' and 'D' touching each other and having the fish become a part of them resulted in the logo becoming a solid mark.
+            </p>
+        </div>
+        <hr>
+        <div class="gap-big"></div>
+        
+        <div class="fifty-left">
+            <h2>LOGO PROCESS</h2>
+        </div>
+        <hr>
+        <div class="gap"></div>
+        <div class="hundred-ninety">
+            <div class="process-box">
+                <img class="process-img" src="rrprocess01.png">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess.jpg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess02.jpg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess03.jpg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess04.jpg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess05.svg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess06.svg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess08.svg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess09.svg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess10.svg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess11.svg">
+            </div>
+            <div class="process-box">
+                <img class="process-img" src="rrprocess12.svg">
+            </div>
+        </div>
+        <hr>
+        <div class="gap-big"></div>
+    </div>    
+    
+    <hr>
+    </div>
+        <!--end links-->
+    <footer>
+        <div class="wrapper">
+            <a href="../#design" class="left-social">&#8592; Design
+            </a>
+            <a>|</a>
+            <a href="../About/" class="left-social">About
+            </a>
+            <div class="right-social">
+                <a href="https://github.com/valerielamm" target="_blank"><img class="social" src="../github.svg"></a>
+                <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="../linkedin.svg"></a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script>
+    //slideshow
+            var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          if (n > x.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = x.length}
+          for (i = 0; i < x.length; i++) {
+             x[i].style.display = "none";  
+          }
+          x[slideIndex-1].style.display = "block";  
+        }
+    </script>
+</body>
+    
+</html>
