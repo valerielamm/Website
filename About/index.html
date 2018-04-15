@@ -13,6 +13,16 @@
     
     <!--linked instagram feed js-->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117423184-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117423184-1');
+    </script>
 </head>
     
 <body onload="load()">
@@ -23,11 +33,11 @@
     <!--Top Bar-->
     <div class="top-bar">
         <div class="wrapper">
-            <a href="http://www.myvalerie.design/" class="left-social"> Valerie Lamm</a>
+            <a href="../" class="left-social"> Valerie Lamm</a>
             <div class="right-social">
                 <a class="float-right js-btn3 mobile-hide">Contact</a>
                 <a class="float-right">About</a>
-                <a href="http://www.myvalerie.design/#design" class="float-right">Design</a>
+                <a href="../#design" class="float-right">Design</a>
             </div>
         </div>
     </div>
@@ -45,7 +55,7 @@
         <div class="wrapper">
             <div class="white">
                 <div class="fifty-hundred" style="background:#1a1a1a;">
-                    <img id="me" src="valerie.JPG">
+                    <img id="me" src="lookiehere.jpg">
                 </div>    
                 <div class="fifty-hundred">
                     <p>
@@ -94,7 +104,7 @@
     <!--end links-->
     <footer>
         <div class="wrapper">
-            <a href="http://www.myvalerie.design/#design" class="left-social">&#8592; Design
+            <a href="../#design" class="left-social">&#8592; Design
             </a>
             <div class="right-social">
                 <a href="https://github.com/valerielamm" target="_blank"><img class="social" src="../github.svg"></a>
@@ -111,7 +121,7 @@
         
         //check before email popup
         function load(){
-            if(document.referrer === 'http://www.myvalerie.design/About/sent.html'){
+            if(document.referrer === 'http://www.valerielamm.com/About/sent.html'){
                 document.getElementById('sent').style.zIndex='99';
             } 
         };
