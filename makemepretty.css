@@ -345,7 +345,7 @@ audio{
     color: white;
     
     /* Background styles */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1)), url('temppp.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)), url('ohhh.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -505,10 +505,12 @@ audio{
     float:left;
 }
 .tile{margin-left:0;}
-.description{display:none; 
+.description{
+    display:none; 
     float:left; 
     background: #d6d6d6; 
     position:relative;
+    
 }
 .description-box{ 
     /*makes box the right height*/
@@ -595,6 +597,7 @@ audio{
     }
     p {
         padding:0em 1.5em 1.5em 10%;
+        line-height: 1.75em;
     }
     .gap-medium{
         height:4em;
@@ -654,6 +657,7 @@ audio{
     }
     p {
         padding:0em 1.5em 1.5em 10%;
+        line-height: 1.75em;
     }
     h2{
         margin-left: 10%;
@@ -713,7 +717,7 @@ audio{
     }
     .hero{
         background-attachment:scroll;
-        height:50em;
+        height:45em;
     }
     input, input:active, input:focus, textarea, textarea:active, textarea:focus {
         width: 90%;
