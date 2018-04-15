@@ -3,13 +3,23 @@
 <html lang="en">
     
 <head>
-  <title>Valerie Lamm | Design</title>
-  <meta name="description" content="Portfolio for Valerie Lamm">
-  <meta name="author" content="Valerie Lamm">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="makemepretty.css">
-  <link rel="shortcut icon" href="favicon.ico">
+    <title>Valerie Lamm | Design</title>
+    <meta name="description" content="Portfolio for Valerie Lamm">
+    <meta name="author" content="Valerie Lamm">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="makemepretty.css">
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117423184-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-117423184-1');
+    </script>
 </head>
     
 <body>
@@ -22,10 +32,10 @@
         <div class="wrapper">
             <a class="left-social">Valerie Lamm</a>
             <div class="right-social">
-                <a href="http://www.myvalerie.design/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">
+                <a href="/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">
                     Contact
                 </a>
-                <a href="http://www.myvalerie.design/About/" class="float-right">
+                <a href="/About/" class="float-right">
                     About 
                 </a>
                 <a class="float-right js-btn1">
@@ -39,8 +49,7 @@
         <!--hero img-->
          <section class="hero">
             <div class="hero-inner">
-                <h2>Valerie Lamm</h2>
-                <p>UX  UI & Front End Developer</p>
+                <p>UX UI</p>
             </div>
         </section>
         
@@ -48,12 +57,13 @@
         <div class="gap js-section2"></div>
         <div class="wrapper" id="design">
             <img src="lines.svg"><!--dashed line-->
-            <div class="gap-medium"></div>
             <h4>Design</h4>
+            <div class="gap-medium"></div>
+            
             
             <!--perennial image-->
             <div id="per-tile" class="tile-left" onmouseout="visible('root-tile'); invisible('per-description');" onmouseover="hoverClick('perennial')">
-                <a href="http://www.myvalerie.design/Perennial/">
+                <a href="../Perennial/">
                     <img src="Perennial/tile.jpg" class="hundred">
                 </a>
             </div>
@@ -74,7 +84,7 @@
             
             <!--root rocket image-->
             <div id="root-tile" class="tile" onmouseout="visible('per-tile'); invisible('root-description');" onmouseover="hoverClick('root')">
-                <a href="http://www.myvalerie.design/RootRocket/">
+                <a href="../RootRocket/">
                     <img src="RootRocket/tile.jpg" class="hundred">
                 </a>
             </div>
@@ -100,7 +110,7 @@
             
             <!--explore ecology image-->
             <div id="exp-tile" class="tile-left" onmouseout="visible('nutrish-tile'); invisible('exp-description');" onmouseover="hoverClick('explore')">
-                <a href="http://www.myvalerie.design/ExploreEcology/">
+                <a href="../ExploreEcology/">
                     <img src="ExploreEcology/tile.jpg" class="hundred">
                 </a>
             </div>
@@ -121,7 +131,7 @@
             
             <!--nutrish image-->
             <div id="nutrish-tile" class="tile" onmouseout="visible('exp-tile'); invisible('nutrish-description');" onmouseover="hoverClick('nutrish')">
-                <a href="http://www.myvalerie.design/Nutrish/">
+                <a href="../Nutrish/">
                     <img src="Nutrish/veggies-bw.jpg" class="hundred">
                 </a>
             </div>
@@ -146,8 +156,8 @@
             
             
             <!--amala image-->
-            <div id="amala-tile" class="tile-left" onmouseout="invisible('amala-description');" onmouseover="hoverClick('amala')">
-                <a href="http://www.myvalerie.design/Amala/">
+            <div id="amala-tile" class="tile-left" onmouseout="invisible('amala-description'); visible('aqua-tile');" onmouseover="hoverClick('amala')">
+                <a href="../Amala/">
                     <img src="Amala/tile.jpg" class="hundred">
                 </a>
             </div>
@@ -165,6 +175,31 @@
                     </p>
                 </div>
             </div>
+            
+            <!--Aqua Design description-->
+            <div id="aqua-description" class="tile-left description">
+                <div class="description-box"></div>
+                <div class="description-text">
+                    <h2>Aqua Design</h2>
+                    <p class="mobile-hide">
+                        Graphis Silver Award: Typography4
+                    </p>
+                    <p>
+                        Logo
+                    </p>
+                </div>
+            </div>
+            
+            
+            <!--Aqua Design image-->
+            <div id="aqua-tile" class="tile" onmouseout="invisible('aqua-description'); visible('amala-tile');" onmouseover="hoverClick('aqua')">
+                <a href="../Amala/">
+                    <img src="AquaDesign/tile.jpg" class="hundred">
+                </a>
+            </div>
+            
+            
+            
             <div class="gap-big"></div>
         </div>
     </div>
@@ -173,9 +208,9 @@
         <!--end links-->
     <footer>
         <div class="wrapper">
-            <a href="http://www.myvalerie.design/About/" class="left-social">About
+            <a href="/About/" class="left-social">About
             </a>
-            <a href="http://www.myvalerie.design/About/#contact" class="left-social">Contact
+            <a href="/About/#contact" class="left-social">Contact
             </a>
             <div class="right-social">
                 <a href="https://github.com/valerielamm" target="_blank"><img class="social" src="github.svg"></a>
@@ -209,7 +244,10 @@
     var exploreDescription = document.getElementById("exp-description");
     var nutrish = document.getElementById("nutrish-tile");
     var nutrishDescription = document.getElementById("nutrish-description");
+    var amala = document.getElementById("amala-tile");
     var amalaDescription = document.getElementById("amala-description");
+    var aqua = document.getElementById("aqua-tile");
+    var aquaDescription = document.getElementById("aqua-description");
     
     function hoverClick(aa) {   
         // Handle touch event.
@@ -229,6 +267,9 @@
                     break;
                 case 'amala':
                      window.location.href = "http://www.myvalerie.design/Amala/";
+                    break;
+                case 'aqua':
+                     window.location.href = "http://www.myvalerie.design/AquaDesign/";
                     break;
                 default:
                     break;
@@ -254,7 +295,12 @@
                     explore.style.display = 'none';
                     break;
                 case 'amala':
-                     amalaDescription.style.display = 'block';
+                    amalaDescription.style.display = 'block';
+                    aqua.style.display = 'none';
+                    break;
+                case 'aqua':
+                    aquaDescription.style.display = 'block';
+                    amala.style.display = 'none';
                     break;
                 default:
                     break;
