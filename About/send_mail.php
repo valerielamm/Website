@@ -69,7 +69,7 @@ header( "Location: $error_page" );
 else {
 
 	mail( "$webmaster_email", "Feedback Form Results", $msg );
-	header("Location: http://www.myvalerie.design/About/sent.html"); /* Redirect browser */
+	header("Location: http://www.valerielamm.com/About/sent.html"); /* Redirect browser */
 exit();
 }
 ?>
