@@ -102,6 +102,40 @@
         </div>    
     </div>
     <hr>
+        
+    <div class="gap-big"></div>
+        
+    <div class="wrapper root-bg">
+        <h4>PROCESS</h4>
+        <div class="hundred-ninety">
+            <div class="border">
+                <img class="hundred mySlides slideshow" src="pictures03.jpg">
+                <img class="hundred mySlides slideshow" src="pictures02.jpg">
+                <img class="hundred mySlides slideshow" src="pictures01.jpg">
+                <img class="hundred mySlides slideshow" src="pictures04.jpg">
+                <img class="hundred mySlides slideshow" src="team.jpg">
+            </div>
+            <div class="center-circles" id="centerCircle">
+                <span class="w3-badge" onclick="currentDiv(1)"></span>
+                <span class="w3-badge" onclick="currentDiv(2)"></span>
+                <span class="w3-badge" onclick="currentDiv(3)"></span>
+                <span class="w3-badge" onclick="currentDiv(4)"></span>
+                <span class="w3-badge" onclick="currentDiv(5)"></span>
+                <hr>
+                <button style="outline:2pt solid black; background:transparent;" id="buttonAll"><a onclick="allDivs()">Show All</a></button>
+            </div>
+            
+        </div>
+        <div class="gap-big"></div>
+        <hr>
+    </div>
+    <h4>Thank-you for viewing!</h4>
+    <h4><a href="#">Photo Attribution
+        </a></h4>
+    <div class="gap-big"></div>  
+    <hr>
+        
+        
     </div>
         <!--end links-->
     <footer>
@@ -121,22 +155,42 @@
     
     <script>
     //slideshow
-            var slideIndex = 1;
+        var slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
           showDivs(slideIndex += n);
         }
 
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
         function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("w3-badge");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "inline"; 
           if (n > x.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";  
           }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" white-circle", "");
+          }
           x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " white-circle";
+        }
+        
+        function allDivs() {
+            var x = document.getElementsByClassName("mySlides");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "none";  
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";  
+            }
         }
     </script>
 </body>
