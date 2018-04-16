@@ -51,7 +51,6 @@
     <img class="hundred shadow" src="hero.jpg">
     <div class="bg per-bg top">
         <div class="wrapper">
-            
             <div class="gap"></div>
             <img src="../lines.svg"><!--dashed line-->
             <div class="gap"></div>
@@ -67,30 +66,44 @@
                     <b>The Problem:</b> Participants and Guardians often comment on the long, repetitive registration process. Amala would like to address this issue as well as communication limitations within their community.
                 </p>
                 <p>
-                    <b>How Might We:</b> <br>
-                    1. Encourage attendance to the programs.<br>
-                    2. Establish a community.<br>
-                    3. Make the sign-up process easier.<br>
-                    4. Keep our audience informed.<br>
-                    
-                </p>
-                <p>
-                    <b>Journey Mapping:</b>
+                    <b>Project Brief:</b> Make an app to solve the problem.
                 </p>
             </div>
-            <hr>
             <div class="gap-medium"></div>
-
+            <hr>
+            <h2> How Might We</h2>
+            <p>
+                Using the problem established, a set of How Might We questions were formed to encourage more design oppurtunities.
+            </p>
+            <div class="gap"></div>
         </div>
-
-        <!--invision-->
+        <img class="hundred" src="stickies2.png">
+        <div class="gap-medium"></div>
         <div class="wrapper">
-            <img class="hundred-ninety" src="flow.png">
-            <div class="gap"></div><hr>
+            <h2> Focusing on What We Know</h2>
+            <p>
+                A class interview was held with <b>Solomon Masala</b>, who is in charge of Program oversight and is a Board Chair for the Amala Foundation.
+            </p>
+            <div class="gap"></div>
+        </div>
+        <img class="hundred mobile-hide" src="interview.png">
+        <img class="hundred mobile-show" src="interview-mobile.png">
+        
+        
+        <div class="wrapper">
+            <div class="gap-medium"></div>
+            <h2>Journey Mapping</h2>
+            <p>
+                Next, the app was mapped out to find efficient flows for the user and to visualize the app layout.
+            </p>
+            <div class="gap-medium"></div>
+            <img class="hundred-ninety mobile-hide" src="flow.png">
+            <img class="hundred-ninety mobile-show" src="flow-mobile.png">
+            <div class="gap-big"></div><hr>
             <div class="fifty-left">
-                <h2>Down to Earth</h2>
+                <h2>Visual Approach</h2>
                 <p>
-                    An aspect that I love about Amala is how down to earth they are. Take one step into the building and you'll feel the love that this place and these people exert.
+                    An aspect that I love about Amala is how <b>down to earth</b> they are. Take one step into the building and you'll feel the love that this place and these people exert.
                 </p>
                 <p>
                     This is something I wanted my app to reflect.
@@ -98,34 +111,42 @@
             </div>
             <div class="fifty-right">
                 <h2 class="mobile-hide"> &nbsp;</h2>
-                <p>I found that a clean way to approach this was by using uneven, natural edges throughout the app.</p>
+                <p>
+                    The Amala Foundation was open to new colors and designs because a new website is on their agenda as well. Their logo was to remain the same.
+                </p>
+                <p>
+                    I found that a clean way to depict the feel of their foundation was by using uneven, more natural edges throughout the app along with welcoming, natural colors.
+                </p>
             </div>
             <hr>
             <div class="color-content">
                 <div class="amala-box">
-                    <img class="hundred" src="earth01.png">
+                    <img class="hundred" src="color01.png">
                 </div>
                 <div class="amala-box">
-                    <img class="hundred" src="earth02.png">
+                    <img class="hundred" src="color02.png">
                 </div>
                 <div class="amala-box">
-                    <img class="hundred" src="earth03.png">
+                    <img class="hundred" src="color03.png">
                 </div>
                 <div class="amala-box">
-                    <img class="hundred" src="earth04.png">
+                    <img class="hundred" src="color04.png">
                 </div>
             </div>
             <div class="gap-big"></div>
-            
-            <hr><h2>The App</h2>
-            <p><a href="https://invis.io/26FZD0IKJ9P#/280777335_Start" target="_blank">Test Prototype</a></p>
-            <img class="hundred-ninety" src="amala-mockup.jpg">
-            <img class="hundred-ninety" src="stacked.jpg">
-            <img class="hundred-ninety" src="screens.jpg">
-            <div class="gap-big"></div>
-            <hr>
         </div>
+        <img class="hundred" src="stacked.png">
+        <div class="gap-medium"></div>
         <div class="wrapper">
+            
+        
+            <hr><h2>The App Flow</h2>
+            <p>
+                <button style="outline:2pt solid black; background:transparent;"><a href="https://invis.io/26FZD0IKJ9P#/280777335_Start" target="_blank">Test Prototype</a></button>
+            </p>
+            
+            <div class="gap-big"></div>
+            
             <h4>Wireframes</h4>
             <div class="hundred-ninety">
                 <div class="border">
@@ -134,12 +155,14 @@
                     <img class="hundred mySlides slideshow" src="process02.jpg">
                     <img class="hundred mySlides slideshow" src="process03.jpg">
                 </div>
-                <div class="slide-left" onclick="plusDivs(-1)">
-                    &#10094;
-                </div>
-                <div class="slide-right" onclick="plusDivs(1)">
-                    &#10095;
-                </div>
+                <div class="center-circles" id="centerCircle">
+                    <span class="w3-badge" onclick="currentDiv(1)"></span>
+                    <span class="w3-badge" onclick="currentDiv(2)"></span>
+                    <span class="w3-badge" onclick="currentDiv(3)"></span>
+                    <span class="w3-badge" onclick="currentDiv(4)"></span>
+                    <hr>
+                    <button style="outline:2pt solid black; background:transparent;" id="buttonAll"><a onclick="allDivs()">Show All</a></button>
+                </div>  
             </div>
             <div class="gap-big"></div>
             <hr>
@@ -150,7 +173,6 @@
         <div class="gap-big"></div>  
         <hr>
         </div>
-    </div>
     <!--end links-->
     <footer>
         <div class="wrapper">
@@ -168,22 +190,42 @@
    
     <script>
         //slideshow
-            var slideIndex = 1;
+        var slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
           showDivs(slideIndex += n);
         }
 
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
         function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("w3-badge");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "inline"; 
           if (n > x.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";  
           }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" white-circle", "");
+          }
           x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " white-circle";
+        }
+        
+        function allDivs() {
+            var x = document.getElementsByClassName("mySlides");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "none";  
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";  
+            }
         }
     </script>
     
