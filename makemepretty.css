@@ -208,6 +208,37 @@ footer .wrapper{
 }
 
 /*common classes*/
+
+.w3-badge{
+    display: inline-block;
+    background-color:#000;
+    color:#fff;
+    padding-left:8px;
+    padding-right:8px;
+    text-align:center; 
+    border-radius:50%;
+    height:20px;
+    width:20px;
+    padding:0; 
+    margin: 0, 0; 
+    border:1px solid #ccc!important; 
+    background-color:transparent!important;
+}
+.w3-badge:hover{
+    color:#000!important;
+    background-color:#d6d6d6!important;
+}
+.center-circles{
+    position: absolute;
+    margin-top: .3em;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.white-circle {
+    color:#ebebeb!important;
+    background-color:#d6d6d6!important;
+}
 audio{
     align-content: center;
     text-align: center;
@@ -323,6 +354,9 @@ audio{
 }
 .mobile-hide{
     display:block;
+}
+.mobile-show{
+    display:none;
 }
 
 /*hero*/
@@ -512,6 +546,12 @@ audio{
     position:relative;
     
 }
+.description-mobile{ 
+    float:left; 
+    background: #d6d6d6; 
+    position:relative;
+    
+}
 .description-box{ 
     /*makes box the right height*/
     margin-top:100%; 
@@ -616,6 +656,9 @@ audio{
     }
     .mobile-hide{
         display:none;
+    }
+    .mobile-show{
+        display:block;
     }
     #logo-box{
         width: 7.5em;
