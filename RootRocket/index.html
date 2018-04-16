@@ -261,14 +261,16 @@
                 <img class="hundred mySlides slideshow" src="process01.jpg">
                 <img class="hundred mySlides slideshow" src="process03.jpg">
                 <img class="hundred mySlides slideshow" src="tshirts2.jpg">
-                <img class="hundred mySlides slideshow" src="bags.jpg">
             </div>
-            <div class="slide-left" onclick="plusDivs(-1)">
-                &#10094;
+            <div class="center-circles" id="centerCircle">
+                <span class="w3-badge" onclick="currentDiv(1)"></span>
+                <span class="w3-badge" onclick="currentDiv(2)"></span>
+                <span class="w3-badge" onclick="currentDiv(3)"></span>
+                <span class="w3-badge" onclick="currentDiv(4)"></span>
+                <hr>
+                <button style="outline:2pt solid black; background:transparent;" id="buttonAll"><a onclick="allDivs()">Show All</a></button>
             </div>
-            <div class="slide-right" onclick="plusDivs(1)">
-                &#10095;
-            </div>
+            
         </div>
         <div class="gap-big"></div>
         <hr>
@@ -298,22 +300,42 @@
     
     <script>
     //slideshow
-            var slideIndex = 1;
+        var slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
           showDivs(slideIndex += n);
         }
 
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
         function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("w3-badge");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "inline"; 
           if (n > x.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";  
           }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" white-circle", "");
+          }
           x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " white-circle";
+        }
+        
+        function allDivs() {
+            var x = document.getElementsByClassName("mySlides");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "none";  
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";  
+            }
         }
     </script>
 </body>
