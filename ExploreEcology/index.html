@@ -55,8 +55,9 @@
 
         <img id="thirty-sixty" src="logo.svg">
         <div class="fifty-right">
+            <h2>Explore Ecology</h2>
             <p>
-                <b>Explore Ecology: </b>Explore Ecology provides youth ages 5 -13 with fun events that bring awareness of the environment in a welcoming manner. We do this by providing children with memorable experiences, teaching them relevant information, and making sure they stay entertained and stimulated in the process.
+                <b>About: </b>Explore Ecology provides youth ages 5 -13 with fun events that bring awareness of the environment in a welcoming manner. We do this by providing children with memorable experiences, teaching them relevant information, and making sure they stay entertained and stimulated in the process.
             </p>
             <p>
                 <b>The Mission: </b>The mission of Explore Ecology is to promote a greater understanding of the connections between people and their environment and to encourage creative thinking through hands-on environmental education and artistic expression. 
@@ -69,9 +70,11 @@
                 The design is going to achieve a clean and natural feel while also utilizing a broad range of colors, welcoming photography, and simple illustrations.
             </p>
         </div>
-        <hr>
-        <div class="gap-big"></div>
+        <div class="gap-big"></div><hr>
+        
 
+        <h2>Logo Process</h2>
+        <p>The goal was to combine two elements relevant to the company into one for the logo.</p>
         <div class="hundred-ninety">
             <div class="process-box">
                 <img class="process-img" src="exprocess01.png">
@@ -115,8 +118,9 @@
         
         <img class="fifty-left" src="logo-explored.svg">
         <div class="fifty-right">
+            <h2>Logo Explored</h2>
             <p>
-                <b>Logo Explored: </b>The goal was to combine two elements relevant to the company into one for the logo. A conch is combined with a leaf and is reinforced with a hue shift.
+                A conch is combined with a leaf, then reinforced with a hue shift.
             </p>
             <p>
                 1. equal spacing
@@ -125,16 +129,21 @@
                 2. logo staggered to go with curve of conch
             </p>
             <p>
-                3. similarity between the negative space made from the g’s descender and shapes in the logo
+                3. similarity between the shape made from the negative space in the g’s descender and the shapes in the conch
             </p>
-        </div>
-        <hr>
+        </div><hr>
+        <div class="gap-big"></div>
+        <div class="fifty-left">
+            <h2>Colors</h2>
+            <p>
+                Inspired by California's coastal zone and nature.
+            </p>
+        </div><hr>
     </div>
-    <div class="gap-big"></div>
+        
     <div class="hundred">
         <div class="wrapper">
             <div class="color-content">
-                <div class="gap-medium"></div>
                 <div class="exp-color-box">
                     <img class="hundred" src="color01.png">
                 </div>
@@ -200,22 +209,21 @@
         <div class="gap-big"></div>
     </div>
     <div class="gap-big"></div>
-    <div class="wrapper">
-        <h4>Process</h4>
-        <div class="hundred-ninety">
-            <div class="border">
-                <img class="hundred mySlides slideshow" src="mobil-sketch.jpg">
+        
+        <h4>Wireframes</h4>
+            <div class="hundred-ninety">
+                <div class="border">
+                    <img class="hundred mySlides slideshow" src="mobil-sketch.jpg">
+                </div>
+                <div class="center-circles" id="centerCircle">
+                    <span class="w3-badge" onclick="currentDiv(1)"></span>
+                    <hr>
+                    <button style="outline:2pt solid black; background:transparent;" id="buttonAll"><a onclick="allDivs()">Show All</a></button>
+                </div>  
             </div>
-            <div class="slide-left" onclick="plusDivs(-1)">
-                &#10094;
-            </div>
-            <div class="slide-right" onclick="plusDivs(1)">
-                &#10095;
-            </div>
-        </div>
-        <div class="gap-big"></div>
-        <hr>
-    </div>
+            <div class="gap-big"></div>
+            <hr>
+        
         <h4>Thank-you for viewing!</h4>
         <h4><a href="#">Photo Attribution
             </a></h4>
@@ -240,22 +248,42 @@
     
     <script>
     //slideshow
-            var slideIndex = 1;
+        var slideIndex = 1;
         showDivs(slideIndex);
 
         function plusDivs(n) {
           showDivs(slideIndex += n);
         }
 
+        function currentDiv(n) {
+          showDivs(slideIndex = n);
+        }
+
         function showDivs(n) {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("w3-badge");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "inline"; 
           if (n > x.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
              x[i].style.display = "none";  
           }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" white-circle", "");
+          }
           x[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " white-circle";
+        }
+        
+        function allDivs() {
+            var x = document.getElementsByClassName("mySlides");
+            var buttonAll = document.getElementById("buttonAll");
+            buttonAll.style.display = "none";  
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "block";  
+            }
         }
     </script>
     
