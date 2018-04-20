@@ -112,6 +112,16 @@ h1 {
     color: #cecece;
     font-size: .95em;
 }
+.problem-box li {
+    list-style: none;
+    padding-left: 10%;
+}
+.problem-box p {
+    padding-left: 10%;
+}
+.problem-box p:nth-child(1) {
+    padding-top: 2em;
+}
 h2{
     width:100%; 
     margin-bottom: 1em;
@@ -119,10 +129,18 @@ h2{
     color: #1a1a1a;
     font-size: 1.5em;
 }
+h3{
+    text-align: center; 
+    width: 100%; 
+    margin-bottom: .2em;
+    color: #1a1a1a;
+    font-size: 1.5em;
+    font-weight: 700;
+}
 h4{
     text-align: center; 
     width: 100%; 
-    margin-bottom: .2em
+    margin-bottom: .2em;
 }
 input, textarea, button{
     background-color: #ebebeb; 
@@ -342,7 +360,7 @@ audio{
     margin-left: 27%;
 }
 .shadow{
-    box-shadow: 0px 1px 7px -1px #1a1a1a;
+    box-shadow: 0px 1px 7px -3px #1a1a1a;
 }
 .shadow-bottom{
     box-shadow: 0 3px 7px -4px #1a1a1a;
@@ -482,6 +500,9 @@ audio{
     background: #d6d6d6; 
     border-radius:10px;
 }
+.per-dark-s{
+    background: #d6d6d6; 
+}
 .color-box h1 {
     color: rgba(0, 0, 0, .2); 
     font-size: .8em; 
@@ -505,7 +526,6 @@ audio{
 .root-color4 p, .explore-color6 p{color:#1a1a1a;}
 
 
-
 /*explore ecology*/
 .exp-bg{background:#eeede9;
     /* barlow-regular - latin */
@@ -514,7 +534,16 @@ audio{
     font-weight: 500;
 }
 .exp-bg .process-box{background: #e3e2de;}
-.exp-color-box, .amala-box {width:18%;float:left; margin:3.5%;}
+.exp-color-box, .problem-box {width:18%;float:left; margin:3.5%;}
+.problem-box{
+    padding-bottom: 2em;
+    border: solid #8cc363;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #ebebeb;box-shadow:0px 0px 6px #5e5e5e;
+
+}
 .explore-color6{background:#eae7d4;}
 .explore-color1{background:#a3b060;}
 .ee-colors{
@@ -524,6 +553,9 @@ audio{
     background-repeat: no-repeat;
 }
 /*nutrish*/
+#nutrish p, #nutrish h3, #nutrish h2, #nutrish li, #nutrish h4, #nutrish a{
+    font-family: 'Nunito', sans-serif !important;
+}
 .third{
     width:30%; margin-right:1.5%; margin-left:1.5%; float:left;
 }
@@ -645,6 +677,11 @@ audio{
     .gap-big{
         height: 4em;
     }
+    .problem-box {
+        width:42.5%;
+        float:left;
+        margin-right:4%;
+    }
 }
 
 /* Portrait */
@@ -724,10 +761,10 @@ audio{
         padding: 20px 0;
         margin-left:20%;
     }
-    .amala-box {
-    width:42.5%;
-    float:left;
-    margin-right:4%; 
+    .problem-box {
+        width:42.5%;
+        float:left;
+        margin-right:4%; 
     }
     #sketchpages, #fortyeight-ninety, #textswap, .hundred-ninety, .eighty-ninety, .fifty-right, .fifty-left, .skillsets, .third {
         width:90%; 
