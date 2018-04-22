@@ -121,6 +121,17 @@ h1 {
 }
 .problem-box p:nth-child(1) {
     padding-top: 2em;
+     color: #808285;
+    font-size: 1em;
+}
+.problem-box h3{
+    color: #8bc441;
+    padding: .2em 0;
+    font-size: 2em;
+}
+.problem-box h4{
+    padding-top: 2em;
+    color: #808285;
 }
 h2{
     width:100%; 
@@ -226,7 +237,9 @@ footer .wrapper{
 }
 
 /*common classes*/
-
+.white-bg{
+    background: white;
+}
 .w3-badge{
     display: inline-block;
     background-color:#000;
@@ -477,7 +490,7 @@ audio{
 .color-box{
     padding:1.3em 0 1.3em 0;
     overflow: hidden;
-    box-shadow: 0px 0px 7px -1px #1a1a1a;
+    box-shadow: 0px 1px 7px -3px #1a1a1a;
 }
 .color-box:last-child(4){
     padding-bottom: 4em;
@@ -534,14 +547,14 @@ audio{
     font-weight: 500;
 }
 .exp-bg .process-box{background: #e3e2de;}
-.exp-color-box, .problem-box {width:18%;float:left; margin:3.5%;}
+.exp-color-box, .problem-box, .amala-box {width:18%;float:left; margin:3.5%;}
 .problem-box{
-    padding-bottom: 2em;
     border: solid #8cc363;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background: #ebebeb;box-shadow:0px 0px 6px #5e5e5e;
+    background: #ffffff;
+    box-shadow:0px 0px 6px #5e5e5e;
 
 }
 .explore-color6{background:#eae7d4;}
@@ -558,6 +571,12 @@ audio{
 }
 .third{
     width:30%; margin-right:1.5%; margin-left:1.5%; float:left;
+}
+.nutrish-style{
+    margin-top: 2em;
+    padding-bottom:2em;
+    background-color: #8cc363;
+    
 }
 
 /*home page*/
@@ -633,6 +652,11 @@ audio{
 }
     .slide-right{
         margin-left:7.5%;
+    }
+    .problem-box {
+        width:42.5%;
+        float:left;
+        margin-right:4%;
     }
 }
 
@@ -764,7 +788,10 @@ audio{
     .problem-box {
         width:42.5%;
         float:left;
-        margin-right:4%; 
+        margin-right:4%;
+    }
+    .color-content h2{
+        width: 90%;
     }
     #sketchpages, #fortyeight-ninety, #textswap, .hundred-ninety, .eighty-ninety, .fifty-right, .fifty-left, .skillsets, .third {
         width:90%; 
