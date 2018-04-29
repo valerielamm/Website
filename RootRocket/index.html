@@ -123,7 +123,7 @@
         <div class="fifty-left">
             <h2>LOGO PROCESS</h2>
             <p>
-                The goal was to combine nature and space in a simplistic manner. It's rendered as a seal to take advantage of the correlation between a seal’s naturally circular characteristics and the shape of the earth.
+                The goal was to combine nature and space in a simplistic manner because of the name. It's rendered as a seal to take advantage of the correlation between a seal’s naturally circular characteristics and the shape of the earth.
             </p>
         </div>
         <div class="fifty-right">
@@ -178,7 +178,7 @@
         <div class="fifty-left">
             <h2>PACKAGING</h2>
             <p>
-                The fertilizer's packaging should reflect that it's hand-made. A paper bag would enhance the feeling of it being more personal as well as it being good for the environment.
+                The fertilizer's packaging should reflect that it's natural. A paper bag would enhance the feeling of it being more personal as well as it being good for the environment.
             </p>
             <p>
                 Given that Root Rocket is sold in small quantities and that it has moisture, the fertilizer itself would be in small, portioned ziplocks inside of the paper bag.
@@ -187,7 +187,7 @@
         <div class="fifty-right">
             <h2 class="mobile-hide">&nbsp;</h2>
             <p>
-                Using the plastic bag and label type from their pre-existing packaging, a cleaner, more inviting design was produced.
+                Using the plastic bag and label size from their pre-existing packaging, a cleaner, more inviting design was produced. This is an easier transition and saves the small company money.
             </p>
             <p>
                 A new fertilizer for them to provide is a personalized mix. Customers would be able to request personilized mixes to fit thier soil needs.
@@ -232,19 +232,16 @@
         <div class="gap"></div>
         <div class="wrapper">
             <div class="gap-medium"></div>
-            <div class="fifty-left">
-            <video class="hundred" autoplay loop muted playsinline src="comp2_4.mp4"></video>
-            </div>
-            <div class="fifty-right">
-                <h2>WEBSITE</h2>
+            <h3>WEBSITE</h3>
+             <video class="border"muted controls playsinline src="comp2_4.mp4"></video>
+            <div class="gap-big"></div>
                 <p>
                     The website is clean and intuitive. A page is added that links to local organizations, charities, gardening, and 'how it's made' videos with a filter to enhance the hand-made, community aspects of the brand.
                 </p>
                 <p>
-                    Fertilizer can't be shipped, so orders are able to be placed before heading to the store.
+                    Fertilizer can't be shipped, so orders are able to be placed before heading to the store for pick-up.
                 </p>
-                <p><button style="outline:2pt solid black; background:transparent;"><a href="/Website/">Test Me!</a></button></p>
-            </div>
+<!--                <p><button style="outline:2pt solid black; background:transparent;"><a href="/Website/">Test Me!</a></button></p>-->
         </div>
         <img class="hundred" src="rripad.png">
         <div class="gap-big"></div>
@@ -254,6 +251,7 @@
         <div class="gap-big"></div>
         
     <div class="wrapper root-bg">
+        
         <h4>PROCESS</h4>
         <div class="hundred-ninety">
             <div class="border">
@@ -268,16 +266,13 @@
                 <span class="w3-badge" onclick="currentDiv(3)"></span>
                 <span class="w3-badge" onclick="currentDiv(4)"></span>
                 <hr>
-                <button style="outline:2pt solid black; background:transparent;" id="buttonAll"><a onclick="allDivs()">Show All</a></button>
+                <button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="showDivs(21)"><a>Show All</a></button>
             </div>
             
         </div>
         <div class="gap-big"></div>
         <hr>
     </div>
-        <h4>Thank-you for viewing!</h4>
-        <h4><a href="#">Photo Attribution
-            </a></h4>
         <div class="gap-big"></div>  
         <hr>
         
@@ -317,6 +312,13 @@
             var dots = document.getElementsByClassName("w3-badge");
             var buttonAll = document.getElementById("buttonAll");
             buttonAll.style.display = "inline"; 
+          if (n >= 21) {
+              var zz = 0;
+              for (i = 0; i < 5; i++) {
+                x[zz].style.display = "block";  
+                zz++;
+            }
+          }
           if (n > x.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
@@ -327,15 +329,6 @@
           }
           x[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " white-circle";
-        }
-        
-        function allDivs() {
-            var x = document.getElementsByClassName("mySlides");
-            var buttonAll = document.getElementById("buttonAll");
-            buttonAll.style.display = "none";  
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "block";  
-            }
         }
     </script>
 </body>
