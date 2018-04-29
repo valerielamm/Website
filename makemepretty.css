@@ -72,6 +72,8 @@ abbr,acronym { border: 0;
        url('fonts/barlow-v1-latin-500.svg#Barlow') format('svg'); /* Legacy iOS */
 }
 
+
+
 /* Custom CSS
  * --------------------------------------- */
 
@@ -105,6 +107,11 @@ p {
     padding:.3em 2.5em 1.5em 5%;
     line-height: 1.5;
     font-size: .9em;
+}
+li{
+    font-size: .9em;
+    list-style: circle;
+    padding-left: 5%;
 }
 h1 { 
     width:100%; 
@@ -192,13 +199,19 @@ iframe{
 }
 
 /*header*/
+#design h4{
+    font-size: .9em;
+    color: #cecece;
+    margin-top: -2em;
+    margin-bottom: 2em;
+}
 .top-bar{
-    padding-top:.8em;
+    padding-top: 1.2em;
     padding-bottom: 10em;
 }
 .top-bar a{
     padding: 0 1em;
-    color: #ebebeb;
+    color: #d6d6d6;
 }
 .top-bar, .top-about, footer {
     background:#1a1a1a;
@@ -233,12 +246,15 @@ footer .wrapper{
     width:40%; margin-left:5%;
 }
 .right-social a{
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /*common classes*/
 .white-bg{
     background: white;
+}
+.black-bg{
+    background: #1a1a1a;
 }
 .w3-badge{
     display: inline-block;
@@ -275,7 +291,7 @@ audio{
     text-align: center;
 }
 .top{
-    margin-top: 2.5em;
+    margin-top: 3.5em;
     margin-bottom: 8em;
 }
 .bg{
@@ -300,6 +316,10 @@ audio{
 .eighty-ninety {
     width:80%; 
     margin-left:10%;
+}
+.sixty-ninety{
+    width:60%; 
+    margin-left:20%;
 }
 .fifty-hundred {
     width:50%;
@@ -389,6 +409,10 @@ audio{
 .mobile-show{
     display:none;
 }
+#ewSafari{
+    display: none;
+}
+
 
 /*hero*/
 .hero {
@@ -474,7 +498,14 @@ audio{
 .sent-fade{
     opacity:0;
 }
-
+#contact h1{
+    margin-left: 5%;
+}
+#contact h2{
+    color:#cecece;
+    font-weight: 400;
+    font-size: .8em;
+}
 
 /*perrenial*/
 .invision-box{
@@ -527,7 +558,7 @@ audio{
 
 
 /*root rocket*/
-.root-bg {background:#ebebeb; font-family: 'Gill Sans','Gill Sans MT,Calibri',sans-serif;}
+.root-bg {background:#ebebeb; font-family: 'Gill Sans','Gill Sans MT' , Calibri, sans-serif;}
 .root-bg b{font-weight: 600;}
 .per-bg{background:#ebebeb; font-family: 'Overpass', sans-serif;}
 .root-bg p, .per-bg p{color:#1a1a1a;}
@@ -553,10 +584,23 @@ audio{
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    background: #ffffff;
     box-shadow:0px 0px 6px #5e5e5e;
-
+    background: #ffffff;
 }
+#corn, #gluten, #leaf, #eggs, #list, #profile, #heb, #platelist{
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+}
+#list{background-image: url(Nutrish/list.svg);}
+#profile{background-image: url(Nutrish/profile.svg);}
+#heb{background-image: url(Nutrish/heb.svg);}
+#eggs{background-image: url(Nutrish/eggs.svg);}
+#leaf{background-image: url(Nutrish/leaf.svg);}
+#corn{background-image: url(Nutrish/corn.svg);}
+#gluten{background-image: url(Nutrish/gluten.svg);}
+#platelist{background-image: url(Nutrish/platelist.svg);}
+
 .explore-color6{background:#eae7d4;}
 .explore-color1{background:#a3b060;}
 .ee-colors{
@@ -612,6 +656,9 @@ audio{
     position:absolute;
     top:0;
 }
+.tablet-show{
+        display:none;
+    }
 
 /*tablet*/
 @media only screen and (max-width: 1100px) {
@@ -657,6 +704,16 @@ audio{
         width:42.5%;
         float:left;
         margin-right:4%;
+    }
+    .hero{
+        background-attachment:scroll;
+        height:45em;
+    }
+    .third{
+    width:30%; margin-right:1.5%; margin-left:1.5%; float:left;
+    }
+    .tablet-show{
+        display:block;
     }
 }
 
@@ -706,6 +763,12 @@ audio{
         float:left;
         margin-right:4%;
     }
+    .third{
+        width:90%; 
+        margin-left: 5%;
+        float:left;
+        margin-top:1em;
+    }
 }
 
 /* Portrait */
@@ -714,6 +777,9 @@ audio{
 {
     #mobile-indicator {
         display: block;
+    }
+    li{
+        padding: 0em 1.5em 1.5em 10%;
     }
     .mobile-hide{
         display:none;
@@ -793,7 +859,7 @@ audio{
     .color-content h2{
         width: 90%;
     }
-    #sketchpages, #fortyeight-ninety, #textswap, .hundred-ninety, .eighty-ninety, .fifty-right, .fifty-left, .skillsets, .third {
+    #sketchpages, #fortyeight-ninety, #textswap, .hundred-ninety, .eighty-ninety, .fifty-right, .fifty-left, .skillsets, .sixty-ninety {
         width:90%; 
         margin-left: 5%;
         float:left;
@@ -821,10 +887,6 @@ audio{
         transform: scale(.7);
         margin-left: -50%;
         margin-right: -50%;
-    }
-    .hero{
-        background-attachment:scroll;
-        height:45em;
     }
     input, input:active, input:focus, textarea, textarea:active, textarea:focus {
         width: 90%;
