@@ -10,15 +10,17 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="makemepretty.css">
     <link rel="shortcut icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117423184-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'UA-117423184-1');
+        gtag('config', 'UA-117423184-1');
     </script>
 </head>
     
@@ -47,9 +49,9 @@
     <div class="bg per-bg top">
         
         <!--hero img-->
-         <section class="hero">
+        <section class="hero">
             <div class="hero-inner">
-                <p>UX UI</p>
+                <p id="uxui">UX UI</p>
             </div>
         </section>
         
@@ -57,9 +59,12 @@
         <div class="gap js-section2"></div>
         <div class="wrapper" id="design">
             <img src="lines.svg"><!--dashed line-->
-            <h4>Design</h4>
+            <h4 class="mobile-hide">hover for a sneak peek</h4>
+            
+            
             <div class="gap-medium"></div>
             
+            <!--Desktop View-->
             <div class="mobile-hide">
                 <!--perennial image-->
                 <div id="per-tile" class="tile-left" onmouseout="visible('root-tile'); invisible('per-description');" onmouseover="hoverClick('perennial')">
@@ -101,43 +106,18 @@
                             UX / UI / Branding
                         </p>
                     </div>  
-                </div>
+                </div><hr><div class="gap"></div>
 
-
-                <hr>
-                <div class="gap"></div>
-
-
-                <!--nutrish image-->
-                <div id="nutrish-tile" class="tile-left" onmouseout="visible('exp-tile'); invisible('nutrish-description');" onmouseover="hoverClick('nutrish')">
-                    <a href="../Nutrish/">
-                        <img src="Nutrish/tile3.jpg" class="hundred">
-                    </a>
-                </div>
-
-                <!--explore ecology description-->
-                <div id="exp-description" class="tile-left description">
-                    <div class="description-box"></div>
-                    <div class="description-text">
-                        <h2>Explore Ecology</h2>
-                        <p class="mobile-hide">
-                            An organization that provides youth ages 5 -13 with fun events that bring awareness of the environment in a welcoming manner.
-                        </p>
-                        <p>
-                            Web / Branding  
-                        </p>
-                    </div>
-                </div>
                 
-                <!--explore ecology image-->
-                <div id="exp-tile" class="tile" onmouseout="visible('nutrish-tile'); invisible('exp-description');" onmouseover="hoverClick('explore')">
-                    <a href="../ExploreEcology/">
-                        <img src="ExploreEcology/tile.jpg" class="hundred">
+                <!--amala image-->
+                <div id="amala-tile" class="tile-left" onmouseout="invisible('amala-description'); visible('nutrish-tile');" onmouseover="hoverClick('amala')">
+                    <a href="../Amala/">
+                        <img src="Amala/tile.jpg" class="hundred">
                     </a>
                 </div>
 
                 <!--nutrish description-->
-                <div id="nutrish-description" class="tile description">
+                <div id="nutrish-description" class="tile-left description">
                     <div class="description-box"></div>
                     <div class="description-text">
                         <h2>Nutrish</h2>
@@ -149,17 +129,11 @@
                         </p>
                     </div>
                 </div>
-
-
-
-                <hr>
-                <div class="gap"></div>
-
-
-                <!--amala image-->
-                <div id="amala-tile" class="tile-left" onmouseout="invisible('amala-description'); visible('aqua-tile');" onmouseover="hoverClick('amala')">
-                    <a href="../Amala/">
-                        <img src="Amala/tile.jpg" class="hundred">
+                
+                <!--nutrish image-->
+                <div id="nutrish-tile" class="tile" onmouseout="visible('amala-tile'); invisible('nutrish-description');" onmouseover="hoverClick('nutrish')">
+                    <a href="../Nutrish/">
+                        <img src="Nutrish/tile3.jpg" class="hundred">
                     </a>
                 </div>
 
@@ -175,10 +149,18 @@
                             UX / UI 
                         </p>
                     </div>
-                </div>
+                </div><hr><div class="gap"></div>
 
+                
+                <!--Aqua Design image-->
+                <div id="aqua-tile" class="tile-left" onmouseout="invisible('aqua-description');" onmouseover="hoverClick('aqua')">
+                    <a href="../AquaDesign/">
+                        <img src="AquaDesign/tile.jpg" class="hundred">
+                    </a>
+                </div>
+                
                 <!--Aqua Design description-->
-                <div id="aqua-description" class="tile-left description">
+                <div id="aqua-description" class="tile description">
                     <div class="description-box"></div>
                     <div class="description-text">
                         <h2>Aqua Design</h2>
@@ -192,12 +174,6 @@
                 </div>
 
 
-                <!--Aqua Design image-->
-                <div id="aqua-tile" class="tile" onmouseout="invisible('aqua-description'); visible('amala-tile');" onmouseover="hoverClick('aqua')">
-                    <a href="../AquaDesign/">
-                        <img src="AquaDesign/tile.jpg" class="hundred">
-                    </a>
-                </div>
             </div>
             
             
@@ -220,8 +196,7 @@
                             </p>
                         </div>  
                     </a>
-                </div>
-                <hr><div class="gap"></div>
+                </div><hr><div class="gap"></div>
             
                 <!--root rocket mobile-->
                 <div class="tile-left">
@@ -239,8 +214,7 @@
                             </p>
                         </div>
                     </a>
-                </div>  
-                <hr><div class="gap"></div>
+                </div><hr><div class="gap"></div>
                 
                 <!--Nutrish mobile-->
                 <div class="tile-left">
@@ -258,27 +232,7 @@
                             </p>
                         </div>
                     </a>
-                </div>  
-                <hr><div class="gap"></div>
-                
-                <!--Explore Ecology mobile-->
-                <div class="tile-left">
-                    <a href="../ExploreEcology/">
-                        <img src="ExploreEcology/tile.jpg" class="hundred">
-                    </a>
-                </div>
-                <div class="tile description-mobile">
-                    <a href="ExploreEcology/">
-                        <div class="description-box"></div>
-                        <div class="description-text">
-                            <h2>Explore Ecology</h2>
-                            <p>
-                                Web / Branding  
-                            </p>
-                        </div>
-                    </a>
-                </div>  
-                <hr><div class="gap"></div>
+                </div><hr><div class="gap"></div>
                 
                 <!--Amala mobile-->
                 <div class="tile-left">
@@ -296,8 +250,7 @@
                             </p>
                         </div>
                     </a>
-                </div>   
-                <hr><div class="gap"></div>
+                </div><hr><div class="gap"></div>
                 
                 <!--Aqua Design mobile-->
                 <div class="tile-left">
@@ -315,16 +268,16 @@
                             </p>
                         </div>
                     </a>
-                </div>
-                <hr><div class="gap"></div>
+                </div><hr><div class="gap"></div>
                 
             </div>
+            
             <div class="gap-big"></div>
         </div>
     </div>
     
     
-        <!--end links-->
+    <!--end links-->
     <footer>
         <div class="wrapper">
             <a href="/About/" class="left-social">About
@@ -336,7 +289,6 @@
                 <a href="https://www.linkedin.com/in/myvalerie/" target="_blank"><img class="social2" src="linkedin.svg"></a>
             </div>
         </div>
-        
     </footer>
 <script>
     
@@ -405,21 +357,16 @@
                     rootDescription.style.display = 'block';
                     perennial.style.display = 'none';
                     break;
-                case 'explore':
-                    exploreDescription.style.display = 'block';
-                    nutrish.style.display = 'none';
-                    break;
                 case 'nutrish':
                     nutrishDescription.style.display = 'block';
-                    explore.style.display = 'none';
+                    amala.style.display = 'none';
                     break;
                 case 'amala':
                     amalaDescription.style.display = 'block';
-                    aqua.style.display = 'none';
+                    nutrish.style.display = 'none';
                     break;
                 case 'aqua':
                     aquaDescription.style.display = 'block';
-                    amala.style.display = 'none';
                     break;
                 default:
                     break;
