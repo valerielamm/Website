@@ -121,6 +121,7 @@ h1 {
 }
 .problem-box li {
     list-style: none;
+    padding: .2em;
     padding-left: 10%;
 }
 .problem-box p {
@@ -206,7 +207,7 @@ iframe{
     margin-bottom: 2em;
 }
 .top-bar{
-    padding-top: 1.2em;
+    padding-top: 1.5em;
     padding-bottom: 10em;
 }
 .top-bar a{
@@ -290,9 +291,11 @@ audio{
     align-content: center;
     text-align: center;
 }
-.top{
-    margin-top: 3.5em;
+.top, .top-project{
     margin-bottom: 8em;
+}
+.top-project{
+    margin-top: 4em;
 }
 .bg{
     width:100%;
@@ -339,7 +342,7 @@ audio{
     float:left;
     margin-left: 7%;
 }
-.fifty-left, .fifty-right {
+.fifty-left, .fifty-right, #per-analysis {
     width:47.5%;
     float:left;
 }
@@ -440,23 +443,18 @@ audio{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.hero h1 {
-    /* Text styles */
-    font-size: 5em;
-    position: absolute;
-    /* Margins */
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    bottom:0;
-    text-align: center;
-    left:0;
-    cursor: pointer;
-    color:#1a1a1a;
+.hero h2, .hero p {
+    text-align: left;
+    padding: 0;
+    width:80%;
+    margin-left: 20%;
 }
-.hero h1:hover{
-    color:#ebebeb;
+.hero p {
+    margin-bottom: .8em;
 }
-
+.hero h2:hover, .hero p:hover{
+    cursor: default;
+}
 /*slideshow*/
 .mySlides {display:none}
 .slide-left, .slide-right{
@@ -475,6 +473,10 @@ audio{
 }
 .slide-left:hover, .slide-right:hover{
     color:grey;
+}
+.description-text h2{
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
 
 
@@ -659,6 +661,20 @@ audio{
 .tablet-show{
         display:none;
     }
+.description-text p{
+    margin: 0;
+    padding: 0;
+    margin-top:2em;
+}
+.description-text h2{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+.description-text{
+        margin: 10% 0 0 10%;
+        width: 80%;
+    }
 
 /*tablet*/
 @media only screen and (max-width: 1100px) {
@@ -672,6 +688,11 @@ audio{
     .process-box {
         width:20%;
         margin: 2.5% 1.75% 0 1.75%;
+    }
+    .problem-box li {
+        list-style: none;
+        padding: .2em;
+        padding-left: 10%;
     }
     .border, .invision-box{
         width:80%;
@@ -715,6 +736,15 @@ audio{
     .tablet-show{
         display:block;
     }
+    .description-text h2{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .description-text{
+        margin: 10% 0 0 10%;
+        width: 80%;
+    }
 }
 
 /*When input is active on the about page, this keeps everything in mobile format*/
@@ -722,6 +752,16 @@ audio{
     .fifty-hundred {
         width:100%;
         float:left;
+    }
+    .description-text p, .description-text h2{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .description-text h2{
+        font-size: 1.4em;
+        line-height: 1.3em;
+        margin-bottom: .5em;
     }
     #me {
         width: 100%;
@@ -783,6 +823,10 @@ audio{
     }
     .mobile-hide{
         display:none;
+    }
+    .problem-box li {
+        padding: .2em;
+        padding-left: 10%;
     }
     .mobile-show{
         display:block;
@@ -862,6 +906,12 @@ audio{
     #sketchpages, #fortyeight-ninety, #textswap, .hundred-ninety, .eighty-ninety, .fifty-right, .fifty-left, .skillsets, .sixty-ninety {
         width:90%; 
         margin-left: 5%;
+        float:left;
+        margin-top:1em;
+    }
+    #per-analysis{
+        width:80%; 
+        margin-left: 10%;
         float:left;
         margin-top:1em;
     }
