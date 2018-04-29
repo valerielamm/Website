@@ -451,6 +451,10 @@ audio{
 }
 .hero p {
     margin-bottom: .8em;
+    font-size: 1em;
+}
+.hero h2{
+    font-size: 2em;
 }
 .hero h2:hover, .hero p:hover{
     cursor: default;
