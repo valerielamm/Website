@@ -30,28 +30,14 @@
     <div id="mobile-indicator"></div>
 
     <!--Top Bar-->
-    <div class="top-bar">
-        <div class="wrapper">
-            <a class="left-social">Valerie Lamm</a>
-            <div class="right-social">
-                <a href="/About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">
-                    Contact
-                </a>
-                <a href="/About/" class="float-right">
-                    About 
-                </a>
-                <a class="float-right js-btn1">
-                    Design
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="bg per-bg top">
-        
         <!--hero img-->
         <section class="hero">
             <div class="hero-inner">
-                <p id="uxui">UX UI</p>
+                <h2>Valerie Lamm</h2>
+                <p id="uxui">&emsp;<a class="js-btn1">design</a></p>
+                <p>&emsp;&emsp;<a href="/About/">about</a></p>
+                <p>&emsp;&emsp;&emsp;<a href="/About/#contact" onLoad="window.scroll(0, 150)">contact</a></p>
             </div>
         </section>
         
@@ -60,8 +46,6 @@
         <div class="wrapper" id="design">
             <img src="lines.svg"><!--dashed line-->
             <h4 class="mobile-hide">hover for a sneak peek</h4>
-            
-            
             <div class="gap-medium"></div>
             
             <!--Desktop View-->
@@ -262,7 +246,7 @@
                     <a href="AquaDesign/">
                         <div class="description-box"></div>
                         <div class="description-text">
-                            <h2>Aqua <br>Design</h2>
+                            <h2>Aqua Design</h2>
                             <p>
                                 Logo
                             </p>
@@ -547,7 +531,7 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
 document.querySelector('.js-btn1').addEventListener('click', () => {
   scrollIt(
     document.querySelector('.js-section2'),
-    300,
+    600,
     'easeOutQuad',
     () => console.log(`Just finished scrolling to ${window.pageYOffset}px`)
   );
@@ -565,7 +549,7 @@ $(document).ready(function(){
 
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
-        }, 2800, 'swing', function () {
+        }, 900, 'swing', function () {
             window.location.hash = target;
         });
     });
