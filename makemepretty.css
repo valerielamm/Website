@@ -337,7 +337,7 @@ audio{
     float: none;
     margin-bottom: -1em;
 }
-#thirty-sixty {
+#thirty-sixty, #galogo {
     width:30%;  
     float:left;
     margin-left: 7%;
@@ -615,6 +615,17 @@ audio{
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+/*greenacres*/
+#greenacres p, #greenacres h3, #greenacres h2, #greenacres li, #greenacres h4, #greenacres a{
+    font-family: 'Open Sans', sans-serif;
+}
+#galogo{
+    box-sizing: border-box;
+    border: 20px solid #ebebeb;
+    border-radius: 50%;
+    padding: 0 !important;
+}
 /*nutrish*/
 #nutrish p, #nutrish h3, #nutrish h2, #nutrish li, #nutrish h4, #nutrish a{
     font-family: 'Nunito', sans-serif !important;
@@ -641,7 +652,6 @@ audio{
 }
 .tile{margin-left:0;}
 .description{
-    display:none; 
     float:left; 
     background: #d6d6d6; 
     position:relative;
@@ -892,7 +902,7 @@ audio{
         max-width:none;
         width: 100%;
     }
-    #thirty-sixty {
+    #thirty-sixty, #galogo {
         display: block; 
         float: none; 
         width: 60%;
