@@ -617,8 +617,17 @@ audio{
 }
 
 /*greenacres*/
-#greenacres p, #greenacres h3, #greenacres h2, #greenacres li, #greenacres h4, #greenacres a{
+#greenacres p, #greenacres h3, #greenacres li, #greenacres h4, #greenacres a{
     font-family: 'Open Sans', sans-serif;
+}
+#greenacres h3, #greenacres h2, #greenacres p b{
+    font-family: 'Saira Extra Condensed', sans-serif;
+}
+#greenacres h2{
+    font-size: 2em;
+}
+#greenacres p b{
+    font-size: 1.4em;
 }
 #galogo{
     box-sizing: border-box;
