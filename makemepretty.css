@@ -316,6 +316,21 @@ audio{
     width:100%;
     float:left;
 }
+.linked{
+    background-color: #b5b5b5;
+    border: none;
+    color: #f4f4f4;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+}
+.linked:hover{
+    background-color: #9b9b9b;
+    cursor: pointer;
+}
 .eighty-ninety {
     width:80%; 
     margin-left:10%;
