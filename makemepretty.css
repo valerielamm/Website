@@ -500,6 +500,57 @@ audio{
 
 
 /*About Page*/
+.button-left{
+    color:#1a1a1a;
+    background: rgba(247, 247, 247, .9);
+    padding: .2em .4em;
+    border-bottom: #1a1a1a solid .2em;
+}
+.button-left:visited {
+    color: #1a1a1a;
+}
+.button-left:hover {
+/*    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);*/
+    background: rgba(247, 247, 247, 1);
+    font-weight: bold;
+}
+#contactMe:hover{
+/*    box-shadow: 0px 0px 5px rgba(0, 0, 0, .2);*/
+    background: rgba(247, 247, 247, 1);
+    font-weight: bold;
+}
+.button-left::after, #contactMe::after{
+    margin-left: .1em;
+    position: absolute;
+    display: inline-block;
+    content: '';
+    transition: .7s;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1.5em .2em 0 0;
+    border-color: rgba(0, 0, 0, 0);
+} 
+.button-left:hover::after, #contactMe:hover::after{
+    border-style: solid;
+    margin-left: .5em;
+    border-width: 0 .75em .75em 0;
+    border-color: transparent rgba(0, 0, 0, .15) transparent transparent;
+    transition: .7s;
+}
+#contactMe, #contactMe:hover{
+    padding:1em;
+    color:#1a1a1a;
+    background: rgba(247, 247, 247, .9);
+    border-bottom: #1a1a1a solid .2em;
+}
+#contactMe:hover{
+    background: rgba(247, 247, 247, .9);
+}
+#contactMe:hover::after{
+    margin: -.9em 0 0 1em;
+}
+
 #me { 
     object-fit: cover;
     margin-bottom: -.2em;

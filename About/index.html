@@ -57,7 +57,7 @@
                 
                 <!--About Me-->
                 <div class="fifty-hundred" style="background:#1a1a1a;">
-                    <img id="me" src="lookiehere.jpg" alt="bw portrait of Valerie">
+                    <img id="me" src="me.jpg" alt="Picture of Valerie">
                 </div>    
                 <div class="fifty-hundred">
                     <p>
@@ -68,15 +68,16 @@
                         In May of 2018, I graduated Texas State University with a Bachelor of Fine Arts degree in Communication Design.
                     </p>
                     <p>
-                        Being driven by challenges, I dabble in many things. Designing and coding constantly require different skill sets and knowledge bases, so I appreciate the challenges it brings to my table. For more information about me, here's my <a id="resume" href="valerie_lamm_resume.pdf" target="_blank"> 
+                        Being driven by challenges, I dabble in many things. Designing and coding constantly require different skill sets and knowledge bases, so I appreciate the challenges it brings to my table. For more information about me, here's my <a id="resume" href="valerie_lamm_resume.pdf" target="_blank" class="button-left">
                         resume.
                         </a>
                     </p>
                     <p>
-                        In my free time, I enjoy sketching, singing, and playing guitar. Get to know me better through my <a href="https://www.instagram.com/my__valerie/" target="_blank">instagram.</a>
+                        In my free time, I enjoy sketching, singing, and playing guitar. Get to know me better through my <a href="https://www.instagram.com/my__valerie/" target="_blank" class="button-left">instagram.</a>
                         <br><br>
                         P.S. This website is hand-coded.
                     </p>
+                    <p><a href="mailto:valerielamm.com@gmail.com?Subject=Good%20Morning" target="_top" id="contactMe">Contact Me</a></p>
                 </div>
             </div>  
             
@@ -85,26 +86,6 @@
             <img src="../lines.svg">
             <hr><div class="gap"></div>
 
-            <!--Email Form-->
-            <div class="hundred-ninety" id="contact">
-                <h1>Contact Me<h1>
-                <h2>valerielamm.com@gmail.com</h2>
-                <form method="post" action="send_mail.php" >
-                    <p>
-                        <input placeholder="Name" type="text" name="first_name" required>
-                    </p>
-                    <p>
-                        <input placeholder="Email" type="email" name="email_address">
-                    </p>
-                    <p>
-                        <textarea placeholder="Message" name="comments" maxlength="500"></textarea>
-                    </p>
-                    <p>
-                        <button>Send</button>
-                    </p>
-                </form>
-                <div class="gap-medium"></div>
-            </div>
         </div>
     </div> 
     
@@ -118,21 +99,7 @@
             </div>
         </div>
     </footer>
-    <script>        
-        
-        //email sent popup
-        setTimeout(function(){
-            document.getElementById('mailTime').className = 'sent-fade';
-        }, 5000);
-        
-        //check before email popup
-        function load(){
-            if(document.referrer === 'http://www.valerielamm.com/About/sent.html'){
-                document.getElementById('sent').style.zIndex='99';
-            } 
-        };
-        
-        
+    <script>       
         //A huge shoutout to Paweł Grzybek
         //"Page scrolling in vanilla JavaScript"
         //
