@@ -115,7 +115,7 @@
                         4. The username sticks out and the bio doesn't show.
                     </p>
                     <p>
-                        5. This is essentially the same thing as the Q&A tab on the home page. It isn't important enough to be on the bottom navigation.
+                        5. This is essentially the same thing as the Q&amp;A tab on the home page. It isn't important enough to be on the bottom navigation.
                     </p>
                     <p>
                         6. It would be less digging and taps if the app displayed the user's posts below their info.
@@ -224,8 +224,8 @@
             <h2>Consideration</h2>
             <p>
                 Color blindness is something I kept in mind while developing this app. It's good practice to keep it in mind considering that around 4.5% of the population is effected by it.
-                <div class="gap"></div>
             </p>
+            <div class="gap"></div>
         </div>
         <img class="hundred shadow" src="colorblind.jpg" alt="colorblind consideration explored">
     
@@ -281,7 +281,7 @@
             
             <!--logo-->
             <div class="fifty-left">
-                <h2>Logo Process</h2>
+                <h2 class="texty">Logo Process</h2>
                 <p>
                    I wanted the logo to be very clean to match the brand objective, so I used clean shapes to get nice curves. I started with the shape of a flower and then rotated, overlayed, and minimalized it into different variations.
                 </p>
@@ -348,12 +348,12 @@
                     <span class="w3-badge" onclick="currentDiv(2)"></span>
                     <span class="w3-badge" onclick="currentDiv(3)"></span>
                     <hr>
-                    <button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="showDivs(22)"><a>Show All</a></button>
+                    <button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="showDivs(22)">Show All Slides</button>
                 </div>
             </div>
             <div class="gap-big"></div><hr>
             <div class="gap-big"></div><hr>
-        </div> 
+    </div> 
     </div>
     <!--end links-->
     <footer>
@@ -381,46 +381,41 @@
         function currentDiv(n) {
           showDivs(slideIndex = n);
         }
-
+        
+        
         function showDivs(n) {
             var i;
             var x = document.getElementsByClassName("mySlides");
             var dots = document.getElementsByClassName("w3-badge");
             var buttonAll = document.getElementById("buttonAll");
-            buttonAll.style.display = "inline"; 
+            buttonAll.style.display = "inline";
+            var collapse = "Collapse";
+            var showAll = "Show All Slides";
             
-          if (n >= 21) {
+          
+            
+          if (n == 22) {
               var zz = 0;
-              for (i = 0; i < 4; i++) {
-                x[zz].style.display = "block";  
-                zz++;
-            }
+            if (buttonAll.innerHTML == showAll) {
+                for (i = 0; i < 4; i++) {
+                    x[zz].style.display = "block";  
+                    zz++;
+                    buttonAll.innerHTML = collapse;
+                }
+            } 
           }
           if (n > x.length) {slideIndex = 1}    
           if (n < 1) {slideIndex = x.length}
           for (i = 0; i < x.length; i++) {
-             x[i].style.display = "none";  
-          }
+                 x[i].style.display = "none";
+              }
           for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" white-circle", "");
-          }
+                 dots[i].className = dots[i].className.replace(" white-circle", "");
+                 buttonAll.innerHTML = showAll;
+              }
           x[slideIndex-1].style.display = "block";  
           dots[slideIndex-1].className += " white-circle";
         }
-        
-        var userAgent = navigator.userAgent.toLowerCase(); 
-        if (userAgent .indexOf('safari')!=-1){ 
-         var ewSafari = document.getElementById("ewSafari");
-           if(userAgent .indexOf('chrome')  > -1){
-             //browser is chrome
-           }else if((userAgent .indexOf('opera')  > -1)||(userAgent .indexOf('opr')  > -1)){
-             //browser is opera 
-           }else{
-               ewSafari.style.display="block";
-            //browser is safari, add css
-               
-           }
-        };
         
     </script>
 </body>
