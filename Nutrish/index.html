@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-    
+
 <head>
     <title>Valerie Lamm / Nutrish</title>
     <meta name="description" content="Valerie Lamm's design portfolio. Nutrish is a theoretical app designed to create a more nutritious, enjoyable, and less wasteful relationship users have with their food through the use of adaptive algorithms and devices.">
@@ -10,26 +10,34 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../makemepretty.css">
     <link rel="shortcut icon" href="../favicon.ico">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117423184-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-117423184-1');
+    <script src="../slideshow.js"></script>
+    <script src="../lazyload.js"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117423184-1');
+
     </script>
 </head>
-    
-<body>
-    
+
+<body onload="slideShow(1, 6)">
+
     <!--Mobile Checker-->
     <div id="mobile-indicator"></div>
 
-   <!--Top Bar-->
+    <!--Top Bar-->
     <div class="top-bar">
         <div class="top-links">
             <div class="wrapper">
@@ -38,10 +46,10 @@
                 <div class="right-social">
                     <a href="../About/#contact" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
                     </a>
-                    <a href="../About/" class="float-right">About 
+                    <a href="../About/" class="float-right">About
                     </a>
                     <a href="../#design">
-                    Design
+                        Design
                     </a>
                 </div>
             </div>
@@ -49,14 +57,15 @@
     </div>
 
     <!--Main Content-->
-    <img class="hundred shadow" src="hero.jpg" alt="plates of food">
+    <img class="hundred shadow" src="images/hero.jpg" alt="plates of food">
     <div class="bg per-bg top-project" id="nutrish">
         <div class="wrapper root-bg">
             <div class="gap"></div>
-            <img src="../lines.svg" alt="vertical lines"><!--dashed line-->
+            <img src="../lines.svg" alt="vertical lines">
+            <!--dashed line-->
             <div class="gap"></div>
-            
-            <img id="thirty-sixty" src="logo.svg" alt="nutrish logo">
+
+            <img id="thirty-sixty" src="images/logo.svg" alt="nutrish logo">
             <div class="fifty-right">
                 <h2>Nutrish</h2>
                 <p>Showcased in AIGA Blue Ridge’s 2017 annual Flux Student Design Competition</p>
@@ -65,14 +74,14 @@
 
                 </p>
                 <p>
-                    <b>Research Teammates: </b><a href="https://www.jefemade.com/" target="_blank">Jeff Davis, </a> 
-                    <a href="https://www.stevieboyrie.com/" target="_blank">Stevie Boyrie, </a> 
-                    <a href="https://www.christianberg.work/" target="_blank">Christian Berg, </a> 
+                    <b>Research Teammates: </b><a href="https://www.jefemade.com/" target="_blank">Jeff Davis, </a>
+                    <a href="https://www.stevieboyrie.com/" target="_blank">Stevie Boyrie, </a>
+                    <a href="https://www.christianberg.work/" target="_blank">Christian Berg, </a>
                     <a href="https://www.kristiebocanegra.com/" target="_blank">Kristie Bocanegra, </a>
-                    <a href="http://nickanthonygatti.com/" target="_blank">Nick Gatti, </a> 
-                    <a href="https://www.cerdesignsolutions.com/" target="_blank">Christina Rodriguez, </a> 
-                    <a href="https://www.rachaelbriggsdesign.com/" target="_blank">Rachael Briggs, </a> 
-                    <a href="https://www.lorenamartinezdesign.com/" target="_blank">Lorena Martinez, </a> 
+                    <a href="http://nickanthonygatti.com/" target="_blank">Nick Gatti, </a>
+                    <a href="https://www.cerdesignsolutions.com/" target="_blank">Christina Rodriguez, </a>
+                    <a href="https://www.rachaelbriggsdesign.com/" target="_blank">Rachael Briggs, </a>
+                    <a href="https://www.lorenamartinezdesign.com/" target="_blank">Lorena Martinez, </a>
                     <a href="https://www.austincd.com/" target="_blank">Austin Dennis</a>
                 </p>
                 <p>
@@ -82,13 +91,14 @@
             <hr>
             <div class="gap-big"></div>
         </div>
-        
+
         <div class="hundred per-dark-s" id="kimchi">
             <div class="color-content">
-                <div class="gap-medium"></div><hr>
+                <div class="gap-medium"></div>
+                <hr>
                 <h2>The Problem</h2>
                 <p>
-                   Due to lack of time, people struggle with taking nutrition into account, which has been shown to negatively affect our health and happiness. This also inadvertently contributes to the growing problem of food waste. Here are things that influence the problems:
+                    Due to lack of time, people struggle with taking nutrition into account, which has been shown to negatively affect our health and happiness. This also inadvertently contributes to the growing problem of food waste. Here are things that influence the problems:
                 </p>
                 <div class="gap"></div>
                 <div class="problem-box" id="corn">
@@ -140,22 +150,25 @@
                     <div class="nutrish-style"></div>
                 </div>
             </div>
-        <div class="gap-big"></div>
-             </div>
-        
-        
+            <div class="gap-big"></div>
+        </div>
+
+
         <div class="wrapper">
-            <div class="gap-big"></div><hr>
+            <div class="gap-big"></div>
+            <hr>
             <h2>Infographic</h2>
             <p>
                 After sending out a survey, we compiled relevant information about technology and food habits.
             </p>
             <div class="gap"></div>
-            <img class="hundred-ninety mobile-hide shadow" src="infographic.jpg" alt="technology and food habits infographic">
-            <img class="hundred-ninety mobile-show shadow" src="infographic-mobile.jpg" alt="technology and food habits infographic">
-            <hr><div class="gap-medium"></div>
+            <img class="hundred-ninety mobile-hide shadow lazy" src="images/infographic_low.jpg" data-src="images/infographic.jpg" data-srcset="images/infographic.jpg 2x, images/infographic_low.jpg 1x" alt="technology and food habits infographic">
+            <img class="hundred-ninety mobile-show shadow lazy" src="images/infographic-mobile_low.jpg" data-src="images/infographic-mobile.jpg" data-srcset="images/infographic-mobile.jpg 2x, images/infographic-mobile_low.jpg 1x" alt="technology and food habits infographic">
+            <hr>
+            <div class="gap-medium"></div>
             <div class="color-content">
-                <div class="gap-medium"></div><hr>
+                <div class="gap-medium"></div>
+                <hr>
                 <h2>App Competitor Research</h2>
                 <p>
                     After analyzing 16 apps related to grocery shopping and nutrition tracking, these were the results.
@@ -191,15 +204,15 @@
                         <b>Organization</b><br>
                     </h4>
                     <h3>62.5%</h3>
-                    <p>Keeps users organized through calendar features, meal plans and saved recipes.  </p>
+                    <p>Keeps users organized through calendar features, meal plans and saved recipes. </p>
                     <div class="nutrish-style"></div>
                 </div>
             </div>
-            
-            
-            
-            
-            
+
+
+
+
+
             <div class="gap-big"></div>
             <hr>
         </div>
@@ -212,15 +225,16 @@
                     Fresh logo, healthy colors, clean typeface, and clean icons.
                 </p>
                 <div class="gap"></div>
-                <img class="hundred-ninety mobile-hide shadow" src="branding-desktop.jpg" alt="branding explored">
-                <img class="hundred-ninety mobile-show shadow" src="branding-mobile.jpg" alt="branding explored">
-                <hr><div class="gap-big"></div>
+                <img class="hundred-ninety mobile-hide shadow lazy" src="images/branding-desktop_low.jpg" data-src="images/branding-desktop.jpg" data-srcset="images/branding-desktop.jpg 2x, images/branding-desktop_low.jpg 1x" alt="branding explored">
+                <img class="hundred-ninety mobile-show shadow lazy" src="images/branding-mobile_low.jpg" data-src="images/branding-mobile.jpg" data-srcset="images/branding-mobile.jpg 2x, images/branding-mobile_low.jpg 1x" alt="branding explored">
+                <hr>
+                <div class="gap-big"></div>
                 <h2>Meet the Gundersons</h2>
                 <p>
                     A family that could benefit from planning out meals.
                 </p>
                 <div class="gap"></div>
-                <img class="eighty-ninety" src="personas.png" alt="personas">
+                <img class="eighty-ninety lazy" src="images/personas_low.jpg" data-src="images/personas.png" data-srcset="images/personas.png 2x, images/personas_low.jpg 1x" alt="personas">
                 <div class="gap-medium"></div>
                 <hr>
             </div>
@@ -233,15 +247,17 @@
                     This shows how the app helps the user choose from their collection of recipes and add it to their schedule, while avoiding the familys' dietary conflicts.
                 </p>
                 <div class="gap"></div>
-                <img class="eighty-ninety mobile-show" src="flow-mobile.jpg" alt="app screens user flow">
-                <img class="eighty-ninety mobile-hide" src="flow.jpg" alt="app screens user flow">
-                
+                <img class="eighty-ninety mobile-show lazy" src="images/flow-mobile_low.jpg" data-src="images/flow-mobile.jpg" data-srcset="images/flow-mobile.jpg 2x, images/flow-mobile_low.jpg 1x" alt="app screens user flow">
+                <img class="eighty-ninety mobile-hide lazy" src="images/flow_low.jpg" data-src="images/flow.jpg" data-srcset="images/flow.jpg 2x, images/flow_low.jpg 1x" alt="app screens user flow">
+
                 <div class="gap"></div>
-                <h3><p><a href="https://marvelapp.com/6fig0cf" target="_blank"><button style="outline:2pt solid black; background:transparent;">Marvel Prototype</button></a></p></h3>
+                <h3>
+                    <p><a href="https://marvelapp.com/6fig0cf" target="_blank"><button style="outline:2pt solid black; background:transparent;">Marvel Prototype</button></a></p>
+                </h3>
                 <div class="gap-big"></div>
             </div>
         </div>
-        
+
         <div class="hundred">
             <div class="wrapper">
                 <div class="gap-big"></div>
@@ -249,7 +265,7 @@
                 <h3>Google Home</h3>
                 <h4>I used Dialogflow to build this experience.</h4>
                 <div class="gap-medium"></div>
-                <img class="hundred" src="home.png" alt="google home with burst lines">
+                <img class="hundred lazy" src="images/home_low.jpg" data-src="images/home.png" data-srcset="images/home.png 2x, images/home_low.jpg 1x" alt="google home with burst lines">
                 <div class="eighty-ninety">
                     <div class="gap"></div>
                     <audio class="eighty-ninety" controls>
@@ -258,46 +274,46 @@
                     </audio>
                 </div>
                 <div class="gap-big"></div>
-            </div>    
+            </div>
         </div>
         <hr>
-        
+
         <div class="gap-big"></div>
 
         <div class="wrapper root-bg">
             <h4>Research Galore</h4>
             <div class="hundred-ninety">
                 <div class="border">
-                    <img class="hundred mySlides slideshow" src="pictures03.jpg" alt="research on whiteboard with sticky notes">
-                    <img class="hundred mySlides slideshow" src="pictures02.jpg" alt="research on whiteboard with sticky notes">
-                    <img class="hundred mySlides slideshow" src="pictures01.jpg" alt="research on sticky notes">
-                    <img class="hundred mySlides slideshow" src="pictures04.jpg" alt="research on whiteboard">
-                    <img class="hundred mySlides slideshow" src="pictures05.jpg" alt="competitor research on computer">
-                    <img class="hundred mySlides slideshow" src="team.jpg" alt="team picture">
+                    <img class="hundred mySlides slideshow" src="images/pictures03.jpg" alt="research on whiteboard with sticky notes">
+                    <img class="hundred mySlides slideshow" src="images/pictures02.jpg" alt="research on whiteboard with sticky notes">
+                    <img class="hundred mySlides slideshow" src="images/pictures01.jpg" alt="research on sticky notes">
+                    <img class="hundred mySlides slideshow" src="images/pictures04.jpg" alt="research on whiteboard">
+                    <img class="hundred mySlides slideshow" src="images/pictures05.jpg" alt="competitor research on computer">
+                    <img class="hundred mySlides slideshow" src="images/team.jpg" alt="team picture">
                 </div>
                 <div class="center-circles" id="centerCircle">
-                    <span class="w3-badge" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge" onclick="currentDiv(2)"></span>
-                    <span class="w3-badge" onclick="currentDiv(3)"></span>
-                    <span class="w3-badge" onclick="currentDiv(4)"></span>
-                    <span class="w3-badge" onclick="currentDiv(5)"></span>
-                    <span class="w3-badge" onclick="currentDiv(6)"></span>
+                    <span class="w3-badge" onclick="slideShow(1, 6)"></span>
+                    <span class="w3-badge" onclick="slideShow(2, 6)"></span>
+                    <span class="w3-badge" onclick="slideShow(3, 6)"></span>
+                    <span class="w3-badge" onclick="slideShow(4, 6)"></span>
+                    <span class="w3-badge" onclick="slideShow(5, 6)"></span>
+                    <span class="w3-badge" onclick="slideShow(6, 6)"></span>
                     <hr>
-                    <a><button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="showDivs(21)">Show All Slides</button></a>
+                    <a><button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="slideShow(22, 6)">Show All Slides</button></a>
                 </div>
                 <hr>
-            <div class="gap-big"></div>
+                <div class="gap-big"></div>
             </div>
-            
+
             <hr>
-            <div class="gap-big"></div>  
+            <div class="gap-big"></div>
             <hr>
         </div>
-    
-        
+
+
     </div>
-    
-        <!--end links-->
+
+    <!--end links-->
     <footer>
         <div class="wrapper">
             <a href="../#design" class="left-social">&#8592; Design
@@ -311,56 +327,7 @@
             </div>
         </div>
     </footer>
-    
-    
-    <script>
-    //slideshow
-        var slideIndex = 1;
-        showDivs(slideIndex);
 
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-        
-        
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("w3-badge");
-            var buttonAll = document.getElementById("buttonAll");
-            buttonAll.style.display = "inline";
-            var collapse = "Collapse";
-            var showAll = "Show All Slides";
-            
-          
-            
-          if (n == 21) {
-              var zz = 0;
-            if (buttonAll.innerHTML == showAll) {
-                for (i = 0; i < 7; i++) {
-                    x[zz].style.display = "block";  
-                    zz++;
-                    buttonAll.innerHTML = collapse;
-                }
-            } 
-          }
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";
-              }
-          for (i = 0; i < dots.length; i++) {
-                 dots[i].className = dots[i].className.replace(" white-circle", "");
-                 buttonAll.innerHTML = showAll;
-              }
-          x[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " white-circle";
-        }
-    </script>
 </body>
-    
+
 </html>

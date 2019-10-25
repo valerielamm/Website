@@ -1,7 +1,7 @@
 <!doctype html>
 
 <html lang="en">
-    
+
 <head>
     <title>Valerie Lamm / Amala</title>
     <meta name="description" content="Valerie Lamm's design portfolio. This project is an app design for the Amala Foundation. Participants and guardians often comment on the long, repetitive registration process. Amala wanted to address this issue and also give the people within the foundation a way to communicate more.">
@@ -11,19 +11,26 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="../makemepretty.css">
     <link rel="shortcut icon" href="../favicon.ico">
-    
+
+    <script src="../slideshow.js"></script>
+    <script src="../lazyload.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117423184-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-117423184-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117423184-1');
+
     </script>
 </head>
-    
-<body>
+
+<body onload="slideShow(1, 5)">
 
     <!--Mobile Checker-->
     <div id="mobile-indicator"></div>
@@ -43,17 +50,17 @@
     </div>
 
     <!--Main Content-->
-    <img class="hundred shadow" src="hero.jpg" alt="two happy kids holding chickens">
+    <img class="hundred shadow" src="images/hero.jpg" alt="two happy kids holding chickens">
     <div class="bg per-bg top-project">
         <div class="wrapper">
-            
+
             <!--dashed line-->
             <div class="gap"></div>
             <img src="../lines.svg" alt="vertical lines">
             <div class="gap"></div>
-            
+
             <!--intro-->
-            <img id="thirty-sixty" src="amala-logo.svg" alt="amala logo">
+            <img id="thirty-sixty" src="images/amala-logo.svg" alt="amala logo">
             <div class="fifty-right">
                 <h2>Amala Foundation</h2>
                 <p>
@@ -66,8 +73,9 @@
                     <b>Project Brief:</b> Make an app to expedite the registration process and to give users a place to communicate.
                 </p>
             </div>
-            <div class="gap-medium"></div><hr>
-            
+            <div class="gap-medium"></div>
+            <hr>
+
             <h2> How Might We</h2>
             <p>
                 Using the problem established and Procter & Gamble's methodology, a set of How Might We questions were formed to encourage more design opportunities. From this, I found that these functions would be helpful:<br>
@@ -79,27 +87,28 @@
             </p>
             <div class="gap"></div>
         </div>
-        <img class="hundred" src="stickynotes.png" alt="stickynotes how might we questions">
+        <img class="hundred lazy" src="images/stickynotes_low.jpg" data-src="images/stickynotes.png" data-srcset="images/stickynotes.png 2x, images/stickynotes_low.jpg 1x" alt="stickynotes how might we questions">
         <div class="gap-medium"></div>
-        
+
         <div class="wrapper">
             <h2> Focusing on What We Know</h2>
             <p>
                 A class interview was held with <b>Solomon Masala</b>, who is in charge of Program Oversight and is a Board Chair for the Amala Foundation. The most important thing to note is that there is a large number of returning users that could use stored data.
             </p>
             <div class="gap"></div>
-            <img class="hundred" src="interview.png" alt="interview data">
+            <img class="hundred" src="images/interview.png" alt="interview data">
             <div class="gap-medium"></div>
-            
+
             <h2>Journey Mapping</h2>
             <p>
                 Next, the app was mapped out to find efficient flows for the user and to visualize the app layout.
             </p>
             <div class="gap-medium"></div>
-            <img class="hundred-ninety mobile-hide" src="map.png" alt="written map of website">
-            <img class="hundred-ninety mobile-show" src="map-mobile.png" alt="written map of website">
-            <div class="gap-big"></div><hr>
-            
+            <img class="hundred-ninety mobile-hide" src="images/map.png" alt="written map of website">
+            <img class="hundred-ninety mobile-show" src="images/map-mobile.png" alt="written map of website">
+            <div class="gap-big"></div>
+            <hr>
+
             <div class="fifty-left">
                 <h2>Visual Approach</h2>
                 <p>
@@ -109,7 +118,7 @@
                     This is something I wanted my app to reflect.
                 </p>
             </div>
-            
+
             <div class="fifty-right">
                 <h2 class="mobile-hide"> &nbsp;</h2>
                 <p>
@@ -118,54 +127,57 @@
                 <p>
                     I found that a clean way to depict the feel of their foundation was by using uneven, more natural edges throughout the app along with welcoming, natural colors.
                 </p>
-            </div><hr>
-            
+            </div>
+            <hr>
+
             <div class="color-content">
                 <div class="amala-box">
-                    <img class="hundred" src="color01.png" alt="blue brand color">
+                    <img class="hundred" src="images/color01.png" alt="blue brand color">
                 </div>
                 <div class="amala-box">
-                    <img class="hundred" src="color02.png" alt="brown brand color">
+                    <img class="hundred" src="images/color02.png" alt="brown brand color">
                 </div>
                 <div class="amala-box">
-                    <img class="hundred" src="color03.png" alt="green brand color">
+                    <img class="hundred" src="images/color03.png" alt="green brand color">
                 </div>
                 <div class="amala-box">
-                    <img class="hundred" src="color04.png" alt="pink brand color">
+                    <img class="hundred" src="images/color04.png" alt="pink brand color">
                 </div>
             </div>
             <div class="gap-big"></div>
         </div>
-        <img class="hundred" src="showcase.jpg" alt="app screens in four staggered iphones">
-        <img class="hundred" src="stacked.png" alt="app screens in stacked displays">
+        <img class="hundred lazy" src="images/showcase_low.jpg" data-src="images/showcase.jpg" data-srcset="images/showcase.jpg 2x, images/showcase_low.jpg 1x" alt="app screens in four staggered iphones">
+        <img class="hundred lazy" src="images/stacked_low.jpg" data-src="images/stacked.png" data-srcset="images/stacked.png 2x, images/stacked_low.jpg 1x" alt="app screens in stacked displays">
         <div class="gap-medium"></div>
         <div class="wrapper">
             <hr>
-            
+
             <div class="gap-big"></div>
-            
+
             <h4>Wireframes</h4>
             <div class="hundred-ninety">
                 <div class="border">
-                    <img class="hundred mySlides slideshow" src="user-testing.jpg" alt="hand holding paper user test wireframe phone">
-                    <img class="hundred mySlides slideshow" src="process04.jpg" alt="app drawn wireframes">
-                    <img class="hundred mySlides slideshow" src="process01.jpg" alt="app drawn wireframes">
-                    <img class="hundred mySlides slideshow" src="process02.jpg" alt="app drawn wireframes">
-                    <img class="hundred mySlides slideshow" src="process03.jpg" alt="app drawn wireframes">
+                    <img class="hundred mySlides slideshow" src="images/user-testing.jpg" alt="hand holding paper user test wireframe phone">
+                    <img class="hundred mySlides slideshow" src="images/process04.jpg" alt="app drawn wireframes">
+                    <img class="hundred mySlides slideshow" src="images/process01.jpg" alt="app drawn wireframes">
+                    <img class="hundred mySlides slideshow" src="images/process02.jpg" alt="app drawn wireframes">
+                    <img class="hundred mySlides slideshow" src="images/process03.jpg" alt="app drawn wireframes">
                 </div>
                 <div class="center-circles" id="centerCircle">
-                    <span class="w3-badge" onclick="currentDiv(1)"></span>
-                    <span class="w3-badge" onclick="currentDiv(2)"></span>
-                    <span class="w3-badge" onclick="currentDiv(3)"></span>
-                    <span class="w3-badge" onclick="currentDiv(4)"></span>
-                    <span class="w3-badge" onclick="currentDiv(5)"></span>
+                    <span class="w3-badge" onclick="slideShow(1, 5)"></span>
+                    <span class="w3-badge" onclick="slideShow(2, 5)"></span>
+                    <span class="w3-badge" onclick="slideShow(3, 5)"></span>
+                    <span class="w3-badge" onclick="slideShow(4, 5)"></span>
+                    <span class="w3-badge" onclick="slideShow(5, 5)"></span>
                     <hr>
-                    <button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="showDivs(21)"><a>Show All Slides</a></button>
-                </div>  
+                    <button style="outline:2pt solid black; background:transparent;" id="buttonAll" onclick="slideShow(22, 5)"><a>Show All Slides</a></button>
+                </div>
             </div>
-            <div class="gap-big"></div><hr>
+            <div class="gap-big"></div>
+            <hr>
         </div>
-        <div class="gap-big"></div><hr>
+        <div class="gap-big"></div>
+        <hr>
     </div>
     <!--end links-->
     <footer>
@@ -179,56 +191,7 @@
             </div>
         </div>
     </footer>
-   
-    <script>
-        //slideshow
-        var slideIndex = 1;
-        showDivs(slideIndex);
 
-        function plusDivs(n) {
-          showDivs(slideIndex += n);
-        }
-
-        function currentDiv(n) {
-          showDivs(slideIndex = n);
-        }
-        
-        
-        function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("w3-badge");
-            var buttonAll = document.getElementById("buttonAll");
-            buttonAll.style.display = "inline";
-            var collapse = "Collapse";
-            var showAll = "Show All Slides";
-            
-          
-            
-          if (n == 21) {
-              var zz = 0;
-            if (buttonAll.innerHTML == showAll) {
-                for (i = 0; i < 6; i++) {
-                    x[zz].style.display = "block";  
-                    zz++;
-                    buttonAll.innerHTML = collapse;
-                }
-            } 
-          }
-          if (n > x.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = x.length}
-          for (i = 0; i < x.length; i++) {
-                 x[i].style.display = "none";
-              }
-          for (i = 0; i < dots.length; i++) {
-                 dots[i].className = dots[i].className.replace(" white-circle", "");
-                 buttonAll.innerHTML = showAll;
-              }
-          x[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " white-circle";
-        }
-    </script>
-    
 </body>
-    
+
 </html>
