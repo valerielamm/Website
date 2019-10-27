@@ -968,6 +968,7 @@ audio {
 
     .gap-big {
         height: 4em;
+        pointer-events: none;
     }
 
     .problem-box {

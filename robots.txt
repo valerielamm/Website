@@ -11,5 +11,6 @@ Disallow: /lines.svg
 Disallow: /linkedin.svg
 Disallow: /home-background.jpg
 Disallow: /github.svg
+Disallow: /thenounproject.svg
 Disallow: /About/valerie_lamm_resume.pdf
 Disallow: /Test
