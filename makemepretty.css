@@ -374,6 +374,15 @@ audio {
     cursor: pointer;
 }
 
+.light-button{
+    background-color: #d6d6d6;
+    color: #ffffff;
+}
+.light-button:hover{
+    background-color: #b5b5b5;
+    cursor: pointer;
+}
+
 .eighty-ninety {
     width: 80%;
     margin-left: 10%;
