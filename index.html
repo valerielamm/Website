@@ -41,19 +41,31 @@
         <!--hero img-->
         <section class="hero">
             <div class="hero-inner">
-                <h2>Valerie Lamm</h2>
-                <p id="uxui">&emsp;<a onclick="scrollIt(document.querySelector('.js-section2'),300,'easeOutQuad');">design</a></p>
-                <p>&emsp;&emsp;<a href="/About/">about</a></p>
-                <p>&emsp;&emsp;&emsp;<a href="/About/#contact" onLoad="window.scroll(0, 150)">contact</a></p>
+                <h1>Valerie Lamm</h1>
+                <ul>
+                    <li id="uxui">
+                        &emsp;
+                        <a onclick="scrollIt(document.querySelector('.js-section2'),300,'easeOutQuad');">design</a>
+                    </li>
+                    <li>
+                        &emsp;&emsp;
+                        <a href="/About/">about</a>
+                    </li>
+                    <li>
+                        &emsp;&emsp;&emsp;
+                        <a href="/About/#contact" onLoad="window.scroll(0, 150)">contact</a>
+                    </li>
+                </ul>
             </div>
         </section>
+        
+        <div class="gap js-section2"></div>
 
         <!--Main Content-->
-        <div class="gap js-section2"></div>
         <div class="wrapper" id="design">
-            <img src="lines.svg" alt="vertical lines">
-            <!--dashed line-->
+            <img src="lines.svg" alt="vertical lines"> <!--dashed line-->
             <div class="gap-medium"></div>
+            
             <!--Perennial-->
             <a href="Perennial/">
                 <div class="hover">
@@ -152,7 +164,7 @@
 
             <!--Nutrish-->
 
-            <a href="GreenAcres/">
+            <a href="Nutrish/">
                 <div class="hover">
                     <div class="tile-left">
                         <img src="Nutrish/images/tile.jpg" class="hundred" alt="cutting board and ingredients">
@@ -255,14 +267,19 @@
     <!--end links-->
     <footer>
         <div class="wrapper">
-            <a href="/About/" class="left-social">About
-            </a>
-            <a href="/About/#contact" class="left-social">Contact
-            </a>
+            <a href="/About/" class="left-social">About</a>
+            <a href="/About/#contact" class="left-social">Contact</a>
+            
             <div class="right-social">
-                <a href="https://github.com/valerielamm" target="_blank"><img class="social" src="github.svg" alt="github logo"></a>
-                <a href="https://www.linkedin.com/in/valerielamm/" target="_blank"><img class="social2" src="linkedin.svg" alt="linkedin logo"></a>
-                <a href="https://thenounproject.com/my__valerie/" target="_blank"><img class="social" src="thenounproject.svg" alt="thenounproject logo"></a>
+                <a href="https://github.com/valerielamm" target="_blank">
+                    <img class="social" src="github.svg" alt="github logo">
+                </a>
+                <a href="https://www.linkedin.com/in/valerielamm/" target="_blank">
+                    <img class="social2" src="linkedin.svg" alt="linkedin logo">
+                </a>
+                <a href="https://thenounproject.com/my__valerie/" target="_blank">
+                    <img class="social" src="thenounproject.svg" alt="thenounproject logo">
+                </a>
             </div>
         </div>
     </footer>
