@@ -17,14 +17,19 @@
 </head>
 
 <main>
-    <canvas id="background" width="338" height="731">
-    </canvas>
-    <div id="text404">
-        <h1>404</h1>
-        <p>Page not found</p>
-    </div>
-    <a href="http://valerielamm.com"><button class="linked button404">Go Home</button></a>
+    <body style="touch-action: none;">
+        <canvas id="background" width="338" height="731">
+        </canvas>
+        <div id="text404">
+            <h1>404</h1>
+            <p>Page not found</p>
+        </div>
+        <a href="http://valerielamm.com">
+            <button class="linked button404">Go Home</button>
+        </a>
+    </body>
 </main>
+
 
 <script>
     // drawing
