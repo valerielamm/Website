@@ -8,6 +8,7 @@ Disallow: /Nutrish/images/
 Disallow: /Perennial/images/
 Disallow: /RootRocket/images/
 Disallow: /lines.svg
+Disallow: /lazy16_9.svg
 Disallow: /linkedin.svg
 Disallow: /home-background.jpg
 Disallow: /github.svg
