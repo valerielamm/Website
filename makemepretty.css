@@ -1149,36 +1149,3 @@ audio {
     }
 }
 
-/*404*/
-canvas#background {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    background: #ebebeb;
-}
-
-.button404 {
-    position: fixed;
-    top: 45%;
-    left: 45%;
-}
-
-#text404 {
-    position: fixed;
-    left: 10%;
-    top: 10%;
-}
-
-#text404 h1 {
-    font-size: 10em;
-    margin-bottom: 0em;
-}
-
-#text404 p {
-    color: #d6d6d6;
-    font-size: 2em;
-    padding: 0 0 0 .5em;
-}

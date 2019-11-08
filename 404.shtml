@@ -8,13 +8,74 @@
     <meta name="author" content="Valerie Lamm">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="makemepretty.css">
     <link rel="shortcut icon" href="favicon.ico">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bowser/1.9.4/bowser.min.js"></script>
 </head>
+    
+<style>
+canvas#background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: #ebebeb;
+}
+
+.button404 {
+    outline: none;
+    background-color: #b5b5b5;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    position: fixed;
+    top: 45%;
+    left: 45%;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color:#d6d6d6;
+    cursor: pointer;
+}
+
+#text404 {
+    position: fixed;
+    left: 10%;
+    top: 10%;
+}
+
+#text404 h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #cecece;
+    font-size: 10em;
+    margin-bottom: 0em;
+}
+
+#text404 p {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 0 0 0;
+    line-height: 1.75em;
+    color: #d6d6d6;
+    font-size: 2em;
+    padding: 0 0 0 .5em;
+}   
+a{
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: darkgrey;
+    cursor: pointer;
+}
+</style>
 
 <main>
     <body style="touch-action: none;">
