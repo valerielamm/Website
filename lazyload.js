@@ -5,6 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const lazyLoad = function () {
         if (active === false) {
             active = true;
+            
+            lazyImages.forEach(function (lazyImage) {
+                
+                let img = document.createElement('img');
+                img.src = lazyImage.dataset.src;
+                var poll = setInterval(function () {
+                    if (img.naturalWidth) {
+                        clearInterval(poll);
+                        let w = img.naturalWidth; 
+                        let h = img.naturalHeight;
+                        let r = w/h; //ratio
+                        lazyImage.style.height = lazyImage.width/r + "px";
+                    }
+                }, 10);
+                
+            });
 
             setTimeout(function () {
                 lazyImages.forEach(function (lazyImage) {
