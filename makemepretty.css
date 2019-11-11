@@ -412,6 +412,11 @@ audio {
     cursor: pointer;
 }
 
+.seventy-ninety{
+    width: 70%;
+    margin-left: 15%;
+}
+
 .eighty-ninety {
     width: 80%;
     margin-left: 10%;
@@ -1125,6 +1130,7 @@ audio {
 
     .hundred-ninety,
     .eighty-ninety,
+    .seventy-ninety,
     .fifty-right,
     .fifty-left {
         width: 90%;
