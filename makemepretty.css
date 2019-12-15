@@ -720,23 +720,23 @@ audio {
 }
 
 .root-color1 {
-    background: #2b8c59;
-}
-
-.root-color5 {
-    background: #93bd73;
+    background: #757471;
 }
 
 .root-color2 {
-    background: #4a423f;
+    background: #A8A7A3;
 }
 
 .root-color3 {
-    background: #35302c;
+    background: #EDEDEC;
 }
 
 .root-color4 {
-    background: #a8a7a3;
+    background: #2B8C59;
+}
+
+.root-color5 {
+    background: #93BD73;
 }
 
 .root-color4 p {
