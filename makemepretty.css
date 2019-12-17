@@ -412,6 +412,16 @@ audio {
     cursor: pointer;
 }
 
+.dark-button{
+    background-color: #51504E;
+    color:#d6d6d6;
+}
+
+.dark-button:hover{
+    background-color: #5D5C5A;
+    cursor: pointer;
+}
+
 .sixty-ninety{
     width: 60%;
     margin-left: 20%;
