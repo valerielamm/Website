@@ -710,6 +710,12 @@ audio {
 
 
 /*root rocket*/
+#fullVideo{
+    max-width: 102%;
+    min-height: 100%;
+    margin-left: -1%;
+}
+
 .root-bg {
     background: #ebebeb;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
