@@ -711,9 +711,8 @@ audio {
 
 /*root rocket*/
 #fullVideo{
-    max-width: 102%;
+    max-width: 100%;
     min-height: 100%;
-    margin-left: -1%;
 }
 
 .root-bg {
