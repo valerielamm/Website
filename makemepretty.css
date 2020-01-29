@@ -132,6 +132,11 @@ h1 {
     font-size: .95em;
 }
 
+.problem-box ul {
+    margin: 0;
+    padding: 0;
+}
+
 .problem-box li {
     list-style: none;
     padding: .2em;
@@ -412,17 +417,17 @@ audio {
     cursor: pointer;
 }
 
-.dark-button{
+.dark-button {
     background-color: #51504E;
-    color:#d6d6d6;
+    color: #d6d6d6;
 }
 
-.dark-button:hover{
+.dark-button:hover {
     background-color: #5D5C5A;
     cursor: pointer;
 }
 
-.sixty-ninety{
+.sixty-ninety {
     width: 60%;
     margin-left: 20%;
 }
@@ -710,7 +715,7 @@ audio {
 
 
 /*root rocket*/
-#fullVideo{
+#fullVideo {
     max-width: 100%;
     min-height: 100%;
 }
@@ -937,6 +942,11 @@ audio {
         margin: 2.5% 1.75% 0 1.75%;
     }
 
+    .problem-box ul {
+        margin: 0;
+        padding: 0;
+    }
+
     .problem-box li {
         list-style: none;
         padding: .2em;
@@ -1076,6 +1086,11 @@ audio {
         display: none;
     }
 
+    .problem-box ul {
+        margin: 0;
+        padding: 0;
+    }
+
     .problem-box li {
         padding: .2em;
         padding-left: 10%;
@@ -1169,4 +1184,3 @@ audio {
         height: 4em;
     }
 }
-
