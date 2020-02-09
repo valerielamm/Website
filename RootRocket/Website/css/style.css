@@ -151,8 +151,8 @@ footer {
     font-weight: normal;
     display: flex;
     justify-content: space-between;
-    width:85%;
-    margin:0 auto;
+    width: 85%;
+    margin: 0 auto;
     color: #A8A7A3;
     flex-direction: row-reverse;
 }
@@ -162,6 +162,7 @@ footer h3 {
     font-size: 1.5em;
     margin-bottom: .75em;
 }
+
 footer ul li {
     margin-bottom: .75em;
 }
@@ -204,15 +205,19 @@ br {
 }
 
 #navbar {
-    padding: 2em;
+    padding: 5%;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
     display: flex;
     overflow: hidden;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     align-content: flex-start;
+    flex-basis: auto;
+    position: absolute;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #logo {
@@ -221,14 +226,14 @@ br {
     flex: inherit;
 }
 
-#social{
+#social {
     display: flex;
     justify-content: space-between;
     width: 16em;
 }
 
-#social img{
-    width:30px;
+#social img {
+    width: 30px;
 }
 
 #navbar ul {
@@ -255,10 +260,94 @@ br {
     display: none;
 }
 
+
+/* Hide Hamburger */
+#navbar label,
+#hamburger {
+    display: none;
+}
+
+/* Menu Items */
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar ul li {
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#navbar ul li a:hover {
+    transition: .25s;
+    background: rgba(26, 26, 26, .3);
+    border-radius: 20px;
+}
+
+#navbar ul li a {
+    color: #fff;
+    padding: .5em;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+
+    /* Show Hamburger */
+    #navbar label {
+        display: inline-block;
+        color: #fff;
+        font-style: normal;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    #navbar {
+        flex-basis: 100%;
+    }
+
+    #navbar ul::before {
+        clear: both;
+    }
+
+    /* Break down menu items into vertical */
+    #navbar ul li {
+        flex: inherit;
+    }
+
+    /* Toggle show/hide menu on checkbox click */
+    #navbar ul {
+        display: none;
+    }
+
+    #hamburger:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #burger:hover {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+        transition: .5s;
+        background: rgba(26, 26, 26, .3);
+        border-radius: 20px;
+    }
+
+    #burger {
+        transition: .5s;
+        padding: .5em;
+        border-radius: 20px;
+    }
+}
+
 /* Home Page */
 
 #splashVid {
-    margin-bottom: 100vh;
+    height: 100vh;
     display: block;
     overflow: hidden;
 }
@@ -281,6 +370,9 @@ br {
     min-height: 100%;
 }
 
+#headerVideo {
+    object-fit: cover;
+}
 
 #banner {
     width: 100%;
@@ -289,7 +381,7 @@ br {
     padding: 1em 0 1.5em 0;
     background: rgba(26, 26, 26, .9);
     text-align: center;
-    margin-top: 30vh;
+    margin-top: 50vh;
 }
 
 #banner h1 {
