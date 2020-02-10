@@ -146,15 +146,21 @@ body {
 
 footer {
     width: 100%;
+    max-width: 1080px;
+    /* 90% of 1200 inline with br */
     padding: 1em 0 1.5em 0;
     font-size: .8em;
     font-weight: normal;
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 80%;
     margin: 0 auto;
     color: #A8A7A3;
     flex-direction: row-reverse;
+}
+
+footer section {
+    margin-bottom: 3em;
 }
 
 footer h3 {
@@ -193,6 +199,10 @@ br {
 }
 
 /* Common ____________ */
+
+.mobile-hide {
+    display: block;
+}
 
 #container {
     max-width: 1200px;
@@ -297,6 +307,12 @@ br {
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
 
+    /* Common ___________*/
+
+    .mobile-hide {
+        display: none;
+    }
+
     /* Show Hamburger */
     #navbar label {
         display: inline-block;
@@ -345,6 +361,10 @@ br {
         border-radius: 20px;
         margin-right: 0;
     }
+    
+    footer{
+        flex-direction: column;
+    }
 }
 
 /* Home Page */
@@ -364,7 +384,7 @@ br {
     height: 100vh;
     z-index: -1;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 #vidDiv video {
