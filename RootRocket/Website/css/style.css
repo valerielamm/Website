@@ -173,6 +173,16 @@ footer ul li {
     margin-bottom: .75em;
 }
 
+footer ul li a, footer ul li a:visited {
+    color: #A8A7A3;
+    font-style: normal;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: #ffffff;
+}
+
 button {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 20px;
@@ -241,9 +251,19 @@ br {
     justify-content: space-between;
     width: 16em;
 }
+#social a {
+    align-self: center;
+}
 
-#social img {
+#social a svg {
     width: 30px;
+}
+
+.social {
+    fill: #A8A7A3;
+}
+.social:hover {
+    fill: #ffffff;
 }
 
 #navbar ul {
