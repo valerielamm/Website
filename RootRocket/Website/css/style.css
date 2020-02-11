@@ -210,6 +210,37 @@ br {
 
 /* Common ____________ */
 
+#navigation {
+    background: #A8A7A3;
+    width:100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+#navigation #navbar {
+    position: relative;
+}
+
+#navigation #nav ul{
+    width: 85%;
+    margin: 0 auto .4em auto;
+    text-transform: uppercase;
+}
+
+#navigation #nav ul li {
+    display: inline-block;
+}
+
+#navigation #nav ul li:not(:first-child)::before {
+  content: "  /  ";
+  display: inline-block;
+  white-space: pre;
+}
+
+#nav {
+    padding: 0 0 2em 0;
+}
+
 .mobile-hide {
     display: block;
 }
@@ -226,7 +257,7 @@ br {
 
 #navbar {
     padding: 5.1%;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
     display: flex;
     overflow: hidden;
     flex-direction: row;
@@ -312,12 +343,12 @@ br {
 
 #navbar ul li a:hover {
     transition: .25s;
-    background: rgba(26, 26, 26, .3);
+    background: rgba(255, 255, 255, .2);
     border-radius: 20px;
 }
 
 #navbar ul li a {
-    color: #fff;
+    color: #1a1a1a;
     padding: .5em;
     transition: .25s .15s;
     border-radius: 20px;
@@ -336,7 +367,7 @@ br {
     /* Show Hamburger */
     #navbar label {
         display: inline-block;
-        color: #fff;
+        color: #1a1a1a;
         font-style: normal;
         font-size: 2em;
         padding: 10px;
@@ -366,20 +397,19 @@ br {
     }
 
     #burger:hover {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
         transition: .5s;
-        background: rgba(26, 26, 26, .3);
+        background: rgba(255, 255, 255, .2);
         border-radius: 20px;
-        margin-right: .5em;
     }
 
     #burger {
         transition: .5s 1s;
         padding: .5em;
         border-radius: 20px;
-        margin-right: 0;
+        margin-right: .2em;
     }
     
     footer{
@@ -387,7 +417,7 @@ br {
     }
 }
 
-/* Home Page */
+/* Home Page _____________ */
 
 #splashVid {
     height: 100vh;
@@ -476,4 +506,14 @@ br {
     font-size: .9em;
     max-width: 100px;
     color: rgba(0, 0, 0, .6);
+}
+
+/* Shop Page ____________ */
+
+#productsMain, #productsSecondary {
+    padding-bottom: 2em;
+    width: 100%;
+    display: block;
+    position: relative;
+    background: #A8A7A3
 }
