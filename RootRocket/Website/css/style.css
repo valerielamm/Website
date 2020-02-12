@@ -301,6 +301,12 @@ br {
     fill: #ffffff;
 }
 
+.br-restrictor{
+    width:100%;
+    padding: 2em 0 3em 0;
+    background: #A8A7A3;
+}
+
 #navbar ul {
     flex: inherit;
     display: flex;
@@ -541,11 +547,40 @@ br {
 
 /* Shop Page ____________ */
 
-#productsMain,
-#productsSecondary {
+.product-container {
+    width: 90%;
+    padding: 5%;
+    margin: 0 auto;
+    display: flex;
     padding-bottom: 2em;
-    width: 100%;
+    position: relative;
+    background: #A8A7A3;
+    justify-content: space-between;
+}
+
+.product-container .product-card {
+    flex: inherit;
     display: block;
     position: relative;
-    background: #A8A7A3
+    width: 31%;
+}
+
+.product-container .product-card img {
+    width: 100%;
+    margin-bottom: 1em;
+    border-radius: 20px;
+    overflow:hidden;
+    box-shadow: 0 0 6px rgba(0,0,0,.4);
+}
+
+.product-container .product-card h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: .3em;
+    text-align: center;
+}
+
+.product-container .product-card p {
+    font-size: .95em;
+    text-align: center;
 }
