@@ -13,13 +13,20 @@
     <script src="../js/scripts.js"></script>
 </head>
 
+<script>
+    function toggleClass(idName) {
+        document.getElementById(idName).classList.toggle("mobilenavbar");
+        document.body.classList.toggle("stopscroll");
+    }
+</script>
+
 <body>
     <main>
         <div id="container">
             <section id="navigation">
                 <nav id="navbar">
                     <a href=""><img id="logo" src="../images/logo.svg" alt="Root Rocket Logo"></a>
-                    <label for="hamburger" id="burger">&#8942;</label>
+                    <label for="hamburger" id="burger" onclick="toggleClass('navbar')">&#8942;</label>
                     <input type="checkbox" id="hamburger" />
                     <ul id="menu">
                         <li><a href="#">Home</a></li>
@@ -37,11 +44,11 @@
                 </div>
             </section>
             <section id="productsMain">
-            <br>
+                <br>
             </section>
-            
+
             <section id="productsSecondary">
-            <br>
+                <br>
             </section>
         </div>
         <footer>
@@ -91,6 +98,4 @@
             </section>
         </footer>
     </main>
-</body>
-
-</html>
+</body></html>

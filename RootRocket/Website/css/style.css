@@ -173,7 +173,8 @@ footer ul li {
     margin-bottom: .75em;
 }
 
-footer ul li a, footer ul li a:visited {
+footer ul li a,
+footer ul li a:visited {
     color: #A8A7A3;
     font-style: normal;
     text-decoration: none;
@@ -212,7 +213,7 @@ br {
 
 #navigation {
     background: #A8A7A3;
-    width:100%;
+    width: 100%;
     display: block;
     border-radius: 20px 20px 0 0;
 }
@@ -221,7 +222,7 @@ br {
     position: relative;
 }
 
-#navigation #nav ul{
+#navigation #nav ul {
     width: 85%;
     margin: 0 auto .4em auto;
     text-transform: uppercase;
@@ -232,9 +233,9 @@ br {
 }
 
 #navigation #nav ul li:not(:first-child)::before {
-  content: "  /  ";
-  display: inline-block;
-  white-space: pre;
+    content: "  /  ";
+    display: inline-block;
+    white-space: pre;
 }
 
 #nav {
@@ -271,6 +272,7 @@ br {
     margin: 0 auto;
 }
 
+
 #logo {
     width: 90px;
     height: 90px;
@@ -282,6 +284,7 @@ br {
     justify-content: space-between;
     width: 16em;
 }
+
 #social a {
     align-self: center;
 }
@@ -293,6 +296,7 @@ br {
 .social {
     fill: #A8A7A3;
 }
+
 .social:hover {
     fill: #ffffff;
 }
@@ -321,14 +325,11 @@ br {
     display: none;
 }
 
-
-/* Hide Hamburger */
 #navbar label,
 #hamburger {
     display: none;
 }
 
-/* Menu Items */
 #navbar ul {
     list-style-type: none;
     margin: 0;
@@ -360,11 +361,15 @@ br {
 
     /* Common ___________*/
 
+    #container {
+        width: 100%;
+        margin: 2em 0;
+    }
+
     .mobile-hide {
         display: none;
     }
 
-    /* Show Hamburger */
     #navbar label {
         display: inline-block;
         color: #1a1a1a;
@@ -381,14 +386,40 @@ br {
         clear: both;
     }
 
-    /* Break down menu items into vertical */
     #navbar ul li {
         flex: inherit;
     }
 
-    /* Toggle show/hide menu on checkbox click */
     #navbar ul {
         display: none;
+    }
+    
+    .stopscroll{
+        overflow: hidden !important;
+    }
+
+    .mobilenavbar {
+        background: linear-gradient(rgba(50, 50, 49, 1), rgba(168, 167, 163, 1), rgba(168, 167, 163, 1)) !important;
+        position: fixed !important;
+        border-radius: 20px;
+        width: 90% !important;
+        height: 100vh !important;
+        margin: 2em 0 !important;
+        z-index: 99 !important;
+        left: 0 !important;
+        top: 0 !important;
+        display: flex !important;
+    }
+
+
+    .mobilenavbar ul li {
+        align-self: center !important;
+        margin: 0 !important;
+        padding: 2em !important;
+    }
+
+    .mobilenavbar ul {
+        height: 70vh;
     }
 
     #hamburger:checked ~ ul {
@@ -411,8 +442,8 @@ br {
         border-radius: 20px;
         margin-right: .2em;
     }
-    
-    footer{
+
+    footer {
         flex-direction: column;
     }
 }
@@ -510,7 +541,8 @@ br {
 
 /* Shop Page ____________ */
 
-#productsMain, #productsSecondary {
+#productsMain,
+#productsSecondary {
     padding-bottom: 2em;
     width: 100%;
     display: block;
