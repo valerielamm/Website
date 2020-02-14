@@ -659,6 +659,10 @@ br {
 
 /*Product Details*/
 
+.underline {
+    text-decoration: underline;
+}
+
 #productDetails {
     margin: 0 10% 0 5%;
     width: 35%;

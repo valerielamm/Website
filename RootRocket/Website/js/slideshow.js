@@ -11,6 +11,3 @@ function slideShow(slide, numberOfSlides) {
     x[slide - 1].style.display = "block";
     dots[slide - 1].className += " white-circle";
 }
-window.onload = function() {
-  slideShow(1,1);
-};
