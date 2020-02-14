@@ -136,7 +136,7 @@ table {
 
 /* Custom CSS ____________ */
 
-/* Generic ____________ */
+/* Generic _____________________________________________________ */
 
 body {
     background: #1A1A1A;
@@ -209,41 +209,23 @@ br {
     border-bottom: 1px solid #3F3F3F; // Works in Chrome/Safari
 }
 
-/* Common ____________ */
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
 
-#navigation {
-    background: #A8A7A3;
+    footer {
+        flex-direction: column;
+    }
+}
+
+/* Common ______________________________________________________ */
+
+/* General _________________*/
+
+.br-restrictor {
+    /* for br not in another div */
     width: 100%;
-    display: block;
-    border-radius: 20px 20px 0 0;
-}
-
-#navigation #navbar {
-    position: relative;
-}
-
-#navigation #nav ul {
-    width: 85%;
-    margin: 0 auto .4em auto;
-    text-transform: uppercase;
-}
-
-#navigation #nav ul li {
-    display: inline-block;
-}
-
-#navigation #nav ul li:not(:first-child)::before {
-    content: "  /  ";
-    display: inline-block;
-    white-space: pre;
-}
-
-#nav {
-    padding: 0 0 2em 0;
-}
-
-.mobile-hide {
-    display: block;
+    padding: 2em 0 3em 0;
+    background: #A8A7A3;
 }
 
 #container {
@@ -254,6 +236,64 @@ br {
     width: 90%;
     margin: 3em auto;
     overflow: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.mobile-hide {
+    display: block;
+}
+
+/* [ON SMALL SCREENS] */
+@media screen and (max-width: 768px) {
+
+    #container {
+        width: 100%;
+        margin: 2em 0;
+    }
+
+    .mobile-hide {
+        display: none;
+    }
+}
+
+/* Navigation _________________*/
+
+
+#logo {
+    width: 90px;
+    height: 90px;
+    flex: inherit;
+}
+
+#navigationWithBreadcrumbs {
+    background: #A8A7A3;
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+}
+
+#breadcrumbs ul {
+    width: 85%;
+    margin: 0 auto .4em auto;
+    text-transform: uppercase;
+}
+
+#breadcrumbs ul li {
+    display: inline-block;
+}
+
+#breadcrumbs ul li:not(:first-child)::before {
+    content: "  /  ";
+    display: inline-block;
+    white-space: pre;
+}
+
+#breadcrumbs {
+    padding: 0 0 2em 0;
 }
 
 #navbar {
@@ -267,44 +307,9 @@ br {
     align-items: center;
     align-content: flex-start;
     flex-basis: auto;
-    position: absolute;
+    position: relative;
     width: 90%;
     margin: 0 auto;
-}
-
-
-#logo {
-    width: 90px;
-    height: 90px;
-    flex: inherit;
-}
-
-#social {
-    display: flex;
-    justify-content: space-between;
-    width: 16em;
-}
-
-#social a {
-    align-self: center;
-}
-
-#social a svg {
-    width: 30px;
-}
-
-.social {
-    fill: #A8A7A3;
-}
-
-.social:hover {
-    fill: #ffffff;
-}
-
-.br-restrictor {
-    width: 100%;
-    padding: 2em 0 3em 0;
-    background: #A8A7A3;
 }
 
 #navbar ul {
@@ -314,10 +319,16 @@ br {
     align-items: flex-end;
     align-content: flex-end;
     margin-top: 2em;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 #navbar ul li {
     margin-left: 2em;
+    display: inline-block;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 #navbar ul li a {
@@ -325,27 +336,9 @@ br {
     font-weight: 600;
     color: #1A1A1A;
     text-transform: uppercase;
-}
-
-.hidden {
-    display: none;
-}
-
-#navbar label,
-#hamburger {
-    display: none;
-}
-
-#navbar ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#navbar ul li {
-    display: inline-block;
-    padding: 10px;
-    box-sizing: border-box;
+    padding: .5em;
+    transition: .25s .15s;
+    border-radius: 20px;
 }
 
 #navbar ul li a:hover {
@@ -354,35 +347,13 @@ br {
     border-radius: 20px;
 }
 
-#navbar ul li a {
-    color: #1a1a1a;
-    padding: .5em;
-    transition: .25s .15s;
-    border-radius: 20px;
-    text-decoration: none;
+#navbar label,
+#hamburger {
+    display: none;
 }
 
 /* [ON SMALL SCREENS] */
 @media screen and (max-width: 768px) {
-
-    /* Common ___________*/
-
-    #container {
-        width: 100%;
-        margin: 2em 0;
-    }
-
-    .mobile-hide {
-        display: none;
-    }
-
-    #navbar label {
-        display: inline-block;
-        color: #1a1a1a;
-        font-style: normal;
-        font-size: 2em;
-        padding: 10px;
-    }
 
     #navbar {
         flex-basis: 100%;
@@ -398,6 +369,37 @@ br {
 
     #navbar ul {
         display: none;
+    }
+
+    #navbar label {
+        display: inline-block;
+        color: #1a1a1a;
+        font-style: normal;
+        font-size: 2em;
+        padding: 10px;
+    }
+
+    #burger {
+        transition: .5s 1s;
+        padding: .5em;
+        border-radius: 20px;
+        margin-right: .2em;
+    }
+
+    #burger:hover {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        transform: rotate(180deg);
+        transition: .5s;
+        background: rgba(255, 255, 255, .2);
+        border-radius: 20px;
+    }
+
+    /*Open Menu*/
+
+    #hamburger:checked ~ ul {
+        display: flex;
+        flex-direction: column;
     }
 
     .stopscroll {
@@ -417,6 +419,9 @@ br {
         display: flex !important;
     }
 
+    .mobilenavbar ul {
+        height: 70vh;
+    }
 
     .mobilenavbar ul li {
         align-self: center !important;
@@ -424,35 +429,29 @@ br {
         padding: 2em !important;
     }
 
-    .mobilenavbar ul {
-        height: 70vh;
-    }
-
-    #hamburger:checked ~ ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #burger:hover {
-        -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        transform: rotate(180deg);
-        transition: .5s;
-        background: rgba(255, 255, 255, .2);
-        border-radius: 20px;
-    }
-
-    #burger {
-        transition: .5s 1s;
-        padding: .5em;
-        border-radius: 20px;
-        margin-right: .2em;
-    }
-
-    footer {
-        flex-direction: column;
-    }
 }
+
+/* Footer _________________*/
+
+#social {
+    display: flex;
+    justify-content: space-between;
+    width: 16em;
+}
+
+#social a {
+    align-self: center;
+}
+
+.social-icon {
+    fill: #A8A7A3;
+    width: 30px;
+}
+
+.social-icon:hover {
+    fill: #ffffff;
+}
+
 
 /* Home Page _____________ */
 
@@ -596,7 +595,8 @@ br {
         width: 45%;
         margin: 1.5em auto;
     }
-    .product-container .product-card:nth-child(1){
+
+    .product-container .product-card:nth-child(1) {
         width: 80%;
     }
 }
