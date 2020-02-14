@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css">
     <script src="../../js/scripts.js"></script>
+    <script src="../../js/slideshow.js"></script>
 </head>
 
 <script>
@@ -47,10 +48,48 @@
             </section>
             <section id="productPage">
                 <div id="productSlideshow">
-
+                    <div class="border">
+                        <img class="hundred mySlides" src="../../images/original.jpg" alt="">
+                        <img class="hundred mySlides" src="../../images/roots.jpg" alt="">
+                    </div>
+                    <div class="center-circles" id="centerCircle">
+                        <span class="w3-badge" onclick="slideShow(1, 2)"></span>
+                        <span class="w3-badge" onclick="slideShow(2, 2)"></span>
+                    </div>
                 </div>
                 <div id="productDetails">
-
+                    <h4>$4.95</h4>
+                    <h2>The Go-To Original Recipe</h2>
+                    <p>Give your plants a nutritious jump start.</p>
+                    <div id="stars"> <!--Stars-->
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="review-star">
+                            <path d="M11 18l-6.76 3.708 1.291-7.854L.063 8.292 7.62 7.146 11 0l3.38 7.146 7.557 1.146-5.468 5.562 1.291 7.854z" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="review-star">
+                            <path d="M11 18l-6.76 3.708 1.291-7.854L.063 8.292 7.62 7.146 11 0l3.38 7.146 7.557 1.146-5.468 5.562 1.291 7.854z" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="review-star">
+                            <path d="M11 18l-6.76 3.708 1.291-7.854L.063 8.292 7.62 7.146 11 0l3.38 7.146 7.557 1.146-5.468 5.562 1.291 7.854z" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="review-star">
+                            <path d="M11 18l-6.76 3.708 1.291-7.854L.063 8.292 7.62 7.146 11 0l3.38 7.146 7.557 1.146-5.468 5.562 1.291 7.854z" fill-rule="evenodd" />
+                        </svg>
+                        <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg" class="review-star">
+                            <path d="M11 18l-6.76 3.708 1.291-7.854L.063 8.292 7.62 7.146 11 0l3.38 7.146 7.557 1.146-5.468 5.562 1.291 7.854z" fill-rule="evenodd" />
+                        </svg>
+                    </div>
+                    <div id="quanityPrice">
+                        <p>Qty</p>
+                        <div id="amount">
+                            <button>-</button>
+                            <p>1</p>
+                            <button>+</button>
+                        </div>
+                        <br>
+                        <p>Product Total</p>
+                        <p>$14.85</p>
+                    </div>
+                    <button>Add to Cart</button>
                 </div>
             </section>
             <div class="br-restrictor"><br></div>
@@ -60,6 +99,15 @@
                     <li onclick="aboutReview('review')">Reviews</li>
                 </ul>
                 <div id="about">
+                    <p>
+                        Root Rocket™ a special mix of nutrients that have been horticulturalist tested and proven to help young plants in the transition from their nursery containers into the ground or a more permanent container.
+                    </p>
+                    <p>
+                        The nutrients in each Root Rocket™ includes endo and ectomycorrhizae fungi, soluble sea kelp, soluble yucca plant extract, beneficial bacteria and Horta-Sorbe Water Management Gel.The fungi and beneficial bacteria go to work instantly, creating a nutritious environment for plants. The fungi brings old soil to life by filling it with nitrogen and phosphorous, for plant roots to enjoy.
+                    </p>
+                    <p>
+                        If your plant is hungry it will enjoy the organic matter like the sea kelp and yucca plant extract because they contain a lot of minerals that will stimulate root growth.
+                    </p>
                 </div>
                 <div id="reviews">
                     <div id="reviewGallery"></div>
