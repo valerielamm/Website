@@ -387,6 +387,7 @@ audio {
 
 .hundred2 {
     width: 100%;
+    height: auto;
     float: left;
 }
 
@@ -430,11 +431,13 @@ audio {
 .sixty-ninety {
     width: 60%;
     margin-left: 20%;
+    height: auto;
 }
 
 .eighty-ninety {
     width: 80%;
     margin-left: 10%;
+    height: auto;
 }
 
 .fifty-hundred {
@@ -447,12 +450,14 @@ audio {
 .hundred {
     width: 100%;
     float: left;
+    height: auto;
 }
 
 #thirty-sixty {
     width: 30%;
     float: left;
     margin-left: 7%;
+    height: auto;
 }
 
 .fifty-left,
@@ -460,6 +465,7 @@ audio {
 #per-analysis {
     width: 47.5%;
     float: left;
+    height: auto;
 }
 
 .fifty-right {
@@ -490,6 +496,7 @@ audio {
 .process-img {
     width: 80%;
     padding: 10%;
+    height: auto;
 }
 
 .border {
@@ -1146,6 +1153,7 @@ audio {
         width: 60%;
         padding: 20px 0;
         margin-left: 20%;
+        height: auto;
     }
 
     .problem-box {
