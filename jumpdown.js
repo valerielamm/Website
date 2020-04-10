@@ -123,21 +123,33 @@ function scrollIt(destination, duration = 200, easing = 'linear', callback) {
     scroll();
 }
 
+function wiggleButton(buttonId) {
+  if (buttonId.classList.contains("wiggle")) {
+    buttonId.classList.remove("wiggle");
+  } else buttonId.classList.add("wiggle");
 
-// Thank-you Rick 
-// https://stackoverflow.com/users/4467793/rick
-// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
-$(document).ready(function () {
-    $('a[href^="#"]').on('click', function (e) {
-        e.preventDefault();
+  setTimeout(function () {
+    if (buttonId.classList.contains("wiggle")) {
+      buttonId.classList.remove("wiggle");
+    }
+  }, 1500);
+}
 
-        var target = this.hash,
-            $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 2800, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-});
+//
+//// Thank-you Rick 
+//// https://stackoverflow.com/users/4467793/rick
+//// https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+//$(document).ready(function () {
+//    $('a[href^="#"]').on('click', function (e) {
+//        e.preventDefault();
+//
+//        var target = this.hash,
+//            $target = $(target);
+//
+//        $('html, body').stop().animate({
+//            'scrollTop': $target.offset().top
+//        }, 2800, 'swing', function () {
+//            window.location.hash = target;
+//        });
+//    });
+//});
