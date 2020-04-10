@@ -27,7 +27,7 @@
     </script>
 </head>
 
-<body onload="load()">
+<body>
 
     <!--Mobile Checker-->
     <div id="mobile-indicator"></div>
@@ -37,7 +37,7 @@
         <div class="wrapper">
             <a href="../" class="left-social"> Valerie Lamm</a>
             <div class="right-social">
-                <a class="float-right mobile-hide" onclick="scrollIt(document.querySelector('.js-section3'),300,'easeOutQuad');">Contact</a>
+                <a class="float-right mobile-hide" onclick="scrollIt(document.querySelector('.js-section3'),300,'easeOutQuad'); wiggleButton(wiggleTarget);">Contact</a>
                 <a class="float-right">About</a>
                 <a href="../#design" class="float-right">Design</a>
             </div>
@@ -52,7 +52,7 @@
                 
                 <!--About Me-->
                 <div class="fifty-hundred" style="background:#1a1a1a;">
-                    <img id="me" src="self.jpg?v=1.0.0" alt="Picture of Valerie Lamm" loading="lazy">
+                    <img id="me" src="self.jpg?v=1.0.0" alt="Picture of Valerie Lamm">
                 </div>
                 <div class="fifty-hundred margin-top-bottom-two">
                     <h2>About</h2>
@@ -73,7 +73,7 @@
                         <br><br>
                         P.S. This website is hand-coded.
                     </p>
-                    <p><a href="mailto:hello@valerielamm.com?Subject=Hello" target="_top" id="contactMe">Contact Me</a></p>
+                    <p id="wiggleTarget"><a href="mailto:hello@valerielamm.com?Subject=Hello" target="_top" id="contactMe">Contact Me</a></p>
                 </div>
             </div>
 
