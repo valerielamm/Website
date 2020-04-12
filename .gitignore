@@ -20,6 +20,7 @@
 
 Videos
 *.mp4
+*.mov
 
 Music
 *.mp3
