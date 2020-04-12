@@ -1,16 +1,9 @@
 User-agent: *
-Allow: /About/me.jpg
+Allow: /About/self.jpg
 
-Disallow: /Amala/images/
-Disallow: /AquaDesign/images/
-Disallow: /GreenAcres/images/
-Disallow: /Nutrish/images/
-Disallow: /Perennial/images/
-Disallow: /RootRocket/images/
-Disallow: /lines.svg
-Disallow: /linkedin.svg
-Disallow: /home-background.jpg
-Disallow: /github.svg
-Disallow: /thenounproject.svg
+Disallow: /images
+Disallow: /css
+Disallow: /Nutrish/home.mp3
+Disallow: /RootRocket/brandbook_square.pdf
+Disallow: /RootRocket/Website
 Disallow: /About/valerie_lamm_resume.pdf
-Disallow: /Test
