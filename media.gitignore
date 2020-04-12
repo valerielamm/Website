@@ -1,0 +1,22 @@
+# JPEG
+*.jpg
+*.jpeg
+
+# Graphics Interchange Format
+*.gif
+
+# Portable Network Graphics
+*.png
+
+# Scalable Vector Graphics
+*.svg
+*.svgz
+
+# Portable Document Format
+*.pdf
+
+# ICO
+*.ico
+
+Videos
+*.mp4
