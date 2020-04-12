@@ -739,8 +739,6 @@ audio {
     margin-bottom: 0;
 }
 
-
-
 /*root rocket*/
 #fullVideo {
     max-width: 100%;
@@ -955,6 +953,52 @@ audio {
     width: 80%;
 }
 
+/*svg fills*/
+
+.fill-none {
+    fill: none;
+}
+
+.fill-1a1a1a {
+    fill: #1a1a1a;
+}
+
+.fill-18BE98{
+    fill: #18BE98;
+}
+
+.fill-79CCB2{
+    fill: #79CCB2;
+}
+
+.fill-ebebeb{
+    fill: #ebebeb;
+}
+
+.fill-282D33{
+    fill: #282D33;
+}
+
+.fill-white{
+    fill: #FFFFFF;
+}
+
+.fill-2B8C59{
+    fill: #2B8C59;
+}
+
+.fill-010101 {
+    fill: #010101;
+}
+
+.fill-CECECE{
+    fill: #CECECE;
+}
+
+.opacity-25{
+    opacity: 0.25;
+}
+
 /*tablet*/
 @media only screen and (max-width: 1100px) {
     #me {
@@ -1143,6 +1187,7 @@ audio {
     .process-box {
         width: 30%;
         margin: 2.5% 1.66% 0 1.66%;
+        display: table;
     }
 
     p {
