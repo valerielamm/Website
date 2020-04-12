@@ -290,6 +290,7 @@ footer a:visited {
     background-color: #686868;
     border-radius: 50%;
     float: right;
+    height: auto;
 }
 
 .social:hover {
