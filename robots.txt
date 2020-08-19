@@ -1,9 +1,12 @@
 User-agent: *
-Allow: /About/self.jpg
 
 Disallow: /images
 Disallow: /css
-Disallow: /Nutrish/home.mp3
-Disallow: /RootRocket/brandbook_square.pdf
-Disallow: /RootRocket/Website
-Disallow: /About/valerie_lamm_resume.pdf
+Disallow: /home.mp3
+Disallow: /brandbook_square.pdf
+Disallow: /valerie_lamm_resume.pdf
+
+Allow: /images/self.jpg
+Allow: /images/ad-card.jpg
+Allow: /images/ad-tile.jpg
+Allow: /images/perennial-notification.jpg
