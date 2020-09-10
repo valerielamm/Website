@@ -75,6 +75,12 @@ p {
     font-size: .9em;
 }
 
+small{
+    margin-left: 5%;
+    color: #686868;
+    background: #d6d6d6
+}
+
 li {
     font-size: .9em;
     list-style: circle;
@@ -716,7 +722,7 @@ audio:active, audio:focus {
     background: rgba(235, 235, 235, .9);
 }
 
-/*perrenial*/
+/*perennial*/
 .color-box {
     padding: 1.3em 0 1.3em 0;
     overflow: hidden;
@@ -741,6 +747,15 @@ audio:active, audio:focus {
 
 .per-dark-s {
     background: #d6d6d6;
+}
+
+#perHmw {
+    padding-left: 5%;
+}
+
+#perHmw li{
+    padding-left: 0;
+    list-style-position: inside;
 }
 
 .color-box h1 {
@@ -1145,6 +1160,10 @@ audio:active, audio:focus {
         line-height: 1.75em;
     }
 
+    small{
+        margin-left: 10%;
+    }
+
     .gap-medium {
         height: 4em;
     }
@@ -1221,6 +1240,10 @@ audio:active, audio:focus {
         line-height: 1.75em;
     }
 
+    small{
+        margin-left: 10%;
+    }
+
     h2 {
         margin-left: 10%;
     }
@@ -1275,6 +1298,10 @@ audio:active, audio:focus {
         margin-left: 10%;
         float: left;
         margin-top: 1em;
+    }
+
+    #perHmw{
+        padding-left: 10%;
     }
 
     .gap-medium {
