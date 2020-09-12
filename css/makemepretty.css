@@ -275,7 +275,7 @@ h4 {
     width: fit-content;
 }
 
-button {
+button, .linked {
     background-color: #ebebeb;
     outline: none;
     text-decoration: none;
@@ -285,7 +285,7 @@ button {
     cursor: pointer;
 }
 
-button a:visited {
+button a:visited, .linked:visited {
     color: #1a1a1a;
 }
 
@@ -459,7 +459,7 @@ audio:active, audio:focus {
 .linked {
     background-color: #b5b5b5;
     border: none;
-    color: #f4f4f4;
+    color: #f4f4f4 !important;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
