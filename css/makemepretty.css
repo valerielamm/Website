@@ -75,7 +75,7 @@ p {
     font-size: .9em;
 }
 
-small{
+small {
     margin-left: 5%;
     color: #686868;
     background: #d6d6d6
@@ -275,7 +275,8 @@ h4 {
     width: fit-content;
 }
 
-button, .linked {
+button,
+.linked {
     background-color: #ebebeb;
     outline: none;
     text-decoration: none;
@@ -285,7 +286,8 @@ button, .linked {
     cursor: pointer;
 }
 
-button a:visited, .linked:visited {
+button a:visited,
+.linked:visited {
     color: #1a1a1a;
 }
 
@@ -414,7 +416,8 @@ audio {
     height: 3em !important;
 }
 
-audio:active, audio:focus {
+audio:active,
+audio:focus {
     outline: none;
 }
 
@@ -456,6 +459,30 @@ audio:active, audio:focus {
     float: left;
 }
 
+.dashed-lines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    height: 20px;
+    justify-content: center;
+}
+
+.grey-dash {
+    flex-grow: 0;
+    /* do not grow   - initial value: 0 */
+    flex-shrink: 0;
+    /* do not shrink - initial value: 1 */
+    width: 5px;
+    height: 20px;
+    margin: 0 4px;
+    background: #cecece;
+    display: block;
+}
+
 .linked {
     background-color: #b5b5b5;
     border: none;
@@ -466,6 +493,8 @@ audio:active, audio:focus {
     display: inline-block;
     font-size: 16px;
     border-radius: 5px;
+    margin-bottom: 1em;
+    margin-right: 1em;
 }
 
 .linked:hover {
@@ -753,7 +782,7 @@ audio:active, audio:focus {
     padding-left: 5%;
 }
 
-#perHmw li{
+#perHmw li {
     padding-left: 0;
     list-style-position: inside;
 }
@@ -1119,6 +1148,12 @@ audio:active, audio:focus {
         float: left;
     }
 
+    .dashed-lines {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 1em;
+    }
+
     .description-text p,
     .description-text h2 {
         margin: 0;
@@ -1160,7 +1195,7 @@ audio:active, audio:focus {
         line-height: 1.75em;
     }
 
-    small{
+    small {
         margin-left: 10%;
     }
 
@@ -1194,6 +1229,12 @@ audio:active, audio:focus {
     {
     #mobile-indicator {
         display: block;
+    }
+    
+    .dashed-lines {
+        width: 90%;
+        margin-left: 5%;
+        margin-bottom: 1em;
     }
 
     li {
@@ -1240,7 +1281,7 @@ audio:active, audio:focus {
         line-height: 1.75em;
     }
 
-    small{
+    small {
         margin-left: 10%;
     }
 
@@ -1300,7 +1341,7 @@ audio:active, audio:focus {
         margin-top: 1em;
     }
 
-    #perHmw{
+    #perHmw {
         padding-left: 10%;
     }
 
