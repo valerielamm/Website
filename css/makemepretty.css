@@ -967,6 +967,46 @@ audio:focus {
 
 }
 
+/*iconography page*/
+
+.icon-locations-ul{
+    text-decoration: none;
+    padding: 0;
+    padding-top: .3em;
+}
+
+.icon-locations-ul li{
+    list-style-type: none;
+    padding: 0;
+}
+
+.text-align-center{
+    text-align: center !important;
+    margin: 0 !important;
+}
+
+.flex-process-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-process-box{
+    max-width: 15%;
+    min-width: 100px;
+    display: block;
+    align-content: center;
+    background: #d6d6d6;
+    margin-bottom: 1em;
+    padding:0;
+}
+
+.flex-process-img{
+    height: 100%;
+    width: 100%;
+}
+
 /*home page*/
 .hero-inner {
     width: 80%;
