@@ -1008,6 +1008,14 @@ audio:focus {
 }
 
 /*home page*/
+
+.home-labels{
+    background: #b5b5b5;
+    margin: 0 5% 0 0;
+    white-space: nowrap;
+}
+
+
 .hero-inner {
     width: 80%;
 }
@@ -1050,6 +1058,7 @@ audio:focus {
     margin: 0;
     padding: 0;
     margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .description-text h2 {
