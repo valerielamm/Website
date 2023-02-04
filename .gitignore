@@ -25,4 +25,6 @@ Videos
 Music
 *.mp3
 
+**/.DS_Store
+
 /rr/
