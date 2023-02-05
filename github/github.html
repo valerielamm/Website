@@ -3,19 +3,32 @@
 <html lang="en">
 
 <head>
-    <title>Valerie Lamm / Perennial / Inspiration</title>
-    <meta name="description" content="Valerie Lamm's design portfolio. This is a photo gallery that depicts the inspiration behind the UI for Perennial. Creative Objective: The app should be clean, user friendly, and take advantage of nature's beauty through the use of imagery.">
+    <title>Valerie Lamm / Github</title>
     <meta name="author" content="Valerie Lamm">
-    <meta name="viewport" content="width=device-width, initial-scale=1">   
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=0">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/makemepretty.min.css?v=4.0.0">
+    <link rel="stylesheet" href="../css/makemepretty.min.css?v=4.0.0">
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="canonical" href="http://www.valerielamm.com/perennial/inspiration"/>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Overpass:400,600,700" rel="stylesheet">
     
+    <!-- JS -->
+    <script src="../js/jumpdown.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117423184-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117423184-1');
+
+    </script>
 </head>
 
 <body>
@@ -25,27 +38,57 @@
 
     <!--Top Bar-->
     <div class="top-bar">
-        <div class="top-links" role="menubar">
-            <div class="wrapper">
-                <a href="/" class="left-social"> Valerie Lamm
+        <div class="wrapper">
+            <a href="/" class="left-social"> Valerie Lamm</a>
+            <div class="right-social">
+                <a href="../about" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
                 </a>
-                <div class="right-social">
-                    <a href="about" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
-                    </a>
-                    <a href="about" class="float-right">About
-                    </a>
-                    <a href="/#design">
-                        Design
-                    </a>
-                </div>
+                <a href="../about" class="float-right">About</a>
+                <a href="../#design" class="float-right">Design</a>
             </div>
         </div>
     </div>
 
     <!--Main Content-->
-    <div class="bg per-bg top-project">
+    <div class="bg top-project about-bg">
+        <div class="gap-medium"></div>
         <div class="wrapper">
-            <div class="gap"></div>
+            <div class="white">
+
+                <!--About Me-->
+                <div class="fifty-hundred" id="githubBox" style="background:#1a1a1a;">
+                    <div style="display:flex;width:100%;height:100%;">
+                        <svg width="100%" height="100%">
+                            <defs >
+                                <pattern id="puzzle" x="-50" y="-50" width="120" height="120" patternUnits="userSpaceOnUse" >
+                                    <path transform="scale(.1)" fill="#FFF" d="M786 347.9c5.2-12.9 22.9-65-5.1-135.5 0 0-43-13.8-140.7 52.5 -40.9-11.4-84.7-17.1-128.2-17.3 -43.5 0.2-87.3 5.8-128.1 17.2 -97.9-66.2-140.8-52.5-140.8-52.5 -27.9 70.5-10.3 122.6-5.1 135.6 -32.7 35.8-52.7 81.5-52.7 137.4 0 196.2 119.6 240.1 233.2 253.1 -14.6 12.8-27.8 35.4-32.5 68.4 -29.1 13.1-103.3 35.8-149-42.5 0 0-27.1-49.2-78.5-52.8 0 0-50.1-0.6-3.5 31.1 0 0 33.5 15.8 56.8 74.9 0 0 30.1 91.3 172.5 60.4 0.2 35 0.6 68.3 0.7 86 40.4 11.3 82.9 17.4 126.9 17.4 44 0 86.5-6.1 126.9-17.4 0 3.8 0 7 0 9.4 0 11.9 0 11.9 0 0 0-16.9 0.7-72.1 0.7-140.5 0-47.8-16.3-78.9-34.8-94.8 114.1-12.7 233.8-56 233.8-252.7C838.6 429.4 818.8 383.8 786 347.9z"></path>
+                                </pattern>
+                            </defs>
+                    
+                            <rect x="0" y="0" width="100%" height="100%" fill="url(#puzzle)" />
+                        </svg>
+                    </div>
+                    
+                </div>
+                <div class="fifty-hundred margin-top-bottom-two about-dark">
+                    <h2>Github</h2>
+                    <p>
+                        Projects in my cloud storage you can view:
+
+                    </p>
+                    <p>
+                        A project where I learned about <a class="button-left" href="flexbox/index.html">flexbox</a> styles.
+                    </p>
+                    <p>
+                        A <a class="button-left" href="monthlyCalendar/index.html">monthlyCalendar</a> where I learned about parsing data to automate my personalized calendar filling process.
+                    </p>
+                    <p>
+                        One of my first <a class="button-left" href="rockPaperScissors/index.html">rockPaperScissors</a> projects.
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="gap-big js-section3"></div>
 
             <!--dashed lines-->
             <div class="dashed-lines">
@@ -145,78 +188,16 @@
                 <span class="grey-dash"></span>
                 <span class="grey-dash"></span>
             </div>
+            <hr>
             <div class="gap"></div>
 
-            <!--intro-->
-
-            <!--perennial logo-->
-            <svg id="thirty-sixty" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 307.3 307.3" style="enable-background:new 0 0 307.3 307.3;" xml:space="preserve">
-                <path class="fill-79CCB2" d="M153.6,307.3L153.6,307.3C68.8,307.3,0,238.5,0,153.6l0,0C0,68.8,68.8,0,153.6,0l0,0
-	c84.8,0,153.6,68.8,153.6,153.6l0,0C307.3,238.5,238.5,307.3,153.6,307.3z" />
-                <path class="fill-18BE98" d="M153.6,301.8L153.6,301.8c-81.8,0-148.1-66.3-148.1-148.2l0,0C5.5,71.8,71.8,5.5,153.6,5.5l0,0
-	c81.8,0,148.1,66.3,148.1,148.1l0,0C301.8,235.5,235.5,301.8,153.6,301.8z" />
-                <g class="opacity-25">
-                    <path d="M131.5,207c5.9,11.1,13.3,23.8,22.1,39.1c8.8-15.3,16.2-28,22.1-39.1c-8.4-2.5-15.7-5-22.1-7.6
-		C147.2,202,139.9,204.4,131.5,207z" />
-                    <path d="M175.7,100.3c-5.9-11.1-13.3-23.8-22.1-39.1c-8.8,15.3-16.2,28-22.1,39.1c8.4,2.5,15.7,5,22.1,7.6
-		C160,105.3,167.3,102.8,175.7,100.3z" />
-                    <path d="M100.3,131.5c-11.1,5.9-23.8,13.3-39.1,22.1c15.3,8.8,28,16.2,39.1,22.1c2.5-8.4,5-15.7,7.6-22.1
-		C105.3,147.2,102.8,139.9,100.3,131.5z" />
-                    <path d="M207,175.7c11.1-5.9,23.8-13.3,39.1-22.1c-15.3-8.8-28-16.2-39.1-22.1c-2.5,8.4-5,15.7-7.6,22.1
-		C202,160,204.4,167.3,207,175.7z" />
-                    <path d="M100.3,175.7c-3.6,12-7.4,26.2-12,43.3c17-4.6,31.3-8.4,43.3-12c-4.1-7.7-7.6-14.6-10.3-21
-		C114.9,183.3,108,179.8,100.3,175.7z" />
-                    <path d="M207,131.5c3.6-12,7.4-26.2,12-43.3c-17,4.6-31.3,8.4-43.3,12c4.1,7.7,7.6,14.6,10.3,21C192.3,124,199.3,127.4,207,131.5z" />
-                    <path d="M207,175.7c-7.7,4.1-14.6,7.6-21,10.3c-2.7,6.4-6.1,13.3-10.3,21c12,3.6,26.2,7.4,43.3,12
-		C214.4,201.9,210.6,187.7,207,175.7z" />
-                    <path d="M131.5,100.3c-12-3.6-26.2-7.4-43.3-12c4.6,17,8.4,31.3,12,43.3c7.7-4.1,14.6-7.6,21-10.3C124,114.9,127.4,108,131.5,100.3
-		z" />
-                </g>
-                <path class="fill-white" d="M241.6,117c-0.3-33.8-17.4-50.9-51.3-51.3C207.4,82.8,224.5,99.9,241.6,117z" />
-                <path class="fill-white" d="M65.7,190.3c0.3,33.8,17.4,50.9,51.3,51.3C99.9,224.5,82.8,207.4,65.7,190.3z" />
-                <path class="fill-white" d="M190.3,241.6c33.8-0.3,50.9-17.4,51.3-51.3C224.5,207.4,207.4,224.5,190.3,241.6z" />
-                <path class="fill-white" d="M117,65.7C83.1,66,66,83.1,65.7,117C82.8,99.9,99.9,82.8,117,65.7z" />
-                <path class="fill-white" d="M117,241.6c24.4,23.9,48.9,23.9,73.3,0C165.8,241.6,141.4,241.6,117,241.6z" />
-                <path class="fill-white" d="M190.3,65.7c-24.4-23.9-48.9-23.9-73.3,0C141.4,65.7,165.8,65.7,190.3,65.7z" />
-                <path class="fill-white" d="M241.6,190.3c23.9-24.4,23.9-48.9,0-73.3C241.6,141.4,241.6,165.8,241.6,190.3z" />
-                <path class="fill-white" d="M65.7,117c-23.9,24.4-23.9,48.9,0,73.3C65.7,165.8,65.7,141.4,65.7,117z" />
-                <circle class="fill-white" cx="153.6" cy="153.6" r="13.9" />
-            </svg>
-
-            <!--intro text-->
-            <div class="fifty-right">
-                <h2>Perennial Inspiration Board</h2>
-                <p>
-                    <b>Creative Objective:</b> The app should be clean, user friendly, and take advantage of nature's beauty through the use of imagery.
-                </p>
-                <p>
-                    <a href="perennial">
-                        <button class="linked">
-                            See the App
-                        </button>
-                    </a>
-                </p>
-            </div>
-            <hr>
-            <div class="gap-big"></div>
         </div>
-        <img class="hundred2" width="1800" height="1238" src="indexedimages/perennial-inspiration.jpg?v=1.2.0" alt="succulents laying on white counter">
-        <img class="hundred2" width="1800" height="776" src="images/perennial-inspiration04.jpg?v=1.1.0" alt="two pictures garden and laptop with plant next to it">
-        <img class="hundred2" width="1800" height="542" src="images/perennial-inspiration05.jpg?v=1.1.0" alt="two pictures flowers and girl on computer with plant in foreground">
-        <img class="hundred2" width="1800" height="1012" src="images/perennial-inspiration03.jpg?v=1.1.0" alt="white wall of windows with one open">
-        <img class="hundred2" width="1800" height="805" style="margin-bottom: -2em" src="images/perennial-inspiration02.jpg?v=1.0.0" alt="two pictures succulent and building">
-        <div style="clear: both;">&nbsp;</div>
-        <!--Makes background show behind transparent lazy loading images -->
     </div>
 
     <!--end links-->
     <footer>
         <div class="wrapper">
-            <a href="/#design" class="left-social">&#8592; Design
-            </a>
-            <a>|</a>
-            <a href="about" class="left-social">About
-            </a>
+            <a href="../#design" class="left-social">&#8592; Design</a>
             <div class="right-social">
                 <a href="https://github.com/valerielamm" target="_blank" rel="noreferrer">
                     <svg xmlns="http://www.w3.org/2000/svg" class="social" viewBox="0 0 1024 1024">
@@ -256,7 +237,6 @@
             </div>
         </div>
     </footer>
-
 </body>
 
 </html>
