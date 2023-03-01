@@ -751,6 +751,10 @@ audio:focus {
     background: rgba(235, 235, 235, .9);
 }
 
+#githubBox {
+    height: 25em;
+}
+
 /*perennial*/
 .color-box {
     padding: 1.3em 0 1.3em 0;
@@ -1188,6 +1192,10 @@ audio:focus {
         margin: 10% 0 0 10%;
         width: 80%;
     }
+
+    #githubBox {
+        height: 28em;
+    }
 }
 
 /*When input is active on the about page, this keeps everything in mobile format*/
@@ -1400,6 +1408,9 @@ audio:focus {
 
     .gap-big {
         height: 4em;
+    }
+    #githubBox {
+        height: 15em;
     }
 }
 
