@@ -5,7 +5,7 @@ Disallow: /css
 Disallow: /home.mp3
 Disallow: /brandbook_square.pdf
 Disallow: /valerie_lamm_resume.pdf
-Disallow: /rr
+Disallow: /java-jos
 Disallow: /github
 
 Allow: /indexedimages

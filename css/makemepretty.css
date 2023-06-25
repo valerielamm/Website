@@ -799,7 +799,7 @@ audio:focus {
     margin-bottom: 0;
 }
 
-/*root rocket*/
+/*java-jos*/
 #fullVideo {
     max-width: 100%;
     min-height: 100%;
@@ -810,12 +810,12 @@ audio:focus {
     overflow-x: hidden;
 }
 
-.root-bg {
+.java-bg {
     background: #ebebeb;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Puritan', Calibri, sans-serif;
+    font-family: 'Roboto', Calibri, sans-serif;
 }
 
-.root-bg b {
+.java-bg b {
     font-weight: 600;
 }
 
@@ -824,34 +824,11 @@ audio:focus {
     font-family: 'Overpass', sans-serif;
 }
 
-.root-bg p,
+.java-bg p,
 .per-bg p {
     color: #1a1a1a;
 }
 
-.root-color1 {
-    background: #757471;
-}
-
-.root-color2 {
-    background: #A8A7A3;
-}
-
-.root-color3 {
-    background: #EDEDEC;
-}
-
-.root-color4 {
-    background: #2B8C59;
-}
-
-.root-color5 {
-    background: #93BD73;
-}
-
-.root-color4 p {
-    color: #1a1a1a;
-}
 
 /*aqua design*/
 
@@ -1417,7 +1394,7 @@ audio:focus {
 /*dark mode*/
 @media screen and (prefers-color-scheme: dark) {
 
-    .root-bg,
+    .java-bg,
     .bg,
     .per-bg {
         background: #494949;
@@ -1457,7 +1434,7 @@ audio:focus {
     li,
     p,
     .per-bg p,
-    .root-bg p,
+    .java-bg p,
     h3,
     h4 {
         color: #d6d6d6;
@@ -1465,7 +1442,7 @@ audio:focus {
 
     p,
     .per-bg p,
-    .root-bg p {
+    .java-bg p {
         font-size: 1em;
     }
 
