@@ -33,7 +33,7 @@
     <div id="mobile-indicator"></div>
 
     <!--Top Bar-->
-    <div class="top-bar">
+    <div class="nav-bar">
         <div class="wrapper">
             <a href="/" class="left-social"> Valerie Lamm</a>
             <div class="right-social">
@@ -46,12 +46,12 @@
     </div>
 
     <!--Main Content-->
-    <div class="bg top-project about-bg">
+    <div class="nav-footer-space dark-bg">
         <div class="gap-medium"></div>
         <div class="wrapper">
             <div class="white">
 
-                <!--About Me-->
+                <!--Github tile background-->
                 <div class="fifty-hundred" id="githubBox" style="background:#1a1a1a;">
                     <div style="display:flex;width:100%;height:100%;">
                         <svg width="100%" height="100%">
@@ -64,8 +64,9 @@
                             <rect x="0" y="0" width="100%" height="100%" fill="url(#puzzle)" />
                         </svg>
                     </div>
-                    
                 </div>
+
+                <!-- Info tile -->
                 <div class="fifty-hundred margin-top-bottom-two about-dark">
                     <h2>Github <a href="https://github.com/valerielamm/Practice">&#x221E;</a></h2>
                     <p>
@@ -86,114 +87,18 @@
                     </p>
                 </div>
             </div>
-            <hr>
-            <div class="gap-big js-section3"></div>
+            <hr><div class="gap-big js-section3"></div>
 
             <!--dashed lines-->
             <div class="dashed-lines">
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
+                <span class="grey-dash" id="dash"></span>
             </div>
             <hr>
             <div class="gap"></div>
-
         </div>
     </div>
 
-    <!--end links-->
+    <!--End Links-->
     <footer>
         <div class="wrapper">
             <a href="../#design" class="left-social">&#8592; Design</a>
@@ -238,4 +143,7 @@
     </footer>
 </body>
 
+<!-- Repeats the dashed line section for me instead of having 96 spans -->
+<!-- Must be at bottom so page can load first -->
+<script src="../js/repeatdiv.js"></script>
 </html>

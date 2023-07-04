@@ -156,7 +156,7 @@ h2 {
     }
 }
 
-.hover {
+.hover-animation {
     transition-duration: 0.5s;
     transition-property: transform;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -164,7 +164,7 @@ h2 {
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-.hover:hover {
+.hover-animation:hover {
     transform: translateY(-6px);
     animation-name: hover;
     animation-duration: 1.5s;
@@ -299,17 +299,17 @@ footer a:visited {
 }
 
 /*header*/
-.top-bar {
+.nav-bar {
     padding-top: 1.5em;
     padding-bottom: 10em;
 }
 
-.top-bar a {
+.nav-bar a {
     padding: 0 1em;
     color: #d6d6d6;
 }
 
-.top-bar,
+.nav-bar,
 footer {
     background: #1a1a1a;
     width: 100%;
@@ -402,18 +402,13 @@ audio:focus {
     outline: none;
 }
 
-.top,
-.top-project {
+.nav-footer-space {
     margin-bottom: 8em;
-}
-
-.top-project {
     margin-top: 4em;
 }
 
-.bg {
-    width: 100%;
-    background-color: #212121;
+.home-footer-space {
+    margin-bottom: 8em;
 }
 
 .gap {
@@ -430,6 +425,12 @@ audio:focus {
 
 .gap-big {
     height: 8em;
+    width: 100%;
+    float: left;
+}
+
+.gap-extra-big {
+    height: 10em;
     width: 100%;
     float: left;
 }
@@ -506,7 +507,7 @@ audio:focus {
     height: auto;
 }
 
-#thirty-sixty {
+.thirty-sixty {
     width: 30%;
     float: left;
     margin-left: 7%;
@@ -514,8 +515,7 @@ audio:focus {
 }
 
 .fifty-left,
-.fifty-right,
-#per-analysis {
+.fifty-right {
     width: 47.5%;
     float: left;
     height: auto;
@@ -566,8 +566,8 @@ audio:focus {
 }
 
 
-/*hero*/
-.hero {
+/*home page hero*/
+.home-hero {
     /* Sizing */
     background-size: 100% 100%;
     width: 100%;
@@ -580,10 +580,12 @@ audio:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
     /* Text styles */
+    font-family: 'Overpass', sans-serif;
     text-align: center;
-    color: white;
+    text-align: left;
 
     /* Background styles */
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('home-background.jpg');
@@ -593,41 +595,35 @@ audio:focus {
     background-attachment: fixed;
 }
 
-.hero h1,
-.hero li {
-    text-align: left;
-    padding: 0;
-    width: 80%;
+.home-hero ul{
+    width: 70%;
     margin-left: 20%;
-    font-family: 'Overpass', sans-serif;
+    margin-top: 0;
 }
 
-.hero li {
-    margin-bottom: .8em;
+.home-hero ul li {
+    padding: 0;
+}
+
+.home-hero li {
     font-size: 1em;
     list-style: none;
-    text-align: left;
-    width: 80%;
-    margin-left: 18%;
     margin-bottom: .8em;
-    font-size: 1em;
     color: #1a1a1a;
 }
 
-.hero h1 {
-    font-family: 'Overpass', sans-serif;
-    margin-bottom: 1em;
-    color: #1a1a1a;
-    text-align: left;
-    padding: 0;
-    width: 80%;
-    margin-left: 20%;
+.home-hero h1 {
     font-size: 2em;
     font-weight: bold;
+    color: #1a1a1a;
+    padding: 0;
+    width: 70%;
+    margin-bottom: 1em;
+    margin-left: 20%;
 }
 
-.hero h1:hover,
-.hero li:hover {
+.home-hero h1:hover,
+.home-hero li:hover {
     cursor: default;
 }
 
@@ -719,19 +715,18 @@ audio:focus {
     margin-bottom: 20px;
 }
 
-.per-dark-s {
+.grey-bg {
     background: #d6d6d6;
 }
 
-.per-ul {
+.fifty-right ul, .fifty-left ul {
     padding-left: 5%;
 }
 
-.per-ul li {
+.fifty-right ul li, .fifty-left ul  li {
     padding-left: 0;
-    list-style-position: inside;
     padding: 0em 1em 1em 0;
-    list-style: disc inside;
+    list-style: disc;
 }
 
 .per-user-feedback {
@@ -801,13 +796,17 @@ audio:focus {
     font-weight: 600;
 }
 
-.per-bg {
+.light-grey-bg {
     background: #ebebeb;
     font-family: 'Overpass', sans-serif;
 }
 
+.dark-bg {
+    background: #212121;
+}
+
 .java-bg p,
-.per-bg p {
+.light-grey-bg p {
     color: #1a1a1a;
 }
 
@@ -951,11 +950,6 @@ audio:focus {
     white-space: nowrap;
 }
 
-
-.hero-inner {
-    width: 80%;
-}
-
 .tile,
 .tile-left {
     width: 40%;
@@ -1054,7 +1048,7 @@ audio:focus {
         margin-right: 4%;
     }
 
-    .hero {
+    .home-hero {
         background-attachment: scroll;
         height: 45em;
     }
@@ -1225,7 +1219,7 @@ audio:focus {
         width: 100%;
     }
 
-    #thirty-sixty {
+    .thirty-sixty {
         display: block;
         float: none;
         width: 60%;
@@ -1250,14 +1244,8 @@ audio:focus {
         margin-top: 1em;
     }
 
-    #per-analysis {
-        width: 80%;
-        margin-left: 10%;
-        float: left;
-        margin-top: 1em;
-    }
-
-    .per-ul {
+    .fifty-right ul,
+    .fifty-left ul{
         padding-left: 10%;
     }
 
@@ -1306,7 +1294,7 @@ audio:focus {
 
     .java-bg,
     .bg,
-    .per-bg {
+    .light-grey-bg {
         background: #494949;
     }
 
@@ -1332,8 +1320,8 @@ audio:focus {
     .override-dark p,
     .problem-box p,
     .problem-box li,
-    .per-dark-s h2,
-    .per-dark-s p,
+    .grey-bg h2,
+    .grey-bg p,
     .white-bg h2,
     .white-bg p,
     .about-dark h2 {
@@ -1343,7 +1331,7 @@ audio:focus {
     h2,
     li,
     p,
-    .per-bg p,
+    .light-grey-bg p,
     .java-bg p,
     h3,
     h4 {
@@ -1351,7 +1339,7 @@ audio:focus {
     }
 
     p,
-    .per-bg p,
+    .light-grey-bg p,
     .java-bg p {
         font-size: 1em;
     }
@@ -1363,10 +1351,6 @@ audio:focus {
 
     .white-bg button {
         background-color: #d6d6d6;
-    }
-
-    .about-bg {
-        background: #212121;
     }
 
     .about-dark p {

@@ -30,153 +30,40 @@
 
 <body>
 
-    <!--Mobile Checker-->
+    <!--Mobile checker-->
     <div id="mobile-indicator"></div>
 
-    <!--Top Bar-->
-    <div class="top-bar">
-        <div class="top-links" role="menubar">
-            <div class="wrapper">
-                <a href="/" class="left-social"> Valerie Lamm
+    <!--Top bar-->
+    <div class="nav-bar">
+         <div role="menubar" class="wrapper">
+            <a href="/" class="left-social"> Valerie Lamm
+            </a>
+            <div class="right-social">
+                <a href="about" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
                 </a>
-                <div class="right-social">
-                    <a href="about" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
-                    </a>
-                    <a href="about" class="float-right">About
-                    </a>
-                    <a href="/#design">
-                        Design
-                    </a>
-                </div>
+                <a href="about" class="float-right">About
+                </a>
+                <a href="/#design">
+                    Design
+                </a>
             </div>
         </div>
     </div>
 
-    <!--Main Content-->
-    <img class="hundred shadow mobile-hide" src="images/icon-header.jpg?v=1.0.0"
-        alt="person icon drawn on sticky note with sharpie">
-    <div class="bg per-bg top-project">
+    <!--Main content-->
+    <img class="hundred shadow mobile-hide" src="images/icon-header.jpg?v=1.0.0" alt="person icon drawn on sticky note with sharpie">
+    <div class="light-grey-bg nav-footer-space">
         <div class="wrapper">
             <div class="gap"></div>
 
             <!--dashed lines-->
             <div class="dashed-lines">
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
+                <span class="grey-dash" id="dash" ></span>
             </div>
             <div class="gap"></div>
 
-            <!--logo-->
-            <?xml version="1.0" encoding="UTF-8"?>
-
-            <svg id="thirty-sixty" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84.35349 84.35349">
-                <defs>
-                    <style>
-                        .cls-1 {
-                            fill: #fff;
-                        }
-                    </style>
-                </defs>
-                <circle class="cls-1" cx="42.17674" cy="42.17674" r="42.17674" />
-                <g id="Person39">
-                    <path id="Shape"
-                        d="M42.17674,14.17674a8.95295,8.95295,0,0,1,5.61608,16.00117l3.88392-.00117a2.5,2.5,0,0,0,2.49469-2.3356l.00531-.1644v-5.5a3,3,0,0,1,5.99491-.1763l.00509.1763v6.5A8.5005,8.5005,0,0,1,51.93189,37.173l-.25515.00375h-1.5v29.5a3.5,3.5,0,0,1-6.99482.19205l-.00518-.19205v-11.5a1.00005,1.00005,0,0,0-1.99327-.11665l-.00673.11665v11.5a3.5,3.5,0,0,1-6.99482.19205l-.00518-.19205.00092-12.76461A3.00019,3.00019,0,0,1,29.18184,51.853l-.0051-.1763v-12.5a9.00273,9.00273,0,0,1,7.5362-8.88154,8.95328,8.95328,0,0,1,5.4638-16.11846Zm15,6a1.99974,1.99974,0,0,0-1.99451,1.85071l-.00549.14929v5.5a3.5,3.5,0,0,1-3.308,3.49483l-.192.00517-5.47008.00075a9.14124,9.14124,0,0,1-8.05888.00049,7.99862,7.99862,0,0,0-7.96725,7.75014l-.00379.24862v12.5a2.00005,2.00005,0,0,0,3.99452.14929l.00548-.14929v-14a.50005.50005,0,0,1,.99195-.08987l.00805.08987v29a2.50005,2.50005,0,0,0,4.99469.16439l.00531-.16439v-11.5a2.00005,2.00005,0,0,1,3.99452-.14929l.00548.14929v11.5a2.50005,2.50005,0,0,0,4.99469.16439l.00531-.16439v-30a.50015.50015,0,0,1,.41013-.49194l.08987-.00806h2a7.50049,7.50049,0,0,0,7.49615-7.25728l.00385-.24272v-6.5A1.99963,1.99963,0,0,0,57.17674,20.17674Zm-15-5a7.9689,7.9689,0,1,0,8.049,7.968A8.00916,8.00916,0,0,0,42.17674,15.17674Z" />
-                </g>
-            </svg>
-
+            <!--Iconography Introduction-->
+            <img src="images/iconography.svg" class="thirty-sixty">
             <div class="fifty-right">
                 <h2>Iconography</h2>
 
@@ -184,24 +71,22 @@
                     <b>About:&ensp;</b>Over 2,000 icons made and still making more.
                 </p>
                 <p>
-                    <a href="https://www.iconfinder.com/my__valerie?ref=my__valerie" target="_blank" class="linked">Icon
-                        Finder</a>
+                    <a href="https://www.iconfinder.com/my__valerie?ref=my__valerie" target="_blank" class="linked">Icon Finder</a>
                     <a href="https://thenounproject.com/my__valerie/" target="_blank" class="linked">Noun Project</a>
                 </p>
             </div>
-            <hr>
-            <div class="gap-medium"></div>
+            <hr><div class="gap-medium"></div>
 
+            <!-- Icon handrawn display -->
             <h2 class="text-align-center">Hand Drawn Icon Family</h2>
-
             <p class="text-align-center">
                 Drawn then refined, this icon family has over 500 icons.
             </p>
             <div class="gap"></div>
         </div>
-
-        <img class="hundred shadow" width="2800" height="1881" src="indexedimages/icon-sign.jpg?v=1.0.0"
-            alt="Icons on fold out sign">
+        <img class="hundred shadow" width="2800" height="1881" src="indexedimages/icon-sign.jpg?v=1.0.0" alt="Icons on fold out sign">
+        
+        <!-- Icon people display -->
         <div class="wrapper">
             <div class="gap-big"></div>
             <h2 class="text-align-center">Person Solid 1 &amp; 2 Icon Family</h2>
@@ -260,15 +145,18 @@
                 </div>
                 <div class="gap-big"></div>
             </div>
+
+            <!-- Arrow icon process display -->
             <h2 class="text-align-center">Arrow Loop</h2>
             <p class="text-align-center">
                 This icon set was made on a 64 x 64px grid with a 1px stroke weight.
             </p>
             <div class="gap"></div>
             <img class="eighty-ninety" src="images/arrow-process-2.png" alt="Arrows on illustrator art boards">
-            <img class="eighty-ninety" src="images/arrow-process-1.png"
-                alt="Arrow aligned with grid on illustrator art board">
+            <img class="eighty-ninety" src="images/arrow-process-1.png" alt="Arrow aligned with grid on illustrator art board">
             <div class="gap-big"></div>
+
+            <!-- Icon places -->
             <h2 class="text-align-center">Places I've Seen My Icons</h2>
             <ul class="text-align-center icon-locations-ul" >
                 <li>Noun Project home page</li>
@@ -283,7 +171,7 @@
 
 
 
-        <!--end links-->
+        <!--End Links-->
         <footer>
             <div class="wrapper">
                 <a href="/#design" class="left-social">&#8592; Design
@@ -344,4 +232,7 @@
 
 </body>
 
+<!-- Repeats the dashed line section for me instead of having 96 spans -->
+<!-- Must be at bottom so page can load first -->
+<script src="js/repeatdiv.js"></script>
 </html>

@@ -32,197 +32,41 @@
 
 <body onload="slideShow(1, 6)">
 
-    <!--Mobile Checker-->
+    <!--Mobile checker-->
     <div id="mobile-indicator"></div>
 
-    <!--Top Bar-->
-    <div class="top-bar">
-        <div class="top-links" role="menubar">
-            <div class="wrapper">
-                <a href="/" class="left-social"> Valerie Lamm
+    <!--Top bar-->
+    <div class="nav-bar">
+         <div role="menubar" class="wrapper">
+            <a href="/" class="left-social"> 
+                Valerie Lamm
+            </a>
+            <div class="right-social">
+                <a href="about" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
                 </a>
-                <div class="right-social">
-                    <a href="about" onLoad="window.scroll(0, 150)" class="float-right mobile-hide">Contact
-                    </a>
-                    <a href="about" class="float-right">About
-                    </a>
-                    <a href="/#design">
-                        Design
-                    </a>
-                </div>
+                <a href="about" class="float-right">About
+                </a>
+                <a href="/#design">
+                    Design
+                </a>
             </div>
         </div>
     </div>
 
-    <!--Main Content-->
+    <!--Main content-->
     <img class="hundred shadow mobile-hide" src="images/nutrish-hero.jpg?v=1.0.0" alt="cutting board and ingredients">
-    <div class="bg per-bg top-project" id="nutrish">
+    <div class="light-grey-bg nav-footer-space" id="nutrish">
         <div class="wrapper root-bg">
             <div class="gap"></div>
 
-            <!--dashed lines-->
+            <!--Dashed lines-->
             <div class="dashed-lines">
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
-                <span class="grey-dash"></span>
+                <span class="grey-dash" id="dash" ></span>
             </div>
             <div class="gap"></div>
 
-            <!--nutrish logo-->
-            <svg id="thirty-sixty" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 816.9 816.6" style="enable-background:new 0 0 816.9 816.6;" xml:space="preserve">
-                <style type="text/css">
-                    .st0 {
-                        fill: #C7C7C7;
-                    }
-
-                    .st1 {
-                        fill: #3D3834;
-                    }
-
-                    .st2 {
-                        fill: none;
-                    }
-
-                    .st3 {
-                        fill: #D6DE23;
-                    }
-
-                    .st4 {
-                        fill: #8BC53F;
-                    }
-
-                </style>
-                <path class="st0" d="M408.5,0C182.9,0,0,183.5,0,408.2c0,225.5,183.2,408.5,408.5,408.5S817,633.8,817,408.2
-	C816.6,183.5,633.7,0,408.5,0z" />
-                <path class="st1" d="M408.5,20.7c-214.1,0-387.8,174.2-387.8,387.5c0,214,173.9,387.8,387.8,387.8s387.8-173.6,387.8-387.8
-	C795.8,194.9,622.2,20.7,408.5,20.7z" />
-                <line class="st2" x1="697.8" y1="339.5" x2="697.8" y2="480.7" />
-                <line class="st2" x1="657" y1="335.9" x2="657" y2="457.9" />
-                <path class="st3" d="M134.6,354.5c6,0,11,4.9,11,11v12.9c0,1.5-1.2,2.7-2.7,2.7H130c-6,0-11-4.9-11-11v-12.9c0-1.5,1.2-2.7,2.7-2.7
-		H134.6z" />
-                <path class="st4" d="M146.4,386.9c0.8-1.3,2.5-1.5,3.8-0.7c12.4,7.2,23.6-2.5,50.8-2.5c8,0,14.1,2.1,18.3,6.4s6.3,10.3,6.3,18.1
-		V466c0,1.7-1.4,3.2-3.2,3.2h-19.7c-1.7,0-3.2-1.4-3.2-3.2v-53.6c0-1.4-0.9-2.7-2.3-3c-2-0.5-4.4-0.8-7.1-0.8
-		c-7.1,0-12.8,1.6-17.1,4.7c-0.8,0.6-1.2,1.5-1.2,2.5V466c0,1.7-1.4,3.2-3.2,3.2h-19.7c-1.7,0-3.2-1.4-3.2-3.2v-77.3
-		C145.9,388,146.1,387.4,146.4,386.9z" />
-                <path class="st4" d="M316.1,467c-0.8,1.3-2.5,1.5-3.8,0.7c-12.4-7.2-23.6,2.5-50.8,2.5c-8,0-14.1-2.1-18.3-6.4s-6.3-10.3-6.3-18.1
-		V388c0-1.7,1.4-3.2,3.2-3.2h19.7c1.7,0,3.2,1.4,3.2,3.2v53.6c0,1.4,0.9,2.7,2.3,3c2,0.5,4.4,0.8,7.1,0.8c7.1,0,12.8-1.6,17.1-4.7
-		c0.8-0.6,1.2-1.5,1.2-2.5V388c0-1.7,1.4-3.2,3.2-3.2h19.7c1.7,0,3.2,1.4,3.2,3.2v77.3C316.6,465.9,316.4,466.5,316.1,467z" />
-                <path class="st4" d="M447.9,385.4h19.9c1.7,0,3.2,1.4,3.2,3.2v77.3c0,1.7-1.4,3.2-3.2,3.2h-19.9c-1.7,0-3.2-1.4-3.2-3.2v-77.3
-		C444.8,386.9,446.2,385.4,447.9,385.4z" />
-                <path class="st4" d="M376.4,448.1c0-2.1-2-3.5-4-3c-2.8,0.7-5.8,1-9,1c-2,0-3.9-0.2-5.7-0.5c-1.3-0.3-2.4-1.3-2.6-2.6
-		c-0.3-1.7-0.4-3.7-0.4-5.9v-26.4c0-1.7,1.4-3.2,3.2-3.2h15.4c1.7,0,3.2-1.4,3.2-3.2v-15.6c0-1.7-1.4-3.2-3.2-3.2h-15.4
-		c-1.7,0-3.2-1.4-3.2-3.2v-15.6c0-1.7-1.4-3.2-3.2-3.2h-20.1c-1.7,0-3.2,1.4-3.2,3.2v82.1c0,11.9,12.9,22.2,33.1,22.2
-		c5.1,0,9.4-0.5,12.9-1.4c0.7-0.2,1.4-0.4,2.1-0.6v-20.9L376.4,448.1L376.4,448.1z" />
-                <path class="st4" d="M511,406.4c6.2-1.6,18.8,0.1,23.3,1.1c3.4,0.7,6.8,1.7,10.1,3c1.7,0.6,3.5-0.2,4.1-1.9l5.3-14.9
-		c0.6-1.6-0.2-3.4-1.8-4.1c-8.8-3.8-19.2-5.8-31.3-5.8c-13.7,0-23.6,2.1-29.7,6.4s-9.1,10.7-9.1,19.3c0,6.3,1.2,11.2,3.5,14.8
-		c2.3,3.6,5.5,6.2,9.7,8c4,1.7,9.2,3.2,15.8,4.6h-0.1c1.2,0.3,2.4,0.6,3.7,0.9c5.4,1.3,8.9,2.4,10.5,3.1s2.4,1.8,2.4,3.3
-		c0,0.2,0,0.3,0,0.5c-0.1,1.6-1.3,2.6-2.8,3.1c-5.1,1.4-17.4,0.5-23.4-0.8c-3.4-0.8-6.8-1.7-10.1-3c-1.7-0.6-3.5,0.2-4.1,1.9
-		l-5.3,14.9c-0.6,1.6,0.2,3.4,1.8,4.1c8.8,3.8,19.2,5.8,31.3,5.8c13.7,0,23.6-2.1,29.7-6.4c6.1-4.3,9.7-10.7,9.7-19.3
-		c0-3-0.5-5.6-1-8c-0.6-2.3-1.5-4.3-2.6-6c-2.5-3.6-6-6.4-10.5-8.4s-10.8-4-19-5.9c-5.4-1.3-8.9-2.4-10.5-3.1s-2.4-1.8-2.4-3.3
-		c0-0.2,0-0.3,0-0.5C508.2,408.1,509.3,406.8,511,406.4z" />
-                <path class="st4" d="M433.5,383.9c-22,1.4-32.3,8.8-43.6,2.2c-1.3-0.8-3-0.5-3.8,0.8c-0.3,0.5-0.5,1.1-0.5,1.7v77.3
-		c0,1.7,1.4,3.2,3.2,3.2h19.7c1.7,0,3.2-1.4,3.2-3.2v-50.2c0-1,0.4-1.9,1.2-2.5c4.3-3.1,9.9-4.7,17.1-4.7c1.3,0,2.5,0.1,3.6,0.2
-		c1.7,0.2,3.2-1.2,3.2-2.9v-18.9C436.6,385.1,435.2,383.8,433.5,383.9z" />
-                <path class="st4" d="M639.3,389.9c-4.5-4.1-10.9-6.2-19.1-6.2c-0.5,0-1,0.1-1.6,0.1c-0.1,0-0.2,0-0.3,0c-11.1,0-20.3,3.7-23.3,3.5
-		c-3.1-0.2-4-2.7-4-4.5c0-0.1,0-0.1,0-0.2v-29.2c0-1.7-1.4-3.2-3.2-3.2h-19.9c-1.7,0-3.2,1.4-3.2,3.2V466c0,1.7,1.4,3.2,3.2,3.2
-		h19.9c1.7,0,3.2-1.4,3.2-3.2v-49.8c0-1,0.5-2,1.3-2.6c4.6-3.1,10.4-4.7,17.3-4.7c3.1,0,5.7,0.3,7.9,0.8c1.4,0.4,2.3,1.6,2.3,3.1
-		V466c0,1.7,1.4,3.2,3.2,3.2h19.9c1.7,0,3.2-1.4,3.2-3.2v-57.8C646.1,400.1,643.8,394,639.3,389.9z" />
-                <path class="st4" d="M654.6,459.4h7.3v1.7h-2.7v8h-1.9v-8h-2.7L654.6,459.4L654.6,459.4z" />
-                <path class="st4" d="M663.5,459.4h3l1.6,6l1.6-6h3v9.7H671v-8.6l-2.3,8.6h-1l-2.3-8.6v8.6h-1.8v-9.7H663.5z" />
-            </svg>
-
+            <!--Nutrish introduction-->
+            <img src="images/nutrish-logo.svg" class="thirty-sixty">
             <div class="fifty-right">
                 <h2>Nutrish</h2>
                 <p>Showcased in AIGA Blue Ridge’s 2017 annual Flux Student Design Competition</p>
@@ -246,11 +90,11 @@
                 </p>
                 <small>school project</small>
             </div>
-            <hr>
-            <div class="gap-big"></div>
+            <hr><div class="gap-big"></div>
         </div>
 
-        <div class="hundred per-dark-s">
+        <!-- the problem -->
+        <div class="hundred grey-bg">
             <div class="wrapper">
                 <div class="gap-medium"></div>
                 <div class="gap-medium"></div>
@@ -323,7 +167,7 @@
             <div class="gap-big"></div>
         </div>
 
-
+        <!-- Infographic -->
         <div class="wrapper">
             <div class="gap-big"></div>
             <hr>
@@ -379,11 +223,11 @@
                     </div>
                 </div>
             </div>
-            <div class="gap-big"></div>
-            <hr>
+            <div class="gap-big"></div><hr>
         </div>
 
-        <div class="hundred per-dark-s">
+        <!-- Branding -->
+        <div class="hundred grey-bg">
             <div class="wrapper">
                 <div class="gap-big"></div>
                 <h2 class="text-align-center">Branding</h2>
@@ -393,18 +237,20 @@
                 <div class="gap"></div>
                 <img loading="lazy" width="2000" height="1166" class="hundred-ninety mobile-hide shadow" src="images/nutrish-branding-desktop.jpg?v=1.0.0" alt="branding, colors, icons, fonts">
                 <img loading="lazy" width="2652" height="1500" class="hundred-ninety mobile-show shadow" src="images/nutrish-branding-mobile.jpg?v=1.0.0" alt="branding, colors, icons, fonts">
-                <hr>
-                <div class="gap-big"></div>
+                <hr><div class="gap-big"></div>
+
+                <!-- Example family -->
                 <h2 class="text-align-center">Meet the Gundersons</h2>
                 <p class="text-align-center">
                     A family that could benefit from planning out meals.
                 </p>
                 <div class="gap"></div>
                 <img loading="lazy" width="1600" height="1059" class="eighty-ninety" src="images/nutrish-personas.png?v=1.0.0" alt="personas">
-                <div class="gap-medium"></div>
-                <hr>
+                <div class="gap-medium"></div><hr>
             </div>
         </div>
+
+        <!-- Userflow -->
         <div class="hundred white-bg">
             <div class="wrapper">
                 <div class="gap-big"></div>
@@ -415,7 +261,6 @@
                 <div class="gap"></div>
                 <img loading="lazy" width="1200" height="3167" class="eighty-ninety mobile-show" src="images/nutrish-flow-mobile.jpg?v=1.0.0" alt="app screens user flow">
                 <img loading="lazy" width="2000" height="2213" class="eighty-ninety mobile-hide" src="images/nutrish-flow.jpg?v=1.0.0" alt="app screens user flow">
-
                 <div class="gap"></div>
                 <h2 class="text-align-center">
                     <p><a href="https://marvelapp.com/6fig0cf" target="_blank"><button class="linked light-button">Marvel Prototype</button></a></p>
@@ -424,6 +269,7 @@
             </div>
         </div>
 
+        <!-- Google home audio -->
         <div class="hundred">
             <div class="wrapper">
                 <div class="gap-big"></div>
@@ -442,10 +288,9 @@
                 <div class="gap-big"></div>
             </div>
         </div>
-        <hr>
+        <hr><div class="gap-big"></div>
 
-        <div class="gap-big"></div>
-
+        <!-- Slideshow -->
         <div class="wrapper root-bg">
             <div class="hundred-ninety">
                 <div class="border">
@@ -466,19 +311,13 @@
                     <hr>
                     <a><button class="linked" id="buttonAll" onclick="slideShow(22, 6)">Show All Slides</button></a>
                 </div>
-                <hr>
-                <div class="gap-big"></div>
+                <hr><div class="gap-big"></div>
             </div>
-
-            <hr>
-            <div class="gap-big"></div>
-            <hr>
+            <hr><div class="gap-big"></div><hr>
         </div>
-
-
     </div>
 
-    <!--end links-->
+    <!--End Links-->
     <footer>
         <div class="wrapper">
             <a href="/#design" class="left-social">&#8592; Design
@@ -525,7 +364,9 @@
             </div>
         </div>
     </footer>
-
 </body>
 
+<!-- Repeats the dashed line section for me instead of having 96 spans -->
+<!-- Must be at bottom so page can load first -->
+<script src="js/repeatdiv.js"></script>
 </html>
