@@ -119,11 +119,7 @@ h1 {
     color: #8bc441;
     padding: .2em 0;
     font-size: 2em;
-}
-
-.problem-box h4 {
-    padding-top: 2em;
-    color: #808285;
+    padding-left: 10%;
 }
 
 h2 {
@@ -132,21 +128,6 @@ h2 {
     margin-left: 5%;
     color: #1a1a1a;
     font-size: 1.5em;
-}
-
-h3 {
-    text-align: center;
-    width: 100%;
-    margin-bottom: .2em;
-    color: #1a1a1a;
-    font-size: 1.5em;
-    font-weight: 700;
-}
-
-h4 {
-    text-align: center;
-    width: 100%;
-    margin-bottom: .2em;
 }
 
 .margin-top-bottom-two {
@@ -453,12 +434,6 @@ audio:focus {
     float: left;
 }
 
-.hundred2 {
-    width: 100%;
-    height: auto;
-    float: left;
-}
-
 .dashed-lines {
     display: flex;
     flex-direction: row;
@@ -512,22 +487,6 @@ audio:focus {
     cursor: pointer;
 }
 
-.dark-button {
-    background-color: #51504E;
-    color: #d6d6d6;
-}
-
-.dark-button:hover {
-    background-color: #5D5C5A;
-    cursor: pointer;
-}
-
-.sixty-ninety {
-    width: 60%;
-    margin-left: 20%;
-    height: auto;
-}
-
 .eighty-ninety {
     width: 80%;
     margin-left: 10%;
@@ -578,19 +537,6 @@ audio:focus {
     margin: auto;
     overflow: hidden;
     width: 100%;
-}
-
-.process-box {
-    width: 14%;
-    margin: 2.4% 2.4% 0 0;
-    background: #d6d6d6;
-    float: left;
-}
-
-.process-img {
-    width: 80%;
-    padding: 10%;
-    height: auto;
 }
 
 .border {
@@ -752,51 +698,87 @@ audio:focus {
 }
 
 #githubBox {
-    height: 25em;
+    height: 27em;
 }
 
 /*perennial*/
-.color-box {
-    padding: 1.3em 0 1.3em 0;
-    overflow: hidden;
-    box-shadow: 0px 1px 7px -3px #1a1a1a;
-}
-
-.color-box:last-child(4) {
-    padding-bottom: 4em;
-}
-
-.color-content {
+.flexbox-hundred {
+    display: flex;
     width: 100%;
-    float: none;
-    max-width: 1000px;
-    margin: auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
-.per-dark {
-    background: #d6d6d6;
-    border-radius: 10px;
+.flexchild-forty {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.flexchild-twenty-forty {
+    width: 20%;
+    margin-bottom: 20px;
 }
 
 .per-dark-s {
     background: #d6d6d6;
 }
 
-#perHmw {
+.per-ul {
     padding-left: 5%;
 }
 
-#perHmw li {
+.per-ul li {
     padding-left: 0;
     list-style-position: inside;
+    padding: 0em 1em 1em 0;
+    list-style: disc inside;
 }
 
-.color-box h1 {
-    color: rgba(0, 0, 0, .2);
-    font-size: .8em;
-    font-weight: 800;
-    margin-left: 4.5%;
-    margin-bottom: 0;
+.per-user-feedback {
+    width: 80%;
+    background:#ebebeb;
+    border-radius:100px;
+    display: flex;
+    margin: 30px 0;
+    position: relative;
+}
+
+.per-user-feedback:nth-child(2) {
+    margin-left: 20%;
+}
+
+.per-user-feedback:nth-child(3) {
+    margin-left: 10%;
+}
+
+.per-user-feedback:nth-child(3)::after {
+    content: '';
+	position: absolute;
+	bottom: 0;
+	left: 75%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ebebeb;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -20px;
+}
+
+.per-user-feedback img {
+    border-radius: 50%;
+    width:10%;
+    margin: 15px;
+    object-fit: cover;
+}
+
+.per-user-feedback p {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    padding-right: 70px;
+    padding-bottom: 0;
 }
 
 /*java-jos*/
@@ -827,26 +809,6 @@ audio:focus {
 .java-bg p,
 .per-bg p {
     color: #1a1a1a;
-}
-
-
-/*aqua design*/
-
-.ad-book {
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: auto;
-}
-
-
-/*explore ecology*/
-.exp-color-box,
-.problem-box,
-.amala-box {
-    width: 18%;
-    float: left;
-    margin: 3.5%;
 }
 
 .problem-box {
@@ -932,13 +894,6 @@ audio:focus {
 #nutrish h4,
 #nutrish a {
     font-family: 'Nunito', sans-serif !important;
-}
-
-.third {
-    width: 30%;
-    margin-right: 1.5%;
-    margin-left: 1.5%;
-    float: left;
 }
 
 .nutrish-style {
@@ -1031,10 +986,6 @@ audio:focus {
     top: 0;
 }
 
-.tablet-show {
-    display: none;
-}
-
 .description-text p {
     margin: 0;
     padding: 0;
@@ -1054,15 +1005,6 @@ audio:focus {
 }
 
 /*svg fills*/
-
-.fill-none {
-    fill: none;
-}
-
-.fill-1a1a1a {
-    fill: #1a1a1a;
-}
-
 .fill-18BE98 {
     fill: #18BE98;
 }
@@ -1071,28 +1013,8 @@ audio:focus {
     fill: #79CCB2;
 }
 
-.fill-ebebeb {
-    fill: #ebebeb;
-}
-
-.fill-282D33 {
-    fill: #282D33;
-}
-
 .fill-white {
     fill: #FFFFFF;
-}
-
-.fill-2B8C59 {
-    fill: #2B8C59;
-}
-
-.fill-CECECE {
-    fill: #CECECE;
-}
-
-.fill-010101 {
-    fill: #010101;
 }
 
 .opacity-25 {
@@ -1108,11 +1030,6 @@ audio:focus {
 
     .wrapper {
         width: 95%;
-    }
-
-    .process-box {
-        width: 20%;
-        margin: 2.5% 1.75% 0 1.75%;
     }
 
     .problem-box ul {
@@ -1131,12 +1048,6 @@ audio:focus {
         margin-left: 9%;
     }
 
-    .color-content {
-        width: 90%;
-        margin-left: 5%;
-        float: left;
-    }
-
     .problem-box {
         width: 42.5%;
         float: left;
@@ -1146,17 +1057,6 @@ audio:focus {
     .hero {
         background-attachment: scroll;
         height: 45em;
-    }
-
-    .third {
-        width: 30%;
-        margin-right: 1.5%;
-        margin-left: 1.5%;
-        float: left;
-    }
-
-    .tablet-show {
-        display: block;
     }
 
     .description-text h2 {
@@ -1247,13 +1147,6 @@ audio:focus {
         float: left;
         margin-right: 4%;
     }
-
-    .third {
-        width: 90%;
-        margin-left: 5%;
-        float: left;
-        margin-top: 1em;
-    }
 }
 
 /* Portrait */
@@ -1304,12 +1197,6 @@ audio:focus {
         max-width: none;
     }
 
-    .process-box {
-        width: 30%;
-        margin: 2.5% 1.66% 0 1.66%;
-        display: table;
-    }
-
     p {
         padding: 0em 1.5em 1.5em 10%;
         line-height: 1.75em;
@@ -1353,13 +1240,8 @@ audio:focus {
         margin-right: 4%;
     }
 
-    .color-content h2 {
-        width: 90%;
-    }
-
     .hundred-ninety,
     .eighty-ninety,
-    .sixty-ninety,
     .fifty-right,
     .fifty-left {
         width: 90%;
@@ -1375,8 +1257,28 @@ audio:focus {
         margin-top: 1em;
     }
 
-    #perHmw {
+    .per-ul {
         padding-left: 10%;
+    }
+
+    .per-user-feedback {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px auto!important;
+    }
+
+    .per-user-feedback img {
+        width: 20%;
+    }
+
+    .per-user-feedback p {
+        padding: 0;
+        margin: 10px 70px 30px 70px;
+        text-align: center;
+    }
+
+    .per-user-feedback:nth-child(3)::after {
+        left: 65%;
     }
 
     .gap-medium {
@@ -1388,6 +1290,14 @@ audio:focus {
     }
     #githubBox {
         height: 15em;
+    }
+
+    .flexchild-twenty-forty {
+        width: 40%;
+    }
+
+    .dog{
+        background-color: blue;
     }
 }
 
@@ -1446,7 +1356,6 @@ audio:focus {
         font-size: 1em;
     }
 
-    .third p,
     .light-darkmode p,
     .light-darkmode h2 {
         color: #1a1a1a;
