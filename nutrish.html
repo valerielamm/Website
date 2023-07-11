@@ -8,13 +8,28 @@
     <meta name="author" content="Valerie Lamm">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/makemepretty.min.css?v=4.1.0">
+    <link rel="stylesheet" href="css/makemepretty.min.css?v=4.5.0">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="canonical" href="http://www.valerielamm.com/nutrish" />
 
     <!-- JS -->
     <script src="js/slideshow.js"></script>
     
+    <!-- google search schema -->
+    <script type="application/ld+json">
+        {
+        "@context": "http://www.valerielamm.com",
+        "@type": "BreadcrumbList",
+        "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Nutrish",
+            "item": "http://www.valerielamm.com/nutrish",
+            "description": "Valerie Lamm's design portfolio. Nutrish is a theoretical app designed to create a more nutritious, enjoyable, and less wasteful relationship users have with their food through the use of adaptive algorithms and devices."
+        }]
+        }
+    </script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700" rel="stylesheet">
@@ -98,76 +113,83 @@
         </div> 
 
         <!-- the problem -->
-        <div class="wrapper">
-            <div class="gap-medium"></div>
-            <div class="fifty-left mobile-hide">
-                <img loading="lazy" width="2000" height="1583" class="hundred-ninety" src="images/nutrish-veggies-table.png" alt="vegetables on table">
-            </div>
-            <div class="fifty-right">
-                <h2>The Problem</h2>
-                <p>
-                    Due to lack of time, people struggle with taking nutrition into account, which has been shown to negatively affect our health and happiness. This also inadvertently contributes to the growing problem of food waste. Here are things that influence the problems:
-                </p>
-                <div class="gap"></div><hr>
+        <div class="hundred grey-bg">
+            <div class="wrapper">
+                <div class="gap-medium"></div>
+                <div class="fifty-left problem-box grey-border">
+                    <img loading="lazy" width="2000" height="1583" class="hundred" src="images/nutrish-cookbook.jpg" alt="vegetables and cookbook on table">
+                    <div class="nutrish-style"></div>
+                </div>
+                <div class="fifty-right">
+                    <h2>Problem Identification</h2>
+                    <p>
+                        Due to lack of time, people struggle with taking nutrition into account, which has been shown to negatively affect our health and happiness. This also inadvertently contributes to the growing problem of food waste.
+                    </p>
+                    <h2>The Goal</h2>
+                    <p>
+                        Find an efficient solution to help solve problems:
+                    </p>
+                    <div class="gap"></div><hr>
 
-                <div class="flexbox-hundred">
-                    <div class="flexchild-forty">
-                        <h3>Convenience</h3>
-                        <ul>
-                            <li>Time</li>
-                            <li>Effort</li>
-                            <li>Difficulty</li>
-                            <li>Accessibility</li>
-                            <li>Mood</li>
-                            <li>Efficiency</li>
-                        </ul>
-                    </div>
-                    <div class="flexchild-forty">
-                        <h3>Nutrition</h3>
-                        <ul>
-                            <li>Portion Control</li>
-                            <li>Restrictions</li>
-                            <li>Balanced Diet</li>
-                            <li>Ingredients</li>
-                            <li>Homemade</li>
-                            <li>Cost</li>
-                        </ul>
-                    </div>
-                    <div class="flexchild-forty">
-                        <h3>Community</h3>
-                        <ul>
-                            <li>Tastes</li>
-                            <li>Restrictions</li>
-                            <li>Diets</li>
-                            <li>Schedules</li>
-                            <li>Portions</li>
-                            <li>Food Deserts</li>
-                        </ul>
-                    </div>
-                    <div class="flexchild-forty">
-                        <h3>Waste</h3>
-                        <ul>
-                            <li>Portions</li>
-                            <li>Consumption</li>
-                            <li>Upbringing</li>
-                            <li>Exp. Date</li>
-                            <li>Fresh</li>
-                            <li>Processed</li>
-                        </ul>
+                    <div class="flexbox-hundred">
+                        <div class="flexchild-forty">
+                            <h3>Convenience</h3>
+                            <ul>
+                                <li>Time</li>
+                                <li>Effort</li>
+                                <li>Difficulty</li>
+                                <li>Accessibility</li>
+                                <li>Mood</li>
+                                <li>Efficiency</li>
+                            </ul>
+                        </div>
+                        <div class="flexchild-forty">
+                            <h3>Nutrition</h3>
+                            <ul>
+                                <li>Portion Control</li>
+                                <li>Restrictions</li>
+                                <li>Balanced Diet</li>
+                                <li>Ingredients</li>
+                                <li>Homemade</li>
+                                <li>Cost</li>
+                            </ul>
+                        </div>
+                        <div class="flexchild-forty">
+                            <h3>Community</h3>
+                            <ul>
+                                <li>Tastes</li>
+                                <li>Restrictions</li>
+                                <li>Diets</li>
+                                <li>Schedules</li>
+                                <li>Portions</li>
+                                <li>Food Deserts</li>
+                            </ul>
+                        </div>
+                        <div class="flexchild-forty">
+                            <h3>Waste</h3>
+                            <ul>
+                                <li>Portions</li>
+                                <li>Consumption</li>
+                                <li>Upbringing</li>
+                                <li>Exp. Date</li>
+                                <li>Fresh</li>
+                                <li>Processed</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <hr><div class="gap-big"></div>
             </div>
-            <hr><div class="gap-big"></div>
         </div>
-
         <!-- Infographic -->
         <div class="wrapper">
-            <div class="gap-big"></div>
-            <hr>
-            <h2 class="text-align-center">Infographic</h2>
-            <p class="text-align-center"> 
-                After sending out a survey, we compiled relevant information about technology and food habits.
-            </p>
+            <hr><div class="gap-medium"></div>
+            <div class="eighty-ninety">
+                <h2 class="text-align-center">Infographic</h2>
+                <p class="text-align-center"> 
+                    We sent out a survey to compile relevant information about technology and food habits.
+                </p>
+            </div>
             <div class="gap"></div>
             <img loading="lazy" width="2000" height="1419" class="hundred-ninety mobile-hide shadow" src="images/nutrish-infographic.jpg?v=1.0.0" alt="technology and food habits infographic">
             <img loading="lazy" width="1500" height="2445" class="hundred-ninety mobile-show shadow" src="images/nutrish-infographic-mobile.jpg?v=1.0.0" alt="technology and food habits infographic">
@@ -179,10 +201,12 @@
             <div class="wrapper">
                 <div class="gap-big"></div>
                 <hr>
-                <h2 class="text-align-center">App Competitor Research</h2>
-                <p class="text-align-center">
-                    Analysis from 16 apps related to grocery shopping and nutrition tracking:
-                </p>
+                <div class="eighty-ninety">
+                    <h2 class="text-align-center nutrish-splash-color">App Competitor Research</h2>
+                    <p class="text-align-center nutrish-splash-color">
+                        16 popular apps related to grocery shopping and nutrition tracking were analyzed:
+                    </p>
+                </div>
                 <div class="gap"></div>
                 <div class="flexbox-hundred">
                     <div class="problem-box flexchild-twenty-forty" id="heb">
@@ -190,7 +214,7 @@
                             <b>Store</b><br>
                         </p>
                         <h3>31.2%</h3>
-                        <p>of the apps have features like coupons and sales to connect the users to nearby grocery stores. </p>
+                        <p>had features like coupons and sales to connect the users to nearby grocery stores. </p>
                         <div class="nutrish-style"></div>
                     </div>
                     <div class="problem-box flexchild-twenty-forty" id="profile">
@@ -198,7 +222,7 @@
                             <b>Personal</b><br>
                         </p>
                         <h3>81.5%</h3>
-                        <p>of the apps allow users to be able to personalize their experience based on their activities. </p>
+                        <p>allowed users to be able to personalize their experience based on their activities. </p>
                         <div class="nutrish-style"></div>
                     </div>
                     <div class="problem-box flexchild-twenty-forty" id="list">
@@ -206,7 +230,7 @@
                             <b>List</b><br>
                         </p>
                         <h3>43.7%</h3>
-                        <p>of the apps allow users to manage a grocery shopping list and aid in shopping for items needed. </p>
+                        <p>allowed users to manage a grocery shopping list and aid in shopping for items needed. </p>
                         <div class="nutrish-style"></div>
                     </div>
                     <div class="problem-box flexchild-twenty-forty" id="platelist">
@@ -214,7 +238,7 @@
                             <b>Organization</b><br>
                         </p>
                         <h3>62.5%</h3>
-                        <p>of the apps keep users organized through calendar features, meal plans and saved recipes. </p>
+                        <p>kept users organized through calendar features, meal plans and saved recipes. </p>
                         <div class="nutrish-style"></div>
                     </div>
                 </div>
@@ -243,13 +267,13 @@
 
                     <!-- Example family -->
                     <div class="gap-big"></div>
-                    <h2 class="text-align-center">Meet the Gundersons</h2>
-                    <p class="text-align-center">
+                    <h2 class="text-align-center nutrish-splash-color">Meet the Gundersons</h2>
+                    <p class="text-align-center nutrish-splash-color">
                         A family that could benefit from planning out meals.
                     </p>
                     <div class="gap"></div>
                     <div class="flexbox-hundred">
-                        <div class="problem-box flexchild-twenty-forty blue-border" id="profile">
+                        <div class="problem-box flexchild-twenty-forty blue-border">
                             <h1>Marsha Gunderson</h1>
                             <h2>About</h2>
                             <p>
@@ -265,7 +289,7 @@
                             </p>
                             <div class="nutrish-style"></div>
                         </div>
-                        <div class="problem-box flexchild-twenty-forty blue-border" id="profile">
+                        <div class="problem-box flexchild-twenty-forty blue-border">
                             <h1>Bill Gunderson</h1>
                             <h2>About</h2>
                             <p>
@@ -281,7 +305,7 @@
                             </p>
                             <div class="nutrish-style"></div>
                         </div>
-                        <div class="problem-box flexchild-twenty-forty blue-border" id="profile">
+                        <div class="problem-box flexchild-twenty-forty blue-border">
                             <h1>Jamie Gunderson</h1>
                             <h2>About</h2>
                             <p>
@@ -293,11 +317,11 @@
                             </p>
                             <h2>Dietary Restrictions</h2>
                             <p>
-                                High sugar foods (easy cavities). Peanut allergy.
+                                High sugar foods. Peanut allergy.
                             </p>
                             <div class="nutrish-style"></div>
                         </div>
-                        <div class="problem-box flexchild-twenty-forty blue-border" id="profile">
+                        <div class="problem-box flexchild-twenty-forty blue-border">
                             <h1>Chad Gunderson</h1>
                             <h2>About</h2>
                             <p>
@@ -320,22 +344,58 @@
         </div>
 
         <!-- Userflow -->
+
+        <!-- Branding and menu-->
         <div class="hundred white-bg">
             <div class="nutrish-blue-divider"></div>
+            <div class="gap"></div>
             <div class="wrapper">
-                <div class="gap-big"></div>
-                <h2 class="text-align-center">Userflow</h2>
-                <p class="text-align-center">
-                    This shows how the app helps the user choose from their collection of recipes and add it to their schedule, while avoiding the familys' dietary conflicts.
-                </p>
-                <div class="gap"></div>
-                <img loading="lazy" width="1200" height="3167" class="eighty-ninety mobile-show" src="images/nutrish-flow-mobile.jpg?v=1.0.0" alt="app screens user flow">
-                <img loading="lazy" width="2000" height="2213" class="eighty-ninety mobile-hide" src="images/nutrish-flow.jpg?v=1.0.0" alt="app screens user flow">
-                <div class="gap"></div>
-                <h2 class="text-align-center">
-                    <p><a href="https://marvelapp.com/6fig0cf" target="_blank"><button class="linked light-button">Marvel Prototype</button></a></p>
-                </h2>
-                <div class="gap-big"></div>
+                <div class="gap-medium"></div>
+                <div class="fifty-left">
+                    <img loading="lazy" width="2000" height="2213" class="eighty-ninety" src="images/nutrish-flow-mobile.jpg?v=1.0.0" alt="app screens user flow">
+                </div>
+                <div class="fifty-right">
+                    <h2>Userflow</h2>
+                    <p>
+                        This shows how the app helps the user choose from their collection of recipes and add it to their schedule, while avoiding the familys' dietary conflicts.
+                    </p>
+                    <p>
+                        <a href="https://marvelapp.com/6fig0cf" target="_blank"><button class="linked light-button">Marvel Prototype</button></a>
+                    </p>
+                    <h2>Problems and Solutions</h2>
+                    <p>
+                        Here are features that help solve problems. Most can be seen in the userflow.
+                    </p>
+                    <h3>Convenience</h3>
+                    <p>
+                        To save time, recipes can be saved in your own personal "platelists" (like song playlists). There are different layout options to view recipes in your platelists, some of which show things like estimated cook times.
+                    </p>
+                    <p>
+                        Integrating more devices, like google home, to do things like adding items to your grocery list would save time for users as well.
+                    </p>
+                    <h3>Nutrition</h3>
+                    <p>
+                        Always having access to favorite recipes on your personal and followed "platelists" encourages healthier selections. There is also the capability to schedule meals ahead of time, which can be seen by people in your community. Meaning, they could request an alternative healthy choice beforehand if wanted.
+                    </p>
+                    <p>
+                        When users make their profiles and input preferences and allergens, it makes for a more catered experience. It gives health warnings and allows the user to filter recipes by their allergies and preferences.
+                    </p>
+                    <h3>Community</h3>
+                    <p>
+                        Having your community set up also allows you to see allergens, restrictions and taste preference warnings beforehand in the form of popups during meal scheduling. 
+                    </p>
+                    <p>
+                        Allowing users to contribute to and see a combined grocery list from the community encourages involvement. 
+                    </p>
+                    <h3>Waste</h3>
+                    <p>
+                        Scheduling ahead encourages evaluating what's currently at home to prepare for cooking and shopping, which helps with preventing waste.
+                    </p>
+                    <p>
+                        A feature that would be helpful is the ability to scan receipts to log what you bought. When adding things to your grocery list, the app could subtly warn you if you recently already bought it. It would discourage buying things you already have.
+                    </p>
+                </div>
+                <hr><div class="gap-big"></div>
             </div>
         </div>
 
@@ -380,19 +440,17 @@
                     <hr>
                     <a><button class="linked" id="buttonAll" onclick="slideShow(22, 6)">Show All Slides</button></a>
                 </div>
-                <hr><div class="gap-big"></div>
-            </div>
-            <div class="hundred-ninety">
+                <hr><div class="gap"></div>
                 <p class="text-align-center">
                     <b>attribution</b><br>
-                    <small>veggie bowl photo by <a href="https://unsplash.com/@nadineprimeau?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">nadine primeau</a> on <a href="https://unsplash.com/photos/8pWavjyk3Uc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">unsplash</a></small>
-                    <br><small>cutting board photo by <a href="https://unsplash.com/pt-br/@kate5oh3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">katie smith</a> on <a href="https://unsplash.com/photos/uQs1802D0CQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">unsplash</a></small>
+                    <small>cutting board photo by <a href="https://unsplash.com/pt-br/@kate5oh3?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">katie smith</a> on <a href="https://unsplash.com/photos/uQs1802D0CQ?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">unsplash</a></small>
+                    <br><small>cookbook photo by <a href="https://unsplash.com/@idbronskiy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">ilia bronskiy</a> on <a href="https://unsplash.com/photos/SsQaHMuMJnk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">unsplash</a></small>
                     <br><small>strawberry photo by <a href="https://unsplash.com/@brookelark?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">brooke lark</a> on <a href="https://unsplash.com/photos/08bOYnH_r_E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">unsplash</a></small>
                     <br><small>tomato photo by <a href="https://unsplash.com/pt-br/@the_modern_life_mrs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">heather ford</a> on <a href="https://unsplash.com/photos/_U4F6pyOQRs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">unsplash</a>
                     </a> </small>
                 </p>
             </div>
-            <hr><div class="gap-big"></div><hr>
+            <hr><div class="gap-extra-big"></div><hr>
         </div>
     </div>
 

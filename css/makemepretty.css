@@ -395,7 +395,6 @@ footer .wrapper {
 }
 
 .center-circles {
-    position: absolute;
     margin-top: .3em;
     left: 0;
     right: 0;
@@ -826,7 +825,7 @@ audio:focus {
 }
 
 .problem-box {
-    border: solid #8cc363;
+    border: solid #8cc363 4px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -837,11 +836,21 @@ audio:focus {
 }
 
 .blue-border {
-    border: solid #28c3c5;
+    border: solid #28c3c5 4px;
 }
 
 .blue-border .nutrish-style {
     background: #28c3c5;
+}
+
+.grey-border {
+    border: solid #b5b5b5 4px;
+    padding-bottom: 0;
+    margin-top: 2em;
+}
+
+.grey-border .nutrish-style {
+    background: #b5b5b5;
 }
 
 #corn,
@@ -924,7 +933,7 @@ audio:focus {
     padding: 0;
 }
 
-#nutrish .fifty-right h3 {
+#nutrish .fifty-right h3, #nutrish .fifty-left h3  {
     font-weight: bold;
     margin-left: 5%;
 }
@@ -953,6 +962,7 @@ audio:focus {
     height: 100%;
     overflow: hidden;
     background-position: center;
+    
 }
 
 .nutrish-splash-two {
@@ -1113,6 +1123,15 @@ audio:focus {
         width: 95%;
     }
 
+    .nutrish-splash, .nutrish-splash-two {
+        background-position: right;
+        background-attachment: initial;
+    }
+
+    .nutrish-splash {
+        background-position: 45% 0%;
+    }
+
     .problem-box ul {
         margin: 0;
         padding: 0;
@@ -1265,6 +1284,19 @@ audio:focus {
         padding-left: 10%;
     }
 
+    .nutrish-splash, .nutrish-splash-two {
+        background-position: right;
+        background-attachment: initial;
+    }
+
+    .nutrish-splash {
+        background-position: 45% 0%;
+    }
+
+    .nutrish-splash-color {
+        color: #1a1a1a;
+    }
+
     .mobile-show {
         display: block;
     }
@@ -1283,6 +1315,11 @@ audio:focus {
     p {
         padding: 0em 1.5em 1.5em 10%;
         line-height: 1.75em;
+    }
+
+    #nutrish .fifty-right h3 {
+        padding: 0;
+        margin-left: 10%;
     }
 
     .project-tags {
@@ -1378,76 +1415,5 @@ audio:focus {
 
     .dog{
         background-color: blue;
-    }
-}
-
-/*dark mode*/
-@media screen and (prefers-color-scheme: dark) {
-
-    .java-bg,
-    .bg,
-    .light-grey-bg {
-        background: #494949;
-    }
-
-    .white-circle,
-    .w3-badge:hover {
-        background-color: grey !important;
-    }
-
-    .w3-badge {
-        border: 1px solid grey !important;
-    }
-
-    .linked {
-        background: #686868;
-    }
-
-    .override-dark {
-        background: #ebebeb !important;
-    }
-
-    .override-dark h2,
-    .override-dark li,
-    .override-dark p,
-    .problem-box p,
-    .problem-box li,
-    .grey-bg h2,
-    .grey-bg p,
-    .grey-bg li,
-    .white-bg h2,
-    .white-bg p,
-    .about-dark h2 {
-        color: #1a1a1a !important;
-    }
-
-    h2,
-    li,
-    p,
-    .light-grey-bg p,
-    .java-bg p,
-    h3,
-    h4 {
-        color: #d6d6d6;
-    }
-
-    p,
-    .light-grey-bg p,
-    .java-bg p {
-        font-size: 1em;
-    }
-
-    .light-darkmode p,
-    .light-darkmode h2 {
-        color: #1a1a1a;
-    }
-
-    .white-bg button {
-        background-color: #d6d6d6;
-    }
-
-    .about-dark p {
-        font-size: .9em;
-        color: #1a1a1a;
     }
 }
